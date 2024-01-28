@@ -333,8 +333,10 @@ nav ul li:first-child a {
   nav {
     display: none;
   }
-
+  
   .cv-container {
     margin: 0 auto;
+    /* style visible when printing from iPhone */
+    box-shadow: none;
   } 
 }
