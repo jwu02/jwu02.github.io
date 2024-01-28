@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="resume.css">
+  <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <title>Jiacong Wu Resume</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html"><ion-icon name="return-down-back"></ion-icon><span>Return</span></a></li>
+      <li><button class="btn btn-color-1" onclick="window.print()">Download Resume</button></li>
+    </ul>
+  </nav>
+
+  <!-- ENGLISH VERSION -->
+  <div class="cv-container">
+    <div class="left-container">
+      <div class="pfp-container">
+        <img src="assets/me.jpg" alt="Picture of me">
+      </div>
+
+      <section class="languages-container">
+        <h2><span>Languages</span><ion-icon name="language"></ion-icon></h2>
+        <div class="skill-item">
+          <div class="skill-name">English (Native)</div>
+          <div class="skill-bar">
+            <span class="skill-per english-skill"></span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">Mandarin (Heritage)</div>
+          <div class="skill-bar">
+            <span class="skill-per mandarin-skill"></span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">Cantonese (Heritage)</div>
+          <div class="skill-bar">
+            <span class="skill-per cantonese-skill"></span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">Japanese (Beginner)</div>
+          <div class="skill-bar">
+            <span class="skill-per japanese-skill"></span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">French (Beginner)</div>
+          <div class="skill-bar">
+            <span class="skill-per french-skill"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-container">
+        <h2><span>Technical Skills</span><ion-icon name="construct"></ion-icon></h2>
+        <ul>
+          <li>Proficient with Python, Java and JavaScript, also familiar with TypeScript, PHP and Ruby</li>
+          <li>Experience with building deep learning models with Python packages TensorFlow/Keras, as well as GUIs with PyQt, web scraping with BeautifulSoup and robot programming with ROS</li>
+          <li>Experience with web development frameworks such as Angular, Django, RubyOnRails, and Spring Boot</li>
+          <li>Experience with database technologies such as MySQL and MongoDB</li>
+        </ul>
+      </section>
+      
+      <section class="achievements-container">
+        <h2><span>Achievements</span><ion-icon name="ribbon"></ion-icon></h2>
+        <ul>
+          <li>2017 - Received an award for my continuous effort and willingness to help with producing videos for various events in school. Includes help promoting the work of a charity, aimed towards providing a better educational environment for children in Nepal</li>
+          <li>2018 - Awarded for participation in the NCS (National Citizenship Service) programme which involved two weeks of volunteering at a care home</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="right-container">
+      <div class="top-container">
+
+        <section class="header">
+          <h1 class="name">Jiacong Wu</h1>
+          <h3 class="interest">Interested In: Software Engineering</h3>
+        </section>
+        
+        <div class="personal-details">
+          <div><ion-icon name="mail"></ion-icon><span><a href="mailto:jiacongwu31@gmail.com">jiacongwu31@gmail.com</a></span></div>
+          <div><ion-icon name="logo-wechat"></ion-icon><span>tonywu02</span></div>
+          <div><ion-icon name="logo-github"></ion-icon><span><a href="https://jwu02.github.io/">jwu02.github.io</a></span></div>
+        </div>
+      </div>
+
+      <div class="bottom-container">
+        <section class="education">
+          <h2><ion-icon name="school"></ion-icon><span>Education</span></h2>
+          <div class="education-item">
+            <div class="education-date"><p>2020.9 - 2023.07</p></div>
+            <div class="education-details-container">
+              <div class="education-institution-course">
+                <span class="education-institution">University of Sheffield</span>
+                <span class="education-course">BSc Computer Science</span>
+              </div>
+              <div>Degree Classification: 2:1 (Upper Second Class)</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects-container">
+          <h2><ion-icon name="layers"></ion-icon><span>Project Experience</span></h2>
+          <p class="notes"><span class="asterisk">*</span> Work is public on my GitHub profile if interested. You can also find more academic and personal projects there.</p>
+
+          <div class="project-item">
+            <span class="project-item-title">Chess Piece Image Classification System</span><span class="asterisk">*</span> - Developed as part of a machine learning course which involved learning various classification techniques, including both supervised and unsupervised. I implemented the system with both the Naive Bayes and k-nearest neighbour algorithms.
+          </div>
+
+          <div class="project-item">
+            <span class="project-item-title">Property Booking Desktop App</span> - Developed as part of a group project, emulating a real-world agile software development process. Utilised UML for a formal requirements analysis and system design process. The application was developed following the MVC architecture, with Java as frontend and backend, linking to MySQL database.
+          </div>
+
+          <div class="project-item">
+            <span class="project-item-title">ESP32 Robot Car</span><span class="asterisk">*</span> - Assembled and developed a remote-controlled robot car (via a WAP and served page) using C/C++, on a ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment.
+          </div>
+
+          <div class="project-item">
+            <span class="project-item-title">Named Entity Recognition (NER) System</span> - Developed from scratch as part of my dissertation project. The Multinomial Logistic Regression (MLR) algorithm was chosen for the implementation, with the help of NumPy for matrix calculations and Pandas for data sanitisation and manipulation. The results achieved were very close to what was capable of existing systems.
+          </div>
+
+          <div class="project-item">
+            <span class="project-item-title">Language Exchange Platform</span><span class="asterisk">*</span> <span class="project-in-progress">In Progress</span> - A personal fullstack project where I self-taught and utilised the Angular framework for frontend, with the help of Bootstrap for presentation. The frontend requests services from a REST API backend developed with Spring Boot. Also gained experiences with using Postman for testing backend service responses and using JSoup for web scraping language data.
+          </div>
+        </section>
+
+        <section class="about-container">
+          <h2><ion-icon name="person"></ion-icon><span>Self Evaluation</span></h2>
+          <ul>
+            <li>I am a responsible individual equipped with strong learning skills. Through my dissertation, I have developed strong research skills, as well as confidence in my own ability to deliver.</li>
+            <li>After overcoming the many challenges and struggles of university, I have developed strong perseverance and self-motivation. Staying optimistic is key in the face of hardship.</li>
+            <li>I have good team working skills and am aware of the various management techniques and workflows, for effective collaboration with other software developers.</li>
+            <li>I am proactive and am always motivated to learn new things, to self-improve and expand my skill sets. This is an important trait to have in the ever changing, fast-paced field of technology, where there is a constant need to keep up.</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+
+  <!-- CHINESE VERSION -->
+  <div class="cv-container">
+    <div class="left-container">
+      <div class="pfp-container">
+        <img src="assets/me.jpg" alt="Picture of me">
+      </div>
+
+      <section class="languages-container">
+        <h2><span>语言能力</span><ion-icon name="language"></ion-icon></h2>
+        <div class="skill-item">
+          <div class="skill-name">英语（母语）</div>
+          <div class="skill-bar">
+            <span class="skill-per english-skill"></span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">国语（传承语）</div>
+          <div class="skill-bar">
+            <span class="skill-per mandarin-skill"></span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">粤语（传承语）</div>
+          <div class="skill-bar">
+            <span class="skill-per cantonese-skill"></span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">日语（初学者）</div>
+          <div class="skill-bar">
+            <span class="skill-per japanese-skill"></span>
+          </div>
+        </div>
+
+        <div class="skill-item">
+          <div class="skill-name">法语（初学者）</div>
+          <div class="skill-bar">
+            <span class="skill-per french-skill"></span>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills-container">
+        <h2><span>技能专长</span><ion-icon name="construct"></ion-icon></h2>
+        <ul>
+          <li>熟练 Python、Java 和 JavaScript，也熟悉 TypeScript、PHP 和 Ruby</li>
+          <li>拥有使用 Python 软件包 TensorFlow/Keras 构建深度学习模型、使用 PyQt 构建图形用户界面、使用 BeautifulSoup 进行网络搜索以及使用 ROS 进行机器人编程的经验</li>
+          <li>具有使用 Angular、Django、RubyOnRails 和 Spring Boot 等网页开发框架的经验</li>
+          <li>具有使用 MySQL 和 MongoDB 等数据库技术的经验</li>
+        </ul>
+      </section>
+      
+      <section class="achievements-container">
+        <h2><span>校外荣誉</span><ion-icon name="ribbon"></ion-icon></h2>
+        <ul>
+          <li>2017 - 因很乐意地持续奉献自己的劳力来帮助制作学校各种活动的视频而获奖。包括帮助宣传一家慈善机构的工作，该慈善机构的目标是在为尼泊尔儿童提供更好的教育环境</li>
+          <li>2018 - 因参加 NCS（National Citizenship Service 国家公民服务）计划而获奖，该计划包括在一家护理院进行为期两周的志愿服务</li>
+        </ul>
+      </section>
+    </div>
+
+    <div class="right-container">
+      <div class="top-container">
+
+        <section class="header">
+          <h1 class="name">吴家聪</h1>
+          <h3 class="interest">求职意向: 软件工程</h3>
+        </section>
+        
+        <div class="personal-details">
+          <div><ion-icon name="mail"></ion-icon><span><a href="mailto:jiacongwu31@gmail.com">jiacongwu31@gmail.com</a></span></div>
+          <div><ion-icon name="logo-wechat"></ion-icon><span>tonywu02</span></div>
+          <div><ion-icon name="logo-github"></ion-icon><span><a href="https://jwu02.github.io/">jwu02.github.io</a></span></div>
+        </div>
+      </div>
+
+      <div class="bottom-container">
+        <section class="education">
+          <h2><ion-icon name="school"></ion-icon><span>教育背景</span></h2>
+          <div class="education-item">
+            <div class="education-date"><p>2020.9 - 2023.07</p></div>
+            <div class="education-details-container">
+              <div class="education-institution-course">
+                <span class="education-institution">谢菲尔德大学</span>
+                <span class="education-course">计算机科学（本科）</span>
+              </div>
+              <div><p>学位等级：二等一（相当于中国的78-84）</p></div>
+            </div>
+          </div>
+        </section>
+
+        <section class="projects">
+          <h2><ion-icon name="layers"></ion-icon><span>项目经验</span></h2>
+          <p class="notes"><span class="asterisk">*</span> 如果感兴趣，作品已在我的 GitHub 个人主页上公开。您还可以在那里找到更多学术和个人项目。</p>
+
+          <div class="project-item"><span class="project-item-title">国际象棋棋子图像分类系统</span><span class="asterisk">*</span> - 作为机器学习修选课的一部分开发，该修选课涉及学习各种分类技术，包括监督和非监督技术。我使用朴素贝叶斯算法和 k近邻算法实施了该系统。</div>
+
+          <div class="project-item"><span class="project-item-title">物业预订桌面应用程序</span> - 作为小组项目的一部分进行开发，模拟现实世界中的敏捷软件开发过程。利用 UML 进行正式的需求分析和系统设计过程。应用程序采用 MVC 架构开发，前台和后台均为 Java，并与 MySQL 数据库相连。</div>
+
+          <div class="project-item"><span class="project-item-title">ESP32 机器人车</span><span class="asterisk">*</span> - 使用 C/C++ 在 ESP32 开发板（类似于 Arduino）上组装和开发遥控机器人汽车（通过 WAP 和服务页面）。还安装了一个超声波传感器，用于在机器人探索环境时探测和避开物体。</div>
+
+          <div class="project-item">
+            <span class="project-item-title">命名实体识别（NER）系统</span> - 作为我的毕业论文项目的一部分，从零开始开发。在 NumPy 进行矩阵计算和使用 Pandas 进行数据处理和操作的帮助下，我选择了多项式逻辑回归 (MLR) 算法来实施该系统。取得的结果与现有系统的能力非常接近。
+          </div>
+          
+          <div class="project-item"><span class="project-item-title">语言交流平台</span><span class="asterisk">*</span> <span class="project-in-progress">进行中</span> - 一个个人全栈项目，我自学并使用 Angular 框架开发前端，演示使用 Bootstrap。前端从使用 Spring Boot 开发的 REST API 后端请求服务。此外，我还获得了使用 Postman 测试后端服务响应和使用 JSoup 进行网络语言数据搜刮的经验。</div>
+        </section>
+
+        <section class="about-container">
+          <h2><ion-icon name="person"></ion-icon><span>自我评价</span></h2>
+          <ul>
+            <li>我是一个责任感很强的人，具着强劲的学习能力。通过毕业论文，我掌握了扎实的研究技能，并对自己取得成果的能力充满信心。</li>
+            <li>在克服了大学生活中的诸多挑战和困难之后，我培养了坚强的毅力和自我激励的能力。面对困难，保持乐观是关键。</li>
+            <li>我拥有良好的团队工作技能，也了解各种管理技术和工作流程，以便与其他软件开发人员一起有效地合作。</li>
+            <li>我积极主动，总是主动学习新知识，自我完善并扩展技能组合。在瞬息万变、快节奏的技术领域，这是一个非常重要的特质。</li>
+          </ul>
+        </section>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,240 @@
+{
+    "about": {
+        "name": {"en": "Tony Wu", "cn": "吴家聪"},
+        "dob": "19/05/2002",
+        "location": {"en": "Guangdong, China", "cn": "广东，中国"},
+        "socials": [
+            {"platform": "GitHub", "username": "jwu02"}
+        ]
+    },
+    
+    "skillset": {
+        "languages": [
+            {
+                "name": {"en": "English", "cn": "英语"}, 
+                "proficiency": {"en": "Native", "cn": "母语", "quantification": 80}
+            },
+            {
+                "name": {"en": "Mandarin", "cn": "国语"}, 
+                "proficiency": {"en": "Heritage", "cn": "传承语", "quantification": 50}
+            },
+            {
+                "name": {"en": "Cantonese", "cn": "粤语"}, 
+                "proficiency": {"en": "Heritage", "cn": "传承语", "quantification": 30}
+            },
+            {
+                "name": {"en": "Japanese", "cn": "日语"}, 
+                "proficiency": {"en": "Beginner", "cn": "初学者", "quantification": 15}
+            },
+            {
+                "name": {"en": "French", "cn": "法语"}, 
+                "proficiency": {"en": "Beginner", "cn": "初学者", "quantification": 15}
+            }
+        ],
+
+        "technical-skills": [
+            {
+                "name": "Python", 
+                "proficiency": {"en":"Proficient", "cn": "熟练", "quantification": 70}, 
+                "icon": "python.png", 
+                "experience": ["Django", "TensorFlow", "Keras", "Beautiful Soup", "PyQt"]
+            },
+            {
+                "name": "Java", 
+                "proficiency": {"en":"Proficient", "cn": "熟练", "quantification": 70}, 
+                "icon": "java.png", 
+                "experience": ["Spring, JSoup"]
+            },
+            {
+                "name": "JavaScript", 
+                "proficiency": {"en":"Proficient", "cn": "熟练", "quantification": 60}, 
+                "icon": "javascript.png", 
+                "experience": ["HTML", "CSS", "Bootstrap", "Node.js", "TypeScript", "Angular", "Postman"]
+            },
+            {
+                "name": "Ruby", 
+                "proficiency": {"en":"Experienced", "cn": "熟悉", "quantification": 50}, 
+                "icon": "ruby.png", 
+                "experience": ["Ruby On Rails"]
+            },
+            {
+                "name": "PHP", 
+                "proficiency": {"en":"Experienced", "cn": "熟悉", "quantification": 50}, 
+                "icon": "php.png", 
+                "experience": []
+            },
+            {
+                "name": "C++", 
+                "proficiency": {"en":"Beginner", "cn": "初学者", "quantification": 20}, 
+                "icon": "cpp.png", 
+                "experience": ["Arduino"]
+            }
+        ]
+    },
+
+    "education": [
+        {
+            "institution": {"en": "University of Sheffield", "cn": "谢菲尔德大学"},
+            "degree-title": {"en": "BSc Computer Science", "cn": "计算机科学（本科）"},
+            "degree-classification": {"en": "2:1 (Class Two Division One Honours)", "cn": "二等一"},
+            "start-date": "2020",
+            "end-date": "2023",
+            "modules-studied": [
+                [
+                    {
+                        "module-name": {"en": "Introduction to Software Engineering", "cn": "软件工程概论"}, 
+                        "module-description": {
+                            "en": "", 
+                            "cn": ""
+                        }
+                    },
+                    {
+                        "module-name": {"en": "Java Programming", "cn": "Java 编程"}, 
+                        "module-description": {
+                            "en": "", 
+                            "cn": ""
+                        }
+                    },
+                    {
+                        "module-name": {"en": "Web and Internet Technology", "cn": "网络和互联网技术"}, 
+                        "module-description": {
+                            "en": "", 
+                            "cn": ""
+                        }
+                    },
+                    {
+                        "module-name": {"en": "Introduction to Algorithms and Data Structures", "cn": "算法与数据结构导论"}, 
+                        "module-description": {
+                            "en": "", 
+                            "cn": ""
+                        }
+                    }
+                ],
+                [
+                    {
+                        "module-name": {"en": "Data Driven Computing", "cn": "数据驱动计算"}, 
+                        "module-description": {
+                            "en": "A machine learning course which involved learning various classification techniques, including both supervised (Naive Bayes, k-nearest neighbour, deep learning) and unsupervised (clustering). Developed a chess piece image classification system implementing both the Naive Bayes and k-nearest neighbour algorithms.", 
+                            "cn": "机器学习课程，涉及学习各种分类技术，包括监督式（朴素贝叶斯、k近邻、深度学习）和无监督式（聚类）分类技术。开发了一个国际象棋棋子图像分类系统，采用了朴素贝叶斯算法和 k近邻算法。"
+                        }
+                    },
+                    {
+                        "module-name": {"en": "Systems Design and Security", "cn": "系统设计与安全"}, 
+                        "module-description": {
+                            "en": "Involved a group project emulating a real-world agile software development process, with formal requirements analysis and system design process, utilising UML diagrams. Developed a property booking desktop app following the MVC architecture, with Java as frontend and backend, linking to MySQL database.", 
+                            "cn": "参与一个小组项目，模拟真实世界的敏捷软件开发流程，利用 UML 图表进行正式的需求分析和系统设计流程。按照 MVC 架构开发了一个物业预订桌面应用程序，使用 Java 作为前端和后端，并与 MySQL 数据库相连。"
+                        }
+                    },
+                    {
+                        "module-name": {"en": "Functional Programming", "cn": "函数式编程"}, 
+                        "module-description": {
+                            "en": "", 
+                            "cn": ""
+                        }
+                    },
+                    {
+                        "module-name": {"en": "Robotics", "cn": "机器人学"}, 
+                        "module-description": {
+                            "en": "Programmed a small robot dog with ROS, in both a simulation and the actual hardware, navigating closed environments whilst completing various tasks such as maze completion.", 
+                            "cn": "在模拟和实际硬件中使用 ROS 对小型机器狗进行编程，使其能够在封闭的环境中航行，同时完成迷宫等各种任务。"
+                        }
+                    },
+                    {
+                        "module-name": {"en": "Software Hut", "cn": "软件小屋"}, 
+                        "module-description": {
+                            "en": "", 
+                            "cn": ""
+                        }
+                    }
+                ],
+                [
+                    {
+                        "module-name": {"en": "Dissertation Project", "cn": "论文项目"}, 
+                        "module-description": {
+                            "en": "", 
+                            "cn": ""
+                        }
+                    },
+                    {
+                        "module-name": {"en": "Text Processing", "cn": "文本处理"}, 
+                        "module-description": {
+                            "en": "", 
+                            "cn": ""
+                        }
+                    },
+                    {
+                        "module-name": {"en": "Speech Processing", "cn": "语音处理"}, 
+                        "module-description": {
+                            "en": "", 
+                            "cn": ""
+                        }
+                    },
+                    {
+                        "module-name": {"en": "Bioinspired Computing", "cn": "仿生计算"}, 
+                        "module-description": {
+                            "en": "", 
+                            "cn": ""
+                        }
+                    },
+                    {
+                        "module-name": {"en": "Modelling and Simulation of Natural Systems", "cn": "自然系统建模与仿真"}, 
+                        "module-description": {
+                            "en": "", 
+                            "cn": ""
+                        }
+                    },
+                    {
+                        "module-name": {"en": "Adaptive Intelligence", "cn": "自适应智能"}, 
+                        "module-description": {
+                            "en": "Programmed a deep neural network from scratch and modified it for deep reinforcement learning on a simplified chess game.", 
+                            "cn": "从零开始为深度神经网络编程，并对其进行修改，以便在简化的国际象棋游戏中进行深度强化学习。"
+                        }
+                    },
+                    {
+                        "module-name": {"en": "The Intelligent Web", "cn": "智能网"}, 
+                        "module-description": {
+                            "en": "", 
+                            "cn": ""
+                        }
+                    },
+                    {
+                        "module-name": {"en": "The Internet of Things", "cn": "物联网"}, 
+                        "module-description": {
+                            "en": "Assembled and developed a remote-controlled robot car using C/C++, on a ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment.", 
+                            "cn": "我组装并开发了自己的遥控机器人车，并在 ESP32 开发板（类似于 Arduino）上使用 C/C++ 进行编程。在机器人探索环境时，我还利用超声波传感器进行物体探测和避让。"
+                        }
+                    }
+                ]
+            ]
+        }
+    ],
+
+    "projects": [
+        {
+            "project-name": {"en": "Personal Website", "cn": "个人网站"}, 
+            "project-status": {"en": "In-progress", "cn": "进行中"}, 
+            "project-description": {
+                "en": "The site you're viewing right now is created with pure vanilla HTML, CSS and JavaScript", 
+                "cn": ""
+            }
+        },
+        {
+            "project-name": {"en": "Language Exchange Application", "cn": "语言交换程序"}, 
+            "project-status": {"en": "In-progress", "cn": "进行中"}, 
+            "project-description": {
+                "en": "A fullstack project where I self-taught and utilised the Angular framework for frontend, with the help of Bootstrap for presentation. The frontend requests services from a REST API backend developed with Spring Boot. Also gained experiences with using Postman for testing backend service responses and using JSoup for web scraping language data.", 
+                "cn": "一个全栈项目，我自学并使用 Angular 框架开发前端，并在 Bootstrap 的帮助下进行展示。前端从使用 Spring Boot 开发的 REST API 后端请求服务。此外，我还获得了使用 Postman 测试后端服务响应和使用 JSoup 进行网络语言数据搜刮的经验。"
+            }
+        }
+    ],
+    
+    "work-experiences": [
+        {
+            "company": "",
+            "role": "",
+            "start-date": "",
+            "end-date": "",
+            "job-description": ""
+        }
+    ]
+}
