@@ -103,9 +103,9 @@ function renderLandingSection() {
 function renderAboutSection() {
     // title
     let titleText = PAGE_TEXT_JSON["about-section"]["title"][displayLanguage];
-    let aboutDetailsText = PAGE_TEXT_JSON["about-section"]["about-details"][displayLanguage];
+    let aboutDetailsText = PAGE_TEXT_JSON["about-section"]["personal-background"][displayLanguage];
     document.getElementById("about-title").textContent = titleText;
-    document.getElementById("about-details").textContent = aboutDetailsText;
+    document.getElementById("personal-background").textContent = aboutDetailsText;
 
     // subsection 1
     let subtitleText1 = PAGE_TEXT_JSON["about-section"]["subtitle-1"][displayLanguage];
@@ -116,14 +116,14 @@ function renderAboutSection() {
     document.getElementById("achievement-description").textContent = achievementDescriptionText;
 
     // subsection 2
-    let subtitleText2 = PAGE_TEXT_JSON["nav-links"]["education"][displayLanguage];
+    let subtitleText2 = PAGE_TEXT_JSON["about-section"]["subtitle-2"][displayLanguage];
     let educationsText = getDegreeListHTML();
     document.getElementById("education-subtitle").textContent = subtitleText2;
     document.getElementById("degree-list").innerHTML = educationsText;
 
     // view details buttons
     let viewDetailsBtnText = PAGE_TEXT_JSON["about-section"]["view-details-btn"][displayLanguage];
-    let viewDetailsBtns = document.getElementsByClassName("view-details-btn")
+    let viewDetailsBtns = document.getElementsByClassName("view-details-btn-text")
     for (let i=0; i<viewDetailsBtns.length; i++) {
         viewDetailsBtns.item(i).textContent = viewDetailsBtnText;
     }
@@ -137,6 +137,7 @@ function getDegreeListHTML() {
         educationsText += `${educationsList[i]["start-date"]}-${educationsList[i]["end-date"]}`;
         educationsText += "<br />";
         educationsText += educationsList[i]["degree-title"][displayLanguage];
+        educationsText += ` @ ${educationsList[i]["institution"][displayLanguage]}`;
         if (i != educationsList.length-1) {
             educationsText += "<br />";
         }

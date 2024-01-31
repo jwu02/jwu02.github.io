@@ -19,7 +19,6 @@
     <nav id="desktop-nav">
       <ul class="nav-links">
         <li><a class="about-nav" href="#about"></a></li>
-        <li><a class="education-nav" href="#education"></a></li>
         <li><a class="skills-nav" href="#skills"></a></li>
         <li><a class="projects-nav" href="#projects"></a></li>
         <li><a class="contacts-nav" href="#contacts"></a></li>
@@ -38,10 +37,9 @@
   
         <div class="menu-links">
           <li><a class="about-nav nav-link" href="#about"></a></li>
-          <li><a class="education-nav nav-link" href="#education"></a></li>
           <li><a class="skills-nav nav-link" href="#skills"></a></li>
           <li><a class="projects-nav nav-link" href="#projects"></a></li>
-          <li><a class="contact-nav nav-link" href="#contact"></a></li>
+          <li><a class="contacts-nav nav-link" href="#contacts"></a></li>
           <li><a class="switch-language-btn icon"><ion-icon name="language"></ion-icon></a></li>
         </div>
       </div>
@@ -84,47 +82,71 @@
 
       <div class="about-details-container">
         <div class="text-container">
-          <p id="about-details"></p>
+          <p id="personal-background"></p>
+          <!-- <p id="self-evaluation"></p> -->
         </div>
 
-        <div class="about-containers">
-          <div class="details-container">
-            <div class="icon"><ion-icon name="ribbon"></ion-icon></div>
-            <h3 id="achievement-subtitle"></h3>
-            <p class="flex-grow"><span id="achievement-date"></span><br /><span id="achievement-description"></span></p>
-            <a onclick="window.open('./assets/newspaper.jpg')">
-              <span class="view-details-btn"></span>
-              <ion-icon name="arrow-forward"></ion-icon>
-            </a>
+        <div class="cards-container">
+          <div class="card">
+            <div class="card-header">
+              <div class="icon"><ion-icon name="ribbon"></ion-icon></div>
+              <h3 id="achievement-subtitle"></h3>
+            </div>
+
+            <div class="card-body">
+              <p id="achievement-date"></p>
+              <p id="achievement-description"></p>
+            </div>
+
+            <div class="card-footer">
+              <a onclick="window.open('./assets/newspaper.jpg')" class="view-details-btn">
+                <span class="view-details-btn-text"></span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </a>
+            </div>
           </div>
 
-          <div class="details-container">
-            <div class="icon"><ion-icon name="school"></ion-icon></div>
-            <h3 id="education-subtitle"></h3>
-            <p id="degree-list"></p>
-            <a href="#education">
-              <span class="view-details-btn"></span>
-              <ion-icon name="arrow-forward"></ion-icon>
-            </a>
+          <div class="card">
+            <div class="card-header">
+              <div class="icon"><ion-icon name="school"></ion-icon></div>
+              <h3 id="education-subtitle"></h3>
+            </div>
+
+            <div class="card-body">
+              <p id="degree-list"></p>
+            </div>
+
+            <div class="card-footer">
+              <a href="#education" class="view-details-btn">
+                <span class="view-details-btn-text"></span>
+                <ion-icon name="arrow-forward"></ion-icon>
+              </a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-
+    
     <a href="#skills" class="arrow icon"><ion-icon name="chevron-down"></ion-icon></a>
   </section>
 
   <section id="skills">
     <h1 id="skills-title" class="title">Skills</h1>
     <div class="skill-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <h2 id="skills-subtitle-1" class="skill-sub-title"></h2>
+      <div class="cards-container">
+        <div class="card">
+          <div class="card-header">
+            <h2 id="skills-subtitle-1" class="skill-sub-title"></h2>
+          </div>
+
           <div id="language-skills" class="article-container"></div>
         </div>
 
-        <div class="details-container">
-          <h2 id="skills-subtitle-2" class="skill-sub-title"></h2>
+        <div class="card">
+          <div class="card-header">
+            <h2 id="skills-subtitle-2" class="skill-sub-title"></h2>
+          </div>
+
           <div id="technical-skills" class="article-container"></div>
         </div>
       </div>

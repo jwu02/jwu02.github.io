@@ -3,7 +3,7 @@
     /* height: 83vh; */
     margin-bottom: 6rem;
   }
-  .about-containers {
+  .cards-container {
     flex-wrap: wrap;
   }
   #contact,
@@ -58,7 +58,7 @@
   article {
     font-size: 1rem;
   }
-  .about-containers,
+  .cards-container,
   .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;

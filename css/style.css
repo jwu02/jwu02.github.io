@@ -1,4 +1,4 @@
-/* https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2 */
+/* Adapted from https://github.com/Ade-mir/html-css-js-portfolio-tutorial-2 */
 
 /* GENERAL */
 
@@ -66,6 +66,10 @@ a {
   text-decoration-color: white;
 }
 
+/* nav a:hover,
+nav a:active,
+.card-footer a:hover,
+.card-footer a:active */
 a:hover,
 a:active {
   color: grey;
@@ -177,6 +181,7 @@ a:active {
 
 section {
   /* padding-top: 4vh; */
+  position: relative;
   height: 100vh;
   margin: 0 10rem;
   margin-bottom: 3rem;
@@ -193,17 +198,16 @@ section {
 #profile {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 5rem;
-  /* height: 83vh; */
-  height: 100vh;
+  height: 83vh;
 }
 
 .section__pic-container {
   display: flex;
   height: 400px;
   width: 400px;
-  margin: auto 0;
-  justify-content: center;
+  /* justify-content: center; */
 }
 
 #pfp {
@@ -212,7 +216,6 @@ section {
 }
 
 .section__text {
-  align-self: center;
   text-align: center;
 }
 
@@ -298,66 +301,91 @@ a {
 }
 
 /* ABOUT SECTION */
-
-#about {
-  position: relative;
+section h1 {
+  margin-bottom: 1rem;
 }
 
-.about-containers {
-  gap: 2rem;
-  margin-bottom: 2rem;
-  margin-top: 2rem;
-}
-
-.about-details-container {
-  justify-content: center;
-  flex-direction: column;
-}
-
-.about-containers,
-.about-details-container {
-  display: flex;
+#about .section-container {
+align-items: center;
 }
 
 .about-pic {
   border-radius: 2rem;
 }
 
-.arrow {
-  cursor: pointer;
-  position: absolute;
-  right: -5rem;
-  bottom: 2.5rem;
+.cards-container,
+.about-details-container, 
+.card,
+.card-body,
+.card-footer {
+  display: flex;
+  /* flex-direction: row is default if not explicitly defined */
 }
 
-.details-container {
+.about-details-container, 
+.card,
+.card-body {
+  flex-direction: column;
+}
+
+.about-details-container {
+  gap: 1.5rem;
+}
+
+.cards-container {
+  gap: 2rem;
+  /* margin: 2rem 0; */
+}
+
+.card {
+  gap: .5rem;
   padding: 1.5rem;
   flex: 1;
   background: white;
   border-radius: 2rem;
-  border: rgb(53, 53, 53) 0.1rem solid;
-  border-color: rgb(163, 163, 163);
+  border: rgb(163, 163, 163) 0.1rem solid;
+  /* text-align: center; */
+}
+
+.card-header {
   text-align: center;
 }
 
-.about-containers .details-container {
+.card-body {
+  /* fills up remaining space if used on only 1 flex-item in flexbox */
+  /* equivalent to flex-grow */
+  flex: 1;
+}
+
+.card-footer {
+  justify-content: flex-end;
+}
+
+.card-footer .view-details-btn {
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 0 .2rem;
 }
 
-.about-containers .details-container a {
-  flex-grow: 1;
+.card-footer a:hover,
+.card-footer a:active {
+  text-underline-offset: .5rem;
 }
-
-.view-details-btn:hover
-.view-details-btn:active {
-  text-underline-offset: -3rem;
-}
-
 
 .section-container {
   gap: 4rem;
   height: 80%;
+}
+
+.arrow {
+  /* display: block;
+  text-align: end; */
+  cursor: pointer;
+  position: absolute;
+  right: -5rem;
+  bottom: 2.5rem;
+  border-radius: 50%;
 }
 
 /* SKILLS SECTION */
@@ -442,33 +470,6 @@ article .icon {
 
 .skill-per {
   background: black;
-}
-
-/* PROJECTS SECTION */
-
-#projects {
-  position: relative;
-}
-
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
-}
-
-.project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
-}
-
-.project-title {
-  margin: 1rem;
-  color: black;
-}
-
-.project-btn {
-  color: black;
-  border-color: rgb(163, 163, 163);
 }
 
 /* CONTACTS */
