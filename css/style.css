@@ -40,6 +40,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  /* border: 1px black solid; */
 }
 
 nav,
@@ -87,6 +88,7 @@ a:active {
   display: none;
 }
 
+/* so Chinese nav links doesn't wrap */
 #hamburger-nav .menu-links li,
 #desktop-nav li {
   text-wrap: nowrap;
@@ -123,6 +125,7 @@ a:active {
   background-color: white;
   width: fit-content;
   max-height: 0;
+  /* min-height: 50vh; */
   overflow: hidden;
   transition: all 0.3 ease-in-out;
 }
@@ -143,7 +146,7 @@ a:active {
 }
 
 .menu-links.open {
-  max-height: 300px;
+  max-height: 50vh;
 }
 
 .hamburger-icon.open span:first-child {
@@ -173,9 +176,10 @@ a:active {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  /* padding-top: 4vh; */
+  height: 100vh;
   margin: 0 10rem;
+  margin-bottom: 3rem;
   box-sizing: border-box;
   min-height: fit-content;
 }
@@ -190,7 +194,8 @@ section {
   display: flex;
   justify-content: center;
   gap: 5rem;
-  height: 80vh;
+  /* height: 83vh; */
+  height: 100vh;
 }
 
 .section__pic-container {
@@ -204,30 +209,6 @@ section {
 #pfp {
   clip-path: circle();
   /* object-fit: cover; */
-}
-
-/* https://dev.to/afif/a-scalable-css-only-typewriter-effect-2opn */
-.typewrite {
-  display:inline-flex;
-}
-
-.typewrite span {
-  word-break: break-all;
-  height: 1.3em;
-  width: 100%;
-  overflow: hidden;
-  animation: typewrite 2s;
-}
-
-.typewrite span:before {
-  content: " ";
-  display: inline-block;
-}
-
-@keyframes typewrite{
-  from {
-    width: 0;
-  }
 }
 
 .section__text {
@@ -443,8 +424,6 @@ article .icon {
   justify-content: space-between;
 } */
 
-/* https://www.youtube.com/watch?v=rp36m6xH3Bw&ab_channel=CodingLab */
-
 .skill-icon-details-container {
   display: flex;
   flex-direction: row;
@@ -458,37 +437,12 @@ article .icon {
 }
 
 .skill-bar {
-  height: 8px;
-  width: 100%;
-  border-radius: 6px;
-  margin-top: 6px;
   background: rgb(85, 85, 85, 0.3);
 }
 
 .skill-per {
-  position: relative;
-  display: block;
-  height: 100%;
-  border-radius: 6px;
   background: black;
-  animation: progress 1s ease-in-out forwards;
-  opacity: 0;
 }
-
-/* .skill-per.{skill-name} {
-  width: {proficiency}%;
-} */
-
-@keyframes progress {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
 
 /* PROJECTS SECTION */
 
@@ -517,13 +471,14 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
-/* CONTACT */
+/* CONTACTS */
 
-#contact {
+#contacts {
   display: flex;
   justify-content: center;
   flex-direction: column;
   height: 70vh;
+  min-height: 100vh;
 }
 
 .contact-info-upper-container {

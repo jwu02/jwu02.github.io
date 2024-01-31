@@ -241,8 +241,9 @@ function renderProjectsSection() {
 
 }
 
-function renderContactSection() {
-
+function renderContactsSection() {
+    let titleText = PAGE_TEXT_JSON["nav-links"]["contacts"][displayLanguage];
+    document.querySelector("#contacts .title").textContent = titleText;
 }
 
 function render() {
@@ -252,5 +253,5 @@ function render() {
     renderEducationSection();
     renderSkillsSection();
     renderProjectsSection();
-    renderContactSection();
+    renderContactsSection();
 }

@@ -141,32 +141,12 @@ section h2 span {
 }
 
 .skill-bar {
-  height: 8px;
-  width: 100%;
-  border-radius: 6px;
-  margin-top: 6px;
   background: rgba(255, 255, 255, 0.3);
 }
 
 .skill-per {
-  position: relative;
-  display: block;
-  height: 100%;
-  border-radius: 6px;
   /* background: #219ebc; */
   background: #8ecae6;
-  animation: progress 1s ease-in-out forwards;
-  opacity: 0;
-}
-
-@keyframes progress {
-  0% {
-    width: 0;
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
 }
 
 .english-skill { width: 80%; }

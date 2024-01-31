@@ -4,7 +4,7 @@
         "education": {"en": "Education", "cn": "教育背景"},
         "skills": {"en": "Skills", "cn": "技能专长"},
         "projects": {"en": "Projects", "cn": "项目经验"}, 
-        "contact": {"en": "Contact", "cn": "联系方式"}
+        "contacts": {"en": "Contacts", "cn": "联系方式"}
     },
     "switch-language-btn": {"en": "Switch Language", "cn": "切换语言"},
 
@@ -18,7 +18,7 @@
     "about-section": {
         "title": {"en": "About Me", "cn": "个人情况"},
         "about-details": {
-            "en": "Originally came from Guangdong China, I mirgated over to the UK when I was in grade 2, where I grew up and received my education. Having graduated from university recently, I decided to come back to China to work here for a few years, in hopes of getting a taste of the culture here as well as the lifestyle in the big cities. But ultimately, I will have to make a tough decision between staying, or pursuing my career overseas for the long-term.",
+            "en": "Originally came from Guangdong China, I migrated over to the UK when I was in grade 2, where I grew up and received my education. Having graduated from university recently, I decided to come back to China to work here for a few years, in hopes of getting a taste of the culture here as well as the lifestyle in the big cities. But ultimately, I will have to make a tough decision between staying, or pursuing my career overseas for the long term.",
             "cn": "原本来自中国广东，我小学二年级时移民到英国，在那里长大并接受教育。刚大学毕业不久，我决定回中国就业几年，希望能体验一下这边的文化和大城市的生活。但最终，我还是得做出一个艰难的决定，留在这里，还是长期去海外发展。"
         },
         "subtitle-1": {"en": "Peakest Moment", "cn": "人生巅峰"},
