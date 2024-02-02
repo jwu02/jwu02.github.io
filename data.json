@@ -1,4 +1,14 @@
 {
+    "languages": {
+        "en": {
+            "en-name": "English",
+            "original-name": "English"
+        },
+        "cn": {
+            "en-name": "Chinese",
+            "original-name": "中文"
+        }
+    },
     "about": {
         "name": {"en": "Tony Wu", "cn": "吴家聪"},
         "dob": "19/05/2002",
@@ -77,132 +87,255 @@
             "institution": {"en": "University of Sheffield", "cn": "谢菲尔德大学"},
             "degree-title": {"en": "BSc Computer Science", "cn": "计算机科学（本科）"},
             "degree-classification": {"en": "2:1 (Class Two Division One Honours)", "cn": "二等一"},
-            "start-date": "2020",
-            "end-date": "2023",
+            "start-date": "2020/09",
+            "end-date": "2023/07",
             "modules-studied": [
                 [
                     {
+                        "module-code": "com1001",
                         "module-name": {"en": "Introduction to Software Engineering", "cn": "软件工程概论"}, 
                         "module-description": {
-                            "en": "", 
-                            "cn": ""
-                        }
+                            "en": "Involved a group project emulating an agile development process. Developed a student-mentor matching website with Ruby as the backend, using the Sinatra gem. The application is intended for students to learn about the industry they are interested in, that which the mentor is a part of.", 
+                            "cn": "参与模仿敏捷开发流程的小组项目。使用 Sinatra gem 开发了一个以 Ruby 为后台的学生与导师匹配网站。该应用程序旨在让学生了解他们感兴趣的行业以及导师所在的行业。"
+                        },
+                        "links": [],
+                        "starred": true,
+                        "image": "https://images.unsplash.com/photo-1623520527569-fee1da87f598?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fHNvZnR3YXJlJTIwZW5naW5lZXJ8ZW58MHx8MHx8fDA%3D"
                     },
                     {
+                        "module-code": "com1002",
+                        "module-name": {"en": "Foundations of Computer Science", "cn": "计算机科学基础"}, 
+                        "module-description": {
+                            "en": "A discrete maths course on logic and linear algebra.", 
+                            "cn": "逻辑和线性代数数学课程。"
+                        },
+                        "links": [],
+                        "starred": false,
+                        "image": "https://res.cloudinary.com/practicaldev/image/fetch/s--AO0dFdQ5--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://thepracticaldev.s3.amazonaws.com/i/srnvrd7vfeeq5qpxnabq.png"
+                    },
+                    {
+                        "module-code": "com1003",
                         "module-name": {"en": "Java Programming", "cn": "Java 编程"}, 
                         "module-description": {
-                            "en": "", 
-                            "cn": ""
-                        }
+                            "en": "Built a good understanding of the Object-Oriented Programming paradigm and the Java language.", 
+                            "cn": "熟练掌握面向对象编程范例和 Java 语言。"
+                        },
+                        "links": [],
+                        "starred": true,
+                        "image": "https://miro.medium.com/v2/resize:fit:800/1*nftoTHMTibmPs4gpgvhEeQ.png"
                     },
                     {
+                        "module-code": "com1005",
+                        "module-name": {"en": "Machines and Intelligence", "cn": "机器与智能"}, 
+                        "module-description": {
+                            "en": "Went on a deep dive into the history and philosophies of robotics. Then went on to learn various search algorithms like breadth/depth-first search, and the A* Algorithm. Involved a project implementing the depth and A* algorithms for pathfinding with an abstract overview of a map.", 
+                            "cn": "深入了解机器人技术的历史和理念。然后继续学习各种搜索算法，如广度/深度优先搜索和 A* 算法。涉及一个项目，通过对地图的抽象概述来实现深度和 A* 算法的寻路。"
+                        },
+                        "links": ["https://github.com/jwu02/com1005-ramblers-problem"],
+                        "starred": true,
+                        "image": "https://www.numenta.com/wp-content/uploads/2021/01/AdobeStock_237619432-scaled.jpeg"
+                    },
+                    {
+                        "module-code": "com1006",
+                        "module-name": {"en": "Devices and Networks", "cn": "设备和网络"}, 
+                        "module-description": {
+                            "en": "Involved learning digital logic, computer arithmetic, internet protocols, and data transmission over the internet.", 
+                            "cn": "涉及学习数字逻辑、计算机运算、互联网协议和互联网数据传输。"
+                        },
+                        "links": [],
+                        "starred": false,
+                        "image": "https://png.pngtree.com/thumb_back/fh260/background/20201023/pngtree-abstract-digital-data-center-background-image_432820.jpg"
+                    },
+                    {
+                        "module-code": "com1008",
                         "module-name": {"en": "Web and Internet Technology", "cn": "网络和互联网技术"}, 
                         "module-description": {
-                            "en": "", 
-                            "cn": ""
-                        }
+                            "en": "(Re)Learned the fundamentals of HTML, CSS, and JavaScript, and built a personal-portfolio website (not this one) as an assignment.", 
+                            "cn": "(重新）学了 HTML、CSS 和 JavaScript 的基础知识，并作为一个一项作业建立了一个个人作品集网站（不是这个）。"
+                        },
+                        "links": [],
+                        "starred": false,
+                        "image": "https://png.pngtree.com/background/20230525/original/pngtree-big-computer-network-shown-on-the-earth-picture-image_2727400.jpg"
                     },
                     {
+                        "module-code": "com1009",
                         "module-name": {"en": "Introduction to Algorithms and Data Structures", "cn": "算法与数据结构导论"}, 
                         "module-description": {
-                            "en": "", 
-                            "cn": ""
-                        }
+                            "en": "Learned fundamental data structures in Computer Science, as well as algorithm design and complexity analysis.", 
+                            "cn": "学习计算机科学的基本数据结构，以及算法设计和复杂性分析。"
+                        },
+                        "links": [],
+                        "starred": false,
+                        "image": "https://images.ctfassets.net/ykljvmtfxwdz/4jSHRRJQJlyiJFOEQJ5jtq/aadc66d5ef47f07bb3c9c3616544fde6/CleanShot_2022-08-18_at_14.40.25_2x.png"
                     }
                 ],
                 [
                     {
+                        "module-code": "com2109",
+                        "module-name": {"en": "Automata, Computation and Complexity", "cn": "自动机、计算和复杂性"}, 
+                        "module-description": {
+                            "en": "Algorithms on steroids.", 
+                            "cn": "Algorithms on steroids."
+                        },
+                        "links": [],
+                        "starred": false,
+                        "image": "https://www.shutterstock.com/image-vector/artificial-intelligence-virtual-reality-concept-600nw-1757599367.jpg"
+                    },
+                    {
+                        "module-code": "com2004",
                         "module-name": {"en": "Data Driven Computing", "cn": "数据驱动计算"}, 
                         "module-description": {
                             "en": "A machine learning course which involved learning various classification techniques, including both supervised (Naive Bayes, k-nearest neighbor, deep learning) and unsupervised (clustering). Developed a chess piece image classification system implementing both the Naive Bayes and k-nearest neighbour algorithms.", 
                             "cn": "机器学习课程，涉及学习各种分类技术，包括监督式（朴素贝叶斯、k近邻、深度学习）和无监督式（聚类）分类技术。开发了一个国际象棋棋子图像分类系统，采用了朴素贝叶斯算法和 k近邻算法。"
-                        }
+                        },
+                        "links": ["https://github.com/jwu02/com2004-chess-board-classification"],
+                        "starred": true,
+                        "image": "https://wallpapercave.com/wp/wp3205268.jpg"
                     },
                     {
+                        "module-code": "com2008",
                         "module-name": {"en": "Systems Design and Security", "cn": "系统设计与安全"}, 
                         "module-description": {
                             "en": "Involved a group project emulating a real-world agile software development process, with formal requirements analysis and system design process, utilizing UML diagrams. Developed a property booking desktop app following the MVC architecture, with Java as frontend and backend, linking to MySQL database.", 
                             "cn": "参与一个小组项目，模拟真实世界的敏捷软件开发流程，利用 UML 图表进行正式的需求分析和系统设计流程。按照 MVC 架构开发了一个物业预订桌面应用程序，使用 Java 作为前端和后端，并与 MySQL 数据库相连。"
-                        }
+                        },
+                        "links": ["https://github.com/jwu02/com2008-homebreak-plc"],
+                        "starred": true,
+                        "image": "https://cdn.dribbble.com/users/199667/screenshots/5889967/dsm_illustration_dribbble_4x.png"
                     },
                     {
+                        "module-code": "com2108",
                         "module-name": {"en": "Functional Programming", "cn": "函数式编程"}, 
                         "module-description": {
-                            "en": "", 
-                            "cn": ""
-                        }
+                            "en": "Learned the fundamentals of Haskell. Involved an assignment to program and solve a solitaire game with the language.", 
+                            "cn": "学了 Haskell 的基础知识。课程包括一项使用该语言编程并解决接龙游戏的作业。"
+                        },
+                        "links": [],
+                        "starred": false,
+                        "image": "https://wallpapers.com/images/hd/functional-programming-glass-puzzle-01pgxxj1vuq9dp3u.jpg"
                     },
                     {
+                        "module-code": "com2009",
                         "module-name": {"en": "Robotics", "cn": "机器人学"}, 
                         "module-description": {
-                            "en": "Programmed a small robot dog with ROS, in both a simulation and the actual hardware, navigating closed environments whilst completing various tasks such as maze completion.", 
-                            "cn": "在模拟和实际硬件中使用 ROS 对小型机器狗进行编程，使其能够在封闭的环境中航行，同时完成迷宫等各种任务。"
-                        }
+                            "en": "Programmed a small robot dog with Python ROS, in both a simulation and the actual hardware, navigating closed environments whilst completing such as maze completion, obstacle avoidance, and beaconing (finding and moving towards a target).", 
+                            "cn": "在模拟和实际硬件中使用 Python ROS 对小型机器狗进行编程，使其能够在封闭的环境中航行，同时完成迷宫迷、避障和信标（寻找并向目标移动）等任务。"
+                        },
+                        "links": ["https://github.com/jwu02/com2009-robotics-team-1"],
+                        "starred": true,
+                        "image": "https://c4.wallpaperflare.com/wallpaper/444/191/751/metal-cyborg-arm-robotics-wallpaper-preview.jpg"
                     },
                     {
+                        "module-code": "com2107",
+                        "module-name": {"en": "Logic in Computer Science", "cn": "计算机科学中的逻辑"}, 
+                        "module-description": {
+                            "en": "Prove it.", 
+                            "cn": "证明一下。"
+                        },
+                        "links": [],
+                        "starred": false,
+                        "image": "https://i.pinimg.com/736x/aa/9e/f5/aa9ef5242e49682874938f8901899b0f.jpg"
+                    },
+                    {
+                        "module-code": "com3420",
                         "module-name": {"en": "Software Hut", "cn": "软件小屋"}, 
                         "module-description": {
-                            "en": "", 
-                            "cn": ""
-                        }
+                            "en": "Involved a group project emulating an agile development process to solve a real-world problem. Developed an extenuating circumstances system for university staff members, which aims to let students appeal to them, deadline extensions for example. The product is a website developed using Ruby on Rails for the front and back end.", 
+                            "cn": "涉及一个模仿敏捷开发流程的小组项目，以解决现实世界中的问题。为大学教职员工开发了一个情有可原系统，目的是让学生能够向教职员工申诉，例如延长截止日期。产品是一个使用 Ruby on Rails 进行前后端开发的网站。"
+                        },
+                        "links": [],
+                        "starred": true,
+                        "image": "https://images.unsplash.com/photo-1526925539332-aa3b66e35444?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGRldmVsb3BlcnxlbnwwfHwwfHx8MA%3D%3D"
                     }
                 ],
                 [
                     {
+                        "module-code": "com3610",
                         "module-name": {"en": "Dissertation Project", "cn": "论文项目"}, 
                         "module-description": {
-                            "en": "", 
-                            "cn": ""
-                        }
+                            "en": "The title of the dissertation is Exploring Deep Learning for Named Entity Recognition (NER). Developed an NER system from scratch implementing the Multinomial Logistic Regression (MLR) algorithm. Also attempted at developing a Transformer neural network with TensorFlow/Keras (forward inference only).", 
+                            "cn": "论文题目是《探索深度学习在命名实体识别（NER）中的应用》。从零开始开发了一个 NER 系统，采用了多项式逻辑回归（MLR）算法。还尝试用 TensorFlow/Keras 开发了一个 Transformer 神经网络（仅前向推理）。"
+                        },
+                        "links": [],
+                        "starred": true,
+                        "image": "https://static-www.elastic.co/v3/assets/bltefdd0b53724fa2ce/blt03343e31035d9e73/645d15830830e25a5ced06de/illustration-campaign-ansof-1680x980.png"
                     },
                     {
+                        "module-code": "com3110",
                         "module-name": {"en": "Text Processing", "cn": "文本处理"}, 
                         "module-description": {
-                            "en": "", 
-                            "cn": ""
-                        }
+                            "en": "Learned various text processing techniques. Involved two assignments: develop a document retrieval system, and a sentiment analysis system using a classifier implementing the Naive Bayes algorithm.", 
+                            "cn": "学习了各种文本处理技术。涉及两项任务：开发一个文档检索系统，以及使用实现 Naive Bayes 算法的分类器开发一个情感分析系统。。"
+                        },
+                        "links": ["https://github.com/jwu02/com3110-information-retrieval-assignment", "https://github.com/jwu02/com3110-sentiment-anaylsis-assignment"],
+                        "starred": true,
+                        "image": "https://www.aimtechnologies.co/wp-content/uploads/2023/08/Whats-Sentiment-Analysis-1.png"
                     },
                     {
+                        "module-code": "com3502",
                         "module-name": {"en": "Speech Processing", "cn": "语音处理"}, 
                         "module-description": {
-                            "en": "", 
-                            "cn": ""
-                        }
+                            "en": "Touched upon the basics of linguistics, and the biology of human speech and hearing. Also gained some speech processing experience using filters.",
+                            "cn": "学习了语言学基础知识以及人类语言和听力的生物学知识。还获得了一些使用滤波器进行语音处理的经验。"
+                        },
+                        "links": [],
+                        "starred": false,
+                        "image": "https://t4.ftcdn.net/jpg/02/87/57/65/360_F_287576564_0H1zylv6N1TOaGAD6HOFqtDMRFlG9a00.jpg"
                     },
                     {
+                        "module-code": "com3524",
                         "module-name": {"en": "Bioinspired Computing", "cn": "仿生计算"}, 
                         "module-description": {
-                            "en": "", 
-                            "cn": ""
-                        }
+                            "en": "Learned various modern artificial intelligence techniques and their inspiration from biological systems. Examples include evolution, multicellular tissues, neural systems, the immune system and swarms, inspiring abstractions such as evolutionary or swarm-based optimization algorithms.", 
+                            "cn": "学习了各种现代人工智能技术及其对生物系统的启发。例如，进化、多细胞组织、神经系统、免疫系统和蜂群，以及进化算法或基于蜂群的优化算法等抽象概念的启发。"
+                        },
+                        "links": [],
+                        "starred": false,
+                        "image": "https://t3.ftcdn.net/jpg/03/89/20/02/360_F_389200264_SwVNiEDSlfJsBVF2So0yLOFyCxk7mk25.jpg"
                     },
                     {
+                        "module-code": "com3001",
                         "module-name": {"en": "Modelling and Simulation of Natural Systems", "cn": "自然系统建模与仿真"}, 
                         "module-description": {
-                            "en": "", 
-                            "cn": ""
-                        }
+                            "en": "Learning about differential equations with application to the Lotka-Volterra (aka. prey-predator) model. Involved a group assignment, researching the Lorenz System and simulating it.", 
+                            "cn": "学习微分方程，并将其应用于 Lotka-Volterra（又名猎物-捕食者）模型。涉及一项小组作业，研究洛伦兹系统并对其进行模拟。"
+                        },
+                        "links": [],
+                        "starred": false,
+                        "image": "https://cdn.mos.cms.futurecdn.net/NNfCm8LqwFFsu6JqUutkoZ.jpg"
                     },
                     {
+                        "module-code": "com3240",
                         "module-name": {"en": "Adaptive Intelligence", "cn": "自适应智能"}, 
                         "module-description": {
-                            "en": "Programmed a deep neural network from scratch and modified it for deep reinforcement learning on a simplified chess game.", 
-                            "cn": "从零开始为深度神经网络编程，并对其进行修改，以便在简化的国际象棋游戏中进行深度强化学习。"
-                        }
+                            "en": "Coded a deep neural network from scratch and modified it for reinforcement learning on a simplified chess game.", 
+                            "cn": "从零开始编码深度神经网络，并对其进行修改，以便在简化的国际象棋游戏中进行强化学习。"
+                        },
+                        "links": ["https://github.com/jwu02/com3240-reinforcement-learning-assignment"],
+                        "starred": true,
+                        "image": "https://continue.yorku.ca/web-scs/wp-content/uploads/2020/12/machine-learning-scaled-1600x0-c-default.jpg"
                     },
                     {
+                        "module-code": "com3504",
                         "module-name": {"en": "The Intelligent Web", "cn": "智能网"}, 
                         "module-description": {
-                            "en": "", 
-                            "cn": ""
-                        }
+                            "en": "Anything but the intelligent part. The course involved a web development group project to develop a bird sighting application. Made use of the following technologies: Socket.io for real-time client interactions (used to implement a chat functionality), Node.js for the backend, and MongoDB for data storage. (Short demo in GitHub repository)", 
+                            "cn": "没有包含一点智能元素。该课程还涉及一个网络开发小组项目，开发一个鸟类观测应用程序。使用了以下技术： Socket.io 用于实时客户端交互（用于实现聊天功能），Node.js 用于后台，MongoDB 用于数据存储。(GitHub 代码库中有一个简短的演示）"
+                        },
+                        "links": ["https://github.com/jwu02/com3504_bird_watching"],
+                        "starred": true,
+                        "image": "https://wallpaper.dog/large/20476918.jpg"
                     },
                     {
+                        "module-code": "com3505",
                         "module-name": {"en": "The Internet of Things", "cn": "物联网"}, 
                         "module-description": {
-                            "en": "Assembled and developed a remote-controlled robot car using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment.", 
-                            "cn": "我组装并开发了自己的遥控机器人车，并在 ESP32 开发板（类似于 Arduino）上使用 C/C++ 进行编程。在机器人探索环境时，我还利用超声波传感器进行物体探测和避让。"
-                        }
+                            "en": "An adult LEGO course. Assembled and developed a remote-controlled robot car using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment.", 
+                            "cn": "一个成人乐高课程。组装并开发了自己的遥控机器人车，并在 ESP32 开发板（类似于 Arduino）上使用 C/C++ 进行编程。在机器人探索环境时，我还利用超声波传感器进行物体探测和避让。"
+                        },
+                        "links": ["https://github.com/jwu02/com3505-robocar"],
+                        "starred": true,
+                        "image": "https://c4.wallpaperflare.com/wallpaper/618/108/910/macro-blue-chip-color-wallpaper-preview.jpg"
                     }
                 ]
             ]
