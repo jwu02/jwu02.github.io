@@ -122,9 +122,11 @@ function getModuleCardHTMLTemplate(moduleData) {
     }
 
     let cardHTML = `
-        <div class="module-card" id="${moduleCode}">
+        <div class="module-card" id="${moduleCode}-card">
             <div class="card-header">
-                <div class="module-pic"><img src="${imageSrc}" /></div>
+                <div class="module-pic">
+                    <img src="./assets/module-images/${moduleCode}.jpg" alt="Background image"/>
+                </div>
                 ${starIcon}
             </div>
 
