@@ -21,7 +21,15 @@ let languageIndex = (() => {
     return index? index : 0;
 })();
 
+function setLanguageIndex(index) {
+    languageIndex = index;
+}
+
 let displayLanguage = LANGUAGES[languageIndex];
+
+function setDisplayLanguage() {
+    displayLanguage = LANGUAGES[languageIndex];
+}
 
 function wireHamburgerBtn() {
     // wire toggle nav menu event
@@ -40,20 +48,27 @@ function wireHamburgerBtn() {
     }
 }
 
+let renderFunctions = [];
+function addRenderFunction(f) {
+    renderFunctions.push(f);
+}
+
+function render() {
+    renderFunctions.forEach( f => f());
+}
+
 function wireSwitchLanguageBtn() {
     // wire switch language button event
     let switchLanguageBtns = document.getElementsByClassName("switch-language-btn");
     for (let i=0; i<switchLanguageBtns.length; i++) {
         switchLanguageBtns.item(i).addEventListener("click", () => {
             // cycle through languages list and re-render page
-            languageIndex = (languageIndex+1) % LANGUAGES.length;
-            displayLanguage = LANGUAGES[languageIndex];
+            setLanguageIndex((languageIndex+1) % LANGUAGES.length);
+            setDisplayLanguage();
             render();
 
             // store languageIndex in session storage
             sessionStorage.setItem("languageIndex", languageIndex);
-
-            languageFlexDirectionAsRowCheck();
         });
     }
 }
@@ -77,5 +92,7 @@ export {
     displayLanguage, 
     wireHamburgerBtn,
     wireSwitchLanguageBtn,
-    renderNavbar
+    renderNavbar,
+    addRenderFunction,
+    render
 };

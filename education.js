@@ -1,7 +1,7 @@
 import { 
-    DATA_JSON, PAGE_TEXT_JSON, LANGUAGES, 
-    languageIndex, displayLanguage, 
-    wireHamburgerBtn, wireSwitchLanguageBtn, renderNavbar
+    DATA_JSON, PAGE_TEXT_JSON,
+    displayLanguage, 
+    wireHamburgerBtn, wireSwitchLanguageBtn, renderNavbar, addRenderFunction, render
 } from "./global.js";
 
 // an array
@@ -10,21 +10,27 @@ let EDUCATIONS_DATA = DATA_JSON["education"];
 init();
 
 function init() {
-    renderNavbar();
-    renderControlsSection();
-    renderAllEducationData();
+    addRenderFunction(renderNavbar);
+    addRenderFunction(renderControlsSection);
+    addRenderFunction(renderAllEducationData);
+    render();
     wireEventListeners();
 }
 
 function renderControlsSection() {
+    // checkbox text
     let showAllModulesText = PAGE_TEXT_JSON["education-section"]["show-all-modules"][displayLanguage];
     let showAllModulesLabel = document.querySelector(".show-modules-cb-container label");
-
     showAllModulesLabel.textContent = showAllModulesText;
+
+    // uncheck/reset checkbox
+    let showAllModulesCB = document.getElementById("show-all-modules-cb");
+    showAllModulesCB.checked = false;
 }
 
 function wireEventListeners() {
     wireHamburgerBtn();
+    wireSwitchLanguageBtn();
     wireShowAllModulesCB();
 }
 

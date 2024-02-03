@@ -1,29 +1,36 @@
 import { 
-    DATA_JSON, PAGE_TEXT_JSON, LANGUAGES, 
-    languageIndex, displayLanguage, 
-    wireHamburgerBtn, wireSwitchLanguageBtn, renderNavbar
+    DATA_JSON, PAGE_TEXT_JSON,
+    displayLanguage, 
+    wireHamburgerBtn, wireSwitchLanguageBtn, renderNavbar, addRenderFunction, render
 } from "./global.js";
 
 let styleSheet = document.createElement("style");
 document.head.appendChild(styleSheet);
 
 // let languageFlexDirectionAsRow = displayLanguage === LANGUAGES[1];
-function languageFlexDirectionAsRowCheck() {
-    // if (displayLanguage === LANGUAGES[1]) {
-    //     let elementsToToggle = document.querySelectorAll("#language-skills .skill-details");
-    //     for (let i=0; i<elementsToToggle.length; i++) {
-    //         elementsToToggle.item(i).classList.toggle('row');
-    //     }
-    // }
-}
+// function languageFlexDirectionAsRowCheck() {
+//     if (displayLanguage === LANGUAGES[1]) {
+//         let elementsToToggle = document.querySelectorAll("#language-skills .skill-details");
+//         for (let i=0; i<elementsToToggle.length; i++) {
+//             elementsToToggle.item(i).classList.toggle('row');
+//         }
+//     }
+// }
 
 init();
 
 function init() {
-    wireEventListeners();
+    addRenderFunction(renderNavbar);
+    addRenderFunction(renderLandingSection);
+    addRenderFunction(renderAboutSection);
+    addRenderFunction(renderEducationSection);
+    addRenderFunction(renderSkillsSection);
+    addRenderFunction(renderProjectsSection);
+    addRenderFunction(renderContactsSection);
     render();
+    wireEventListeners();
 
-    languageFlexDirectionAsRowCheck();
+    // languageFlexDirectionAsRowCheck();
 }
 
 function wireEventListeners() {
@@ -194,12 +201,3 @@ function renderContactsSection() {
     document.querySelector("#contacts .title").textContent = titleText;
 }
 
-function render() {
-    renderNavbar();
-    renderLandingSection();
-    renderAboutSection();
-    renderEducationSection();
-    renderSkillsSection();
-    renderProjectsSection();
-    renderContactsSection();
-}
