@@ -1,11 +1,8 @@
-// globals
-const DATA_JSON = await (await fetch('./data.json')).json();
-const PAGE_TEXT_JSON = await (await fetch('./pageText.json')).json();
-
-let LANGUAGES = ["en", "cn"];
-
-let languageIndex;
-let displayLanguage;
+import { 
+    DATA_JSON, PAGE_TEXT_JSON, LANGUAGES, 
+    languageIndex, displayLanguage, 
+    wireHamburgerBtn, wireSwitchLanguageBtn, renderNavbar
+} from "./global.js";
 
 // an array
 let EDUCATIONS_DATA = DATA_JSON["education"];
@@ -13,16 +10,33 @@ let EDUCATIONS_DATA = DATA_JSON["education"];
 init();
 
 function init() {
-    setSessionDisplayLanguage();
+    renderNavbar();
+    renderControlsSection();
     renderAllEducationData();
+    wireEventListeners();
 }
 
-function setSessionDisplayLanguage() {
-    languageIndex = sessionStorage.getItem("languageIndex");
-    if (!languageIndex) {
-        languageIndex = 0;
-    }
-    displayLanguage = LANGUAGES[languageIndex];
+function renderControlsSection() {
+    let showAllModulesText = PAGE_TEXT_JSON["education-section"]["show-all-modules"][displayLanguage];
+    let showAllModulesLabel = document.querySelector(".show-modules-cb-container label");
+
+    showAllModulesLabel.textContent = showAllModulesText;
+}
+
+function wireEventListeners() {
+    wireHamburgerBtn();
+    wireShowAllModulesCB();
+}
+
+function wireShowAllModulesCB() {
+    let showAllModulesCB = document.getElementById("show-all-modules-cb");
+    showAllModulesCB.addEventListener("change", (e) => {
+        let displayValue = e.target.checked ? "block" : "none";
+        let nonStarredModules = document.querySelectorAll(".module-card:not(:has(span.star))");
+        for (let i=0; i<nonStarredModules.length; i++) {
+            nonStarredModules.item(i).style.display = displayValue;
+        }
+    });
 }
 
 function renderAllEducationData() {
@@ -39,6 +53,7 @@ function renderAllEducationData() {
 function getEducationItemHTMLTemplate(educationItem) {
     // an education item represents education information at one institution
     let institutionName = educationItem["institution"][displayLanguage];
+    let logoPath = educationItem["logo"];
     let degreeTitle = educationItem["degree-title"][displayLanguage];
     let degreeClassification = educationItem["degree-classification"][displayLanguage];
     let startDate = educationItem["start-date"];
@@ -47,28 +62,38 @@ function getEducationItemHTMLTemplate(educationItem) {
 
     let academicYearsHTML = "";
     for (let academicYear=1; academicYear<=modulesStudied.length; academicYear++) {
-        academicYearsHTML += getAcademicYearHTMLTemplate(modulesStudied[academicYear-1]);
+        academicYearsHTML += getAcademicYearHTMLTemplate(academicYear, modulesStudied[academicYear-1]);
     }
 
     return `
         <section class="education-institution-container">
-            <h1 class="institution-name">${institutionName}</h1>
-            <h2 class="degree-title">${degreeTitle}</h2>
-            <h3 class="dergee-classification">${degreeClassification}</h3>
+            <div class="education-header">
+                <div class="institution-logo"><img src="${logoPath}" /></div>
+                
+                <div class="institution-details">
+                    <div>${startDate} - ${endDate}</div>
+                    <h1 class="degree-title">${degreeTitle}</h1>
+                    <h3 class="institution-name">${institutionName}</h3>
+                </div>
+            </div>
+            
             ${academicYearsHTML}
         </section>\n
     `;
 }
 
-function getAcademicYearHTMLTemplate(modulesStudied) {
+function getAcademicYearHTMLTemplate(academicYear, modulesStudied) {
     let moduleCardsHTML = "";
 
     for (let i=0; i<modulesStudied.length; i++) {
         moduleCardsHTML += getModuleCardHTMLTemplate(modulesStudied[i]);
     }
 
+    let academicYearText = PAGE_TEXT_JSON["education-section"]["years"][`${academicYear}`][displayLanguage];
+
     let academicYearHTML = `
         <div class="academic-year-container">
+            <h1>${academicYearText}</h1>
             <div class="modules-grid">
                 ${moduleCardsHTML}
             </div>

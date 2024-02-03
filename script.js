@@ -1,12 +1,8 @@
-// globals
-const DATA_JSON = await (await fetch('./data.json')).json();
-const PAGE_TEXT_JSON = await (await fetch('./pageText.json')).json();
-
-let INTERESTS = ["Software Engineering", "Machine Learning", "Robotics", "Embedded Systems", "Aerospace Engineering", "Language Learning", "Self Improvement", "Content Creation", "Self Doxxing", "Return to Monke"];
-let LANGUAGES = ["en", "cn"];
-
-let languageIndex;
-let displayLanguage;
+import { 
+    DATA_JSON, PAGE_TEXT_JSON, LANGUAGES, 
+    languageIndex, displayLanguage, 
+    wireHamburgerBtn, wireSwitchLanguageBtn, renderNavbar
+} from "./global.js";
 
 let styleSheet = document.createElement("style");
 document.head.appendChild(styleSheet);
@@ -24,64 +20,15 @@ function languageFlexDirectionAsRowCheck() {
 init();
 
 function init() {
-    setSessionDisplayLanguage();
     wireEventListeners();
     render();
 
     languageFlexDirectionAsRowCheck();
 }
 
-function setSessionDisplayLanguage() {
-    languageIndex = sessionStorage.getItem("languageIndex");
-    if (!languageIndex) {
-        languageIndex = 0;
-    }
-    displayLanguage = LANGUAGES[languageIndex];
-}
-
 function wireEventListeners() {
-    // wire toggle nav menu event
-    let hamburgerBtn = document.querySelector(".hamburger-icon");
-    hamburgerBtn.addEventListener("click", toggleMenu);
-    let linksToWire = document.querySelectorAll(".nav-link");
-    for (let i=0; i<linksToWire.length; i++) {
-        linksToWire.item(i).addEventListener("click", toggleMenu);
-    }
-
-    // wire switch language button event
-    let switchLanguageBtns = document.getElementsByClassName("switch-language-btn");
-    for (let i=0; i<switchLanguageBtns.length; i++) {
-        switchLanguageBtns.item(i).addEventListener("click", toggleLanguage);
-    }
-}
-
-function toggleLanguage() {
-    // cycle through languages list and re-render page
-    languageIndex = (languageIndex+1) % LANGUAGES.length;
-    displayLanguage = LANGUAGES[languageIndex];
-    render();
-
-    // store languageIndex in session storage
-    sessionStorage.setItem("languageIndex", languageIndex);
-
-    languageFlexDirectionAsRowCheck();
-}
-
-function toggleMenu() {
-    const menu = document.querySelector(".menu-links");
-    const icon = document.querySelector(".hamburger-icon");
-    menu.classList.toggle("open");
-    icon.classList.toggle("open");
-}
-
-function renderNavbar() {
-    let NAV_LINKS = PAGE_TEXT_JSON["nav-links"];
-    for (const [navName, navText] of Object.entries(NAV_LINKS)) {
-        let navElements = document.getElementsByClassName(`${navName}-nav`);
-        for (let i=0; i<navElements.length; i++) {
-            navElements.item(i).textContent = navText[displayLanguage];
-        }
-    }
+    wireHamburgerBtn();
+    wireSwitchLanguageBtn();
 }
 
 function renderLandingSection() {

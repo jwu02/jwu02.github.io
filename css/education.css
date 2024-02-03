@@ -14,29 +14,51 @@ html {
   scroll-behavior: smooth;
 }
 
-/* nav,  */
+h1 {
+  font-size: 2rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+h3 {
+  font-size: 1rem;
+}
+
+.education-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  /* padding: 1rem; */
+}
+
 main {
   width: 80%;
   margin: 0 auto;
 }
 
-div {
-  /* outline: 1px solid red; */
+.academic-year-container {
+  padding: 1rem;
 }
 
-
-.academic-year-container {
-  /* margin-bottom: 2rem; */
-  padding: 1rem;
+.academic-year-container h1 {
+  margin-bottom: 1rem;
 }
 
 .modules-grid {
   --min-column-size: 17rem;
   display: grid;
   gap: 2rem;
-  grid-template-rows: repeat(3, 1.5fr);
-  /* responsive grid
-    https://www.youtube.com/watch?v=p3_xN2Zp1TY&ab_channel=KevinPowell */
+  /* responsive grid https://www.youtube.com/watch?v=p3_xN2Zp1TY&ab_channel=KevinPowell */
   grid-template-columns: 
     repeat(auto-fit, minmax(min(var(--min-column-size), 100%), 1fr));
 }
@@ -54,10 +76,6 @@ div {
   position: relative;
 }
 
-.module-pic {
-  max-width: 100%;
-}
-
 img {
   display: block; /* solves issue where image doesn't fill up entire at bottom */
   width: 100%;
@@ -66,16 +84,27 @@ img {
   object-position: center;
 }
 
+.institution-logo {
+  padding: 1rem;
+}
+
+.institution-logo img {
+  width: 5rem;
+  height: 100%;
+  object-fit: scale-down;
+}
+
 .star {
-  font-size: x-large;
+  font-size: 1.2rem;
   position: absolute;
   color: #eac54f;
-  top: 5px;
+  top: 10px;
   right: 10px;
   z-index: 100;
-  /* background-color: white;
-  border-radius: 50%;
-  padding: 0 4px; */
+}
+
+.module-card:not(:has(span.star)) {
+  display: none;
 }
 
 .module-code {
@@ -114,4 +143,14 @@ img {
 .module-card:hover .module-description,
 .module-card:hover .card-footer {
   display: block;
+}
+
+.card-footer {
+  text-align: end;
+  font-size: 1.5rem;
+}
+
+a {
+  color: inherit; /* blue colors for links too */
+  text-decoration: inherit; /* no underline */
 }

@@ -85,10 +85,11 @@
     "education": [
         {
             "institution": {"en": "University of Sheffield", "cn": "谢菲尔德大学"},
+            "logo": "/assets/logos/uos_logo.svg",
             "degree-title": {"en": "BSc Computer Science", "cn": "计算机科学（本科）"},
             "degree-classification": {"en": "2:1 (Class Two Division One Honours)", "cn": "二等一"},
-            "start-date": "2020/09",
-            "end-date": "2023/07",
+            "start-date": "2020.09",
+            "end-date": "2023.07",
             "modules-studied": [
                 [
                     {
@@ -151,7 +152,7 @@
                         "module-name": {"en": "Web and Internet Technology", "cn": "网络和互联网技术"}, 
                         "module-description": {
                             "en": "(Re)Learned the fundamentals of HTML, CSS, and JavaScript, and built a personal-portfolio website (not this one) as an assignment.", 
-                            "cn": "(重新）学了 HTML、CSS 和 JavaScript 的基础知识，并作为一个一项作业建立了一个个人作品集网站（不是这个）。"
+                            "cn": "(重新）学了 HTML、CSS 和 JavaScript 的基础知识，并作为一项作业建立了一个个人作品集网站（不是这个）。"
                         },
                         "links": [],
                         "starred": false,
@@ -290,7 +291,7 @@
                             "cn": "学习了各种现代人工智能技术及其对生物系统的启发。例如，进化、多细胞组织、神经系统、免疫系统和蜂群，以及进化算法或基于蜂群的优化算法等抽象概念的启发。"
                         },
                         "links": [],
-                        "starred": false,
+                        "starred": true,
                         "image": "https://t3.ftcdn.net/jpg/03/89/20/02/360_F_389200264_SwVNiEDSlfJsBVF2So0yLOFyCxk7mk25.jpg"
                     },
                     {
@@ -320,7 +321,7 @@
                         "module-name": {"en": "The Intelligent Web", "cn": "智能网"}, 
                         "module-description": {
                             "en": "Anything but the intelligent part. The course involved a web development group project to develop a bird sighting application. Made use of the following technologies: Socket.io for real-time client interactions (used to implement a chat functionality), Node.js for the backend, and MongoDB for data storage. (Short demo in GitHub repository)", 
-                            "cn": "没有包含一点智能元素。该课程还涉及一个网络开发小组项目，开发一个鸟类观测应用程序。使用了以下技术： Socket.io 用于实时客户端交互（用于实现聊天功能），Node.js 用于后台，MongoDB 用于数据存储。(GitHub 代码库中有一个简短的演示）"
+                            "cn": "没有包含一点智能元素。该课程涉及一个网络开发小组项目，开发一个鸟类观测应用程序。使用了以下技术： Socket.io 用于实时客户端交互（用于实现聊天功能），Node.js 用于后台，MongoDB 用于数据存储。(GitHub 代码库中有一个简短的演示）"
                         },
                         "links": ["https://github.com/jwu02/com3504_bird_watching"],
                         "starred": true,

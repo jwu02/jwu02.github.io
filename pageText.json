@@ -34,5 +34,34 @@
     "skills-section": {
         "subtitle-1": {"en": "Languages", "cn": "语言能力"},
         "subtitle-2": {"en": "Technical", "cn": "技术经验"}
+    },
+
+    "education-section": {
+        "show-all-modules": {
+            "en": "Show All Modules",
+            "cn": "显示全部课程"
+        },
+        "years": {
+            "1": {
+                "en": "First Year",
+                "cn": "第一年"
+            },
+            "2": {
+                "en": "Second Year",
+                "cn": "第二年"
+            },
+            "3": {
+                "en": "Third Year",
+                "cn": "第三年"
+            },
+            "4": {
+                "en": "Fourth Year",
+                "cn": "第四年"
+            },
+            "5": {
+                "en": "Fifth Year",
+                "cn": "第五年"
+            }
+        }
     }
 }

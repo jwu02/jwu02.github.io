@@ -3,21 +3,57 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Education</title>
+  <link rel="stylesheet" href="css/global.css">
   <link rel="stylesheet" href="css/education.css">
-  <script defer type="module" src="education.js"></script>
+
   <script defer type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
   <script defer nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-  <title>Education</title>
+
+  <script defer type="module" src="education.js"></script>
 </head>
 <body>
-  <nav>
-    <ul>
-      <li><a href="index.html"><ion-icon name="return-down-back"></ion-icon><span>Return</span></a></li>
-    </ul>
-  </nav>
+  <header>
+    <div class="logo"><a href="./index.html#"><span class="typewrite"><span>Tony Wu.</span></span></a></div>
 
-  <main>
-  </main>
+    <nav id="desktop-nav">
+      <ul class="nav-links">
+        <li><a class="about-nav" href="./index.html#about"></a></li>
+        <li><a class="skills-nav" href="./index.html#skills"></a></li>
+        <li><a class="projects-nav" href="./index.html#projects"></a></li>
+        <li><a class="contacts-nav" href="./index.html#contacts"></a></li>
+        <li><a class="switch-language-btn icon"><ion-icon name="language"></ion-icon></a></li>
+      </ul>
+    </nav>
+
+    <nav id="hamburger-nav">
+      <div class="hamburger-menu">
+        <!-- this element will act as the button for opening and closing the nav menu -->
+        <div class="hamburger-icon">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+  
+        <div class="menu-links">
+          <li><a class="about-nav nav-link" href="./index.html#about"></a></li>
+          <li><a class="skills-nav nav-link" href="./index.html#skills"></a></li>
+          <li><a class="projects-nav nav-link" href="./index.html#projects"></a></li>
+          <li><a class="contacts-nav nav-link" href="./index.html#contacts"></a></li>
+          <li><a class="switch-language-btn icon"><ion-icon name="language"></ion-icon></a></li>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="controls">
+    <div class="show-modules-cb-container">
+        <input type="checkbox" id="show-all-modules-cb" name="show-all-modules">
+        <label for="show-all-modules"></label>
+    </div>
+  </div>
+
+  <main></main>
 
   <footer>
     <p>Created by Tony Wu.</p>
