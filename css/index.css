@@ -155,7 +155,6 @@ align-items: center;
   background: white;
   border-radius: 2rem;
   border: rgb(163, 163, 163) 0.1rem solid;
-  /* text-align: center; */
 }
 
 .card-header {
@@ -194,8 +193,6 @@ align-items: center;
 }
 
 .arrow {
-  /* display: block;
-  text-align: end; */
   cursor: pointer;
   position: absolute;
   right: -5rem;
@@ -206,6 +203,7 @@ align-items: center;
 /* SKILLS SECTION */
 
 #skills {
+  /* needed to work with absolutely placed down/next page arrow buttons */
   position: relative;
 }
 
@@ -213,7 +211,6 @@ align-items: center;
   color: rgb(85, 85, 85);
   font-weight: 600;
   font-size: 1.75rem;
-  margin-bottom: 1rem;
 }
 
 .skill-details-container {
@@ -230,17 +227,10 @@ align-items: center;
   flex-direction: column;
 }
 
-/* .row {
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-} */
-
 .article-container {
   display: flex;
-  text-align: initial;
-  flex-wrap: wrap;
   flex-direction: row;
+  flex-wrap: wrap;
   gap: 2rem;
   justify-content: space-around;
 }
@@ -252,7 +242,7 @@ align-items: center;
 article {
   display: flex;
   flex-direction: column;
-  width: 10rem;
+  width: 40%;
   justify-content: space-around;
 }
 
@@ -260,17 +250,10 @@ article .icon {
   cursor: default;
 }
 
-/* .skill-details {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: space-between;
-} */
-
 .skill-icon-details-container {
   display: flex;
   flex-direction: row;
-  flex-wrap: nowrap;
+  /* flex-wrap: nowrap; */
   justify-content: space-between;
   align-items: center;
 }
@@ -305,7 +288,8 @@ article .icon {
   border-color: rgb(163, 163, 163);
   background: (250, 250, 250);
   margin: 2rem auto;
-  padding: 0.5rem;
+  padding: 2rem;
+  gap: .5rem 2rem;
 }
 
 .contact-info-container {
@@ -313,11 +297,6 @@ article .icon {
   align-items: center;
   justify-content: center;
   gap: 0.5rem;
-  margin: 1rem;
-}
-
-.contact-info-container p {
-  font-size: larger;
 }
 
 .contact-icon {

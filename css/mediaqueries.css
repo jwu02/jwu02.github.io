@@ -48,25 +48,24 @@
 }
 
 @media screen and (max-width: 600px) {
-  #contact {
-    height: 40vh;
+
+  #about .section__pic-container {
+    width: 100%;
   }
-  #profile {
-    height: 83vh;
-    margin-bottom: 0;
+
+  /* .article-container > article {
+    flex: 50%;
+  } */
+
+  .cards-container {
+    flex-direction: column;
   }
-  article {
-    font-size: 1rem;
-  }
-  .cards-container,
-  .contact-info-upper-container,
   .btn-container {
     flex-wrap: wrap;
   }
-  .contact-info-container {
-    margin: 0;
+  .contact-info-upper-container {
+    flex-direction: column;
   }
-  .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
   }
@@ -94,5 +93,9 @@
   }
   .text-container {
     text-align: justify;
+  }
+
+  #contacts {
+    height: 40vh;
   }
 }

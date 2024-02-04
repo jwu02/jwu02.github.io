@@ -157,7 +157,7 @@ function skillBarDivTemplate(skillDict, isTechnicalSkill=false) {
                 ${iconImageTemplate}
                 <div class="skill-details">
                     <h3>${skillNameDisplayText}</h3>
-                    <p>${proficiency[displayLanguage]}</p>
+                    <div>${proficiency[displayLanguage]}</div>
                 </div>
             </div>
             <div class="skill-bar">

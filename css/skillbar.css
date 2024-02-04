@@ -4,15 +4,12 @@
   width: 100%;
   border-radius: 6px;
   margin-top: 6px;
-  /* background: rgba(255, 255, 255, 0.3); */
 }
 
 .skill-per {
-  position: relative;
   display: block;
   height: 100%;
   border-radius: 6px;
-  /* background: #219ebc; */
   animation: progress 1s ease-in-out forwards;
   opacity: 0;
 }

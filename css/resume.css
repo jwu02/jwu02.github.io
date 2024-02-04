@@ -68,6 +68,7 @@ body {
   gap: 2mm;
   padding-top: var(--top-bottom-padding);
   padding-bottom: var(--top-bottom-padding);
+  overflow: hidden;
 }
 
 /* TOP RIGHT HEADER */
@@ -98,14 +99,6 @@ body {
   font-size: 1.2rem;
 }
 
-.mail {
-  color: #DB4437;
-}
-
-.wechat {
-  color: #09B83E;
-}
-
 .right-container ion-icon {
   margin-right: var(--icon-margin);
 }
@@ -119,7 +112,7 @@ body {
 /* LEFT CONTAINER */
 
 .pfp-container {
-  margin: 5mm;
+  margin: 2mm 7mm;
 }
 
 img {
@@ -280,7 +273,8 @@ ul {
 
 @media print {
   header, 
-  .controls {
+  .controls,
+  footer {
     display: none;
   }
   

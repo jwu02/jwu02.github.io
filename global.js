@@ -42,10 +42,17 @@ function wireHamburgerBtn() {
     }
 
     function toggleMenu() {
-        const menu = document.querySelector(".menu-links");
+        const menu = document.querySelector("#hamburger-nav .menu-links");
         const icon = document.querySelector(".hamburger-icon");
-        menu.classList.toggle("open");
         icon.classList.toggle("open");
+
+        if (menu.style.display == "") { // none
+            menu.style.display = "flex";
+            icon.style.position = "fixed";
+        } else {
+            menu.style.display = "";
+            icon.style.position = "relative";
+        }
     }
 }
 

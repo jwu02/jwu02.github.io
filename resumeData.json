@@ -140,6 +140,16 @@
                 "links": ["https://github.com/jwu02/com3505-robocar"]
             },
             {
+                "project-name": {"en": "Robotics", "cn": "机器人学"}, 
+                "project-description": {
+                    "en": "Programmed a small robot dog with Python ROS, in both a simulation and the actual hardware, navigating closed environments whilst completing tasks such as maze completion, obstacle avoidance, and beaconing (finding and moving towards a target).", 
+                    "cn": "在模拟和实际硬件中使用 Python ROS 对小型机器狗进行编程，使其能够在封闭的环境中航行，同时完成迷宫迷、避障和信标（寻找并向目标移动）等任务。"
+                },
+                "in-progress": false,
+                "is-academic": true,
+                "links": ["https://github.com/jwu02/com2009-robotics-team-1"]
+            },
+            {
                 "project-name": {"en": "Property Booking Desktop App", "cn": "物业预订桌面应用程序"}, 
                 "project-description": {
                     "en": "Developed as part of a group project, emulating a real-world agile software development process. Utilized UML for a formal requirements analysis and system design process. The application was developed following the MVC architecture, with Java as frontend and backend, linking to MySQL database.", 
