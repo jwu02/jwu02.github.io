@@ -16,14 +16,11 @@ html {
   scroll-behavior: smooth;
 }
 
-p {
-  color: rgb(85, 85, 85);
-}
-
 /* TRANSITION */
 
 a,
-.btn {
+.btn,
+.icon {
   transition: all 300ms ease;
 }
 
@@ -64,10 +61,6 @@ a {
   text-decoration-color: white;
 }
 
-/* nav a:hover,
-nav a:active,
-.card-footer a:hover,
-.card-footer a:active */
 a:hover,
 a:active {
   color: grey;
@@ -78,10 +71,31 @@ a:active {
 
 .logo {
   font-size: 1.5rem;
+  font-weight: 300;
 }
 
-.logo:hover {
-  cursor: default;
+/* ICONS */
+
+a,
+.icon {
+  cursor: pointer;
+}
+
+.icon {
+  height: 2rem;
+  font-size: 2rem;
+}
+
+.icon.linkedin:hover {
+  color: #0077B5;
+}
+
+.icon.wechat:hover {
+  color: #09B83E;
+}
+
+.icon.mail:hover {
+  color: #DB4437;
 }
 
 /* HAMBURGER MENU */
@@ -179,7 +193,7 @@ a:active {
 
 footer {
   height: 10vh;
-  margin: 0 1rem;
+  padding: 1rem;
 }
 
 footer p {
@@ -209,5 +223,16 @@ footer p {
 @keyframes typewrite{
   from {
     width: 0;
+  }
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1200px) {
+  #desktop-nav {
+    display: none;
+  }
+  #hamburger-nav {
+    display: flex;
   }
 }

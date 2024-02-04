@@ -67,18 +67,6 @@ section {
   gap: 1rem;
 }
 
-/* ICONS */
-
-a {
-  cursor: pointer;
-}
-
-.icon {
-  /* cursor: pointer; */
-  height: 2rem;
-  font-size: 2rem;
-}
-
 /* BUTTONS */
 
 .btn-container {
@@ -174,6 +162,10 @@ align-items: center;
   text-align: center;
 }
 
+#about .icon {
+  cursor: default;
+}
+
 .card-body {
   /* fills up remaining space if used on only 1 flex-item in flexbox */
   /* equivalent to flex-grow */
@@ -238,11 +230,11 @@ align-items: center;
   flex-direction: column;
 }
 
-.row {
+/* .row {
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-}
+} */
 
 .article-container {
   display: flex;

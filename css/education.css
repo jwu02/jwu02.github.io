@@ -1,19 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-}
-
-html {
-  scroll-behavior: smooth;
-}
-
 h1 {
   font-size: 2rem;
 }
@@ -38,7 +22,7 @@ h3 {
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  /* padding: 1rem; */
+  padding: 1rem;
 }
 
 main {
@@ -95,12 +79,16 @@ img {
 }
 
 .star {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   position: absolute;
   color: #eac54f;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 20px;
   z-index: 100;
+}
+
+.star:hover {
+  transform: scale(1.5);
 }
 
 .module-card:not(:has(span.star)) {
@@ -146,7 +134,10 @@ img {
 }
 
 .card-footer {
-  text-align: end;
+  text-align: center;
+}
+
+.card-footer .icon {
   font-size: 1.5rem;
 }
 

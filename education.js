@@ -1,7 +1,7 @@
 import { 
     DATA_JSON, PAGE_TEXT_JSON,
     displayLanguage, 
-    wireHamburgerBtn, wireSwitchLanguageBtn, renderNavbar, addRenderFunction, render
+    renderNavbar, addRenderFunction, render
 } from "./global.js";
 
 // an array
@@ -29,8 +29,6 @@ function renderControlsSection() {
 }
 
 function wireEventListeners() {
-    wireHamburgerBtn();
-    wireSwitchLanguageBtn();
     wireShowAllModulesCB();
 }
 
@@ -118,7 +116,7 @@ function getModuleCardHTMLTemplate(moduleData) {
     
     let starIcon = "";
     if (moduleData["starred"]) {
-        starIcon = `<span class="star"><ion-icon name="star"></ion-icon></span>`;
+        starIcon = `<span class="star icon"><ion-icon name="star"></ion-icon></span>`;
     }
 
     let cardHTML = `

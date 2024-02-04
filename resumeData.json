@@ -1,0 +1,188 @@
+{
+    "controls": {
+        "download-btn" : {"en": "Download Resume", "cn": "下载简历"}
+    },
+    "header": {
+        "interest": {
+            "en": "Interested In: Software Engineering", 
+            "cn": "求职意向: 软件工程"
+        }
+    },
+    "languages-section": {
+        "title": {
+            "en": "Languages",
+            "cn": "语言能力"
+        },
+        "languages": [
+            {
+                "name": {"en": "English", "cn": "英语"}, 
+                "proficiency": {"en": "Native", "cn": "母语", "quantification": 80}
+            },
+            {
+                "name": {"en": "Mandarin", "cn": "国语"}, 
+                "proficiency": {"en": "Heritage", "cn": "传承语", "quantification": 50}
+            },
+            {
+                "name": {"en": "Cantonese", "cn": "粤语"}, 
+                "proficiency": {"en": "Heritage", "cn": "传承语", "quantification": 30}
+            },
+            {
+                "name": {"en": "Japanese", "cn": "日语"}, 
+                "proficiency": {"en": "Beginner", "cn": "初学者", "quantification": 15}
+            },
+            {
+                "name": {"en": "French", "cn": "法语"}, 
+                "proficiency": {"en": "Beginner", "cn": "初学者", "quantification": 15}
+            }
+        ]
+    },
+    "technical-skills-section": {
+        "title": {
+            "en": "Technical Skills",
+            "cn": "技能专长"
+        },
+        "technical-skills": [
+            {
+                "en": "Proficient with Python, Java and JavaScript, also familiar with TypeScript, PHP and Ruby",
+                "cn": "熟练 Python、Java 和 JavaScript，也熟悉 TypeScript、PHP 和 Ruby"
+            },
+            {
+                "en": "Experience with building deep learning models with Python packages TensorFlow/Keras, as well as GUIs with PyQt, web scraping with BeautifulSoup and robot programming with ROS",
+                "cn": "拥有使用 Python 软件包 TensorFlow/Keras 构建深度学习模型、使用 PyQt 构建图形用户界面、使用 BeautifulSoup 进行网络搜索以及使用 ROS 进行机器人编程的经验"
+            },
+            {
+                "en": "Experience with web development frameworks such as Angular, Django, RubyOnRails, and Spring Boot",
+                "cn": "具有使用 Angular、Django、RubyOnRails 和 Spring Boot 等网页开发框架的经验"
+            },
+            {
+                "en": "Experience with database technologies such as MySQL and MongoDB",
+                "cn": "具有使用 MySQL 和 MongoDB 等数据库技术的经验"
+            }
+        ]
+    },
+    "achievements-section": {
+        "title": {
+            "en": "Achievements",
+            "cn": "校外荣誉"
+        },
+        "achievements": [
+            {
+                "year": "2017",
+                "en": "Received an award for my continuous effort and willingness to help with producing videos for various events in school. Includes help promoting the work of a charity, aimed towards providing a better educational environment for children in Nepal",
+                "cn": "因很乐意地持续奉献自己的劳力来帮助制作学校各种活动的视频而获奖。包括帮助宣传一家慈善机构的工作，该慈善机构的目标是在为尼泊尔儿童提供更好的教育环境"
+            },
+            {
+                "year": "2018",
+                "en": "Awarded for participation in the NCS (National Citizenship Service) program which involved two weeks of volunteering at a care home",
+                "cn": "因参加 NCS（National Citizenship Service 国家公民服务）计划而获奖，该计划包括在一家护理院进行为期两周的志愿服务"
+            }
+        ]
+    },
+    "education-section": {
+        "title": {
+            "en": "Education",
+            "cn": "教育背景"
+        },
+        "education": [
+            {
+                "institution": {"en": "University of Sheffield", "cn": "谢菲尔德大学"},
+                "degree-title": {"en": "BSc Computer Science", "cn": "计算机科学（本科）"},
+                "degree-classification": {"en": "2:1 (Class Two Division One Honours)", "cn": "二等一（相当于中国的78-84）"},
+                "start-date": "2020.09",
+                "end-date": "2023.07"
+            }
+        ]
+    },
+    "projects-section": {
+        "title": {
+            "en": "Project Experience",
+            "cn": "项目经验"
+        },
+        "notes": {
+            "en": "Work is public on my GitHub profile if interested. You can also find more academic and personal projects there.", 
+            "cn": "如果感兴趣，作品已在我的 GitHub 个人主页上公开。您还可以在那里找到更多学术和个人项目。"
+        },
+        "statuses": {
+            "in-progress": {
+                "en": "In-Progress", 
+                "cn": "进行中"
+            }
+        },
+        "projects": [
+            {
+                "project-name": {"en": "Language Exchange Platform", "cn": "语言交换程序"}, 
+                "project-description": {
+                    "en": "A personal full-stack project where I self-taught and utilized the Angular framework for frontend, with the help of Bootstrap for presentation. The front end requests services from a REST API backend developed with Spring Boot. Also gained experiences with using Postman for testing backend service responses and using JSoup for web scraping language data.", 
+                    "cn": "一个个人全栈项目，我自学并使用 Angular 框架开发前端，演示使用 Bootstrap。前端从使用 Spring Boot 开发的 REST API 后端请求服务。此外，我还获得了使用 Postman 测试后端服务响应和使用 JSoup 进行网络语言数据搜刮的经验。"
+                },
+                "in-progress": true,
+                "is-academic": false,
+                "links": ["https://github.com/jwu02/language-exchange-angular-frontend", "https://github.com/jwu02/language-exchange-springboot-backend"]
+            },
+            {
+                "project-name": {"en": "Named Entity Recognition (NER) System", "cn": "命名实体识别（NER）系统"}, 
+                "project-description": {
+                    "en": "Developed from scratch as part of my dissertation project. The Multinomial Logistic Regression (MLR) algorithm was chosen for the implementation, with the help of NumPy for matrix calculations and Pandas for data sanitization and manipulation. The results achieved were very close to what was capable of existing systems.", 
+                    "cn": "作为我的毕业论文项目的一部分，从零开始开发。在 NumPy 进行矩阵计算和使用 Pandas 进行数据处理和操作的帮助下，我选择了多项式逻辑回归 (MLR) 算法来实施该系统。取得的结果与现有系统的能力非常接近。"
+                },
+                "in-progress": false,
+                "is-academic": true,
+                "links": []
+            },
+            {
+                "project-name": {"en": "ESP32 Robot Car", "cn": "ESP32 机器人车"}, 
+                "project-description": {
+                    "en": "Assembled and developed a remote-controlled robot car (via a WAP and served page) using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment.", 
+                    "cn": "使用 C/C++ 在 ESP32 开发板（类似于 Arduino）上组装和开发遥控机器人汽车（通过 WAP 和服务页面）。还安装了一个超声波传感器，用于在机器人探索环境时探测和避开物体。"
+                },
+                "in-progress": false,
+                "is-academic": true,
+                "links": ["https://github.com/jwu02/com3505-robocar"]
+            },
+            {
+                "project-name": {"en": "Property Booking Desktop App", "cn": "物业预订桌面应用程序"}, 
+                "project-description": {
+                    "en": "Developed as part of a group project, emulating a real-world agile software development process. Utilized UML for a formal requirements analysis and system design process. The application was developed following the MVC architecture, with Java as frontend and backend, linking to MySQL database.", 
+                    "cn": "作为小组项目的一部分进行开发，模拟现实世界中的敏捷软件开发过程。利用 UML 进行正式的需求分析和系统设计过程。应用程序采用 MVC 架构开发，前台和后台均为 Java，并与 MySQL 数据库相连。"
+                },
+                "in-progress": false,
+                "is-academic": true,
+                "links": ["https://github.com/jwu02/com2008-homebreak-plc"]
+            },
+            {
+                "project-name": {"en": "Chess Piece Image Classification System", "cn": "国际象棋棋子图像分类系统"}, 
+                "project-description": {
+                    "en": "Developed as part of a machine learning course which involved learning various classification techniques, including both supervised and unsupervised. I implemented the system with both the Naive Bayes and k-nearest neighbor algorithms.", 
+                    "cn": "作为机器学习修选课的一部分开发，该修选课涉及学习各种分类技术，包括监督和非监督技术。我使用朴素贝叶斯算法和 k近邻算法实施了该系统。"
+                },
+                "in-progress": false,
+                "is-academic": true,
+                "links": ["https://github.com/jwu02/com2004-chess-board-classification"]
+            }
+        ]
+    },
+    "about-section": {
+        "title": {
+            "en": "Self Evaluation",
+            "cn": "自我评价"
+        },
+        "about": [
+            {
+                "en": "I am a responsible individual equipped with strong learning skills. Through my dissertation, I have developed strong research skills, as well as confidence in my ability to deliver.",
+                "cn": "我是一个责任感很强的人，具着强劲的学习能力。通过毕业论文，我掌握了扎实的研究技能，并对自己取得成果的能力充满信心。"
+            },
+            {
+                "en": "After overcoming the many challenges and struggles of university, I have developed strong perseverance and self-motivation. Staying optimistic is key in the face of hardship.",
+                "cn": "在克服了大学生活中的诸多挑战和困难之后，我培养了坚强的毅力和自我激励的能力。面对困难，保持乐观是关键。"
+            },
+            {
+                "en": "I have good team working skills and am aware of the various management techniques and workflows, for effective collaboration with other software developers.",
+                "cn": "我拥有良好的团队工作技能，也了解各种管理技术和工作流程，以便与其他软件开发人员一起有效地合作。"
+            },
+            {
+                "en": "I am proactive and am always motivated to learn new things, to self-improve and expand my skill sets. This is an important trait to have in the ever-changing, fast-paced field of technology, where there is a constant need to keep up.",
+                "cn": "我积极主动，总是主动学习新知识，自我完善并扩展技能组合。在这个瞬息万变、快节奏的技术领域，这是一个非常重要的特质。"
+            }
+        ]
+    }
+}

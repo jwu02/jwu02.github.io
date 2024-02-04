@@ -1,5 +1,5 @@
 {
-    "languages": {
+    "display-languages": {
         "en": {
             "en-name": "English",
             "original-name": "English"
@@ -331,8 +331,8 @@
                         "module-code": "com3505",
                         "module-name": {"en": "The Internet of Things", "cn": "物联网"}, 
                         "module-description": {
-                            "en": "An adult LEGO course. Assembled and developed a remote-controlled robot car using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment.", 
-                            "cn": "一个成人乐高课程。组装并开发了自己的遥控机器人车，并在 ESP32 开发板（类似于 Arduino）上使用 C/C++ 进行编程。在机器人探索环境时，我还利用超声波传感器进行物体探测和避让。"
+                            "en": "An adult LEGO course. Assembled and developed a remote-controlled robot car using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment. (Short demo in GitHub repository)", 
+                            "cn": "一个成人乐高课程。组装并开发了自己的遥控机器人车，并在 ESP32 开发板（类似于 Arduino）上使用 C/C++ 进行编程。在机器人探索环境时，我还利用超声波传感器进行物体探测和避让。(GitHub 代码库中有一个简短的演示）"
                         },
                         "links": ["https://github.com/jwu02/com3505-robocar"],
                         "starred": true,
@@ -340,25 +340,6 @@
                     }
                 ]
             ]
-        }
-    ],
-
-    "projects": [
-        {
-            "project-name": {"en": "Personal Website", "cn": "个人网站"}, 
-            "project-status": {"en": "In-progress", "cn": "进行中"}, 
-            "project-description": {
-                "en": "The site you're viewing right now is created with pure vanilla HTML, CSS, and JavaScript", 
-                "cn": ""
-            }
-        },
-        {
-            "project-name": {"en": "Language Exchange Application", "cn": "语言交换程序"}, 
-            "project-status": {"en": "In-progress", "cn": "进行中"}, 
-            "project-description": {
-                "en": "A full-stack project where I self-taught and utilized the Angular framework for frontend, with the help of Bootstrap for presentation. The front-end requests services from a REST API backend developed with Spring Boot. Also gained experiences with using Postman for testing backend service responses and using JSoup for web scraping language data.", 
-                "cn": "一个全栈项目，我自学并使用 Angular 框架开发前端，并在 Bootstrap 的帮助下进行展示。前端从使用 Spring Boot 开发的 REST API 后端请求服务。此外，我还获得了使用 Postman 测试后端服务响应和使用 JSoup 进行网络语言数据搜刮的经验。"
-            }
         }
     ],
     

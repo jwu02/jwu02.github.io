@@ -1,6 +1,7 @@
 // globals
 const DATA_JSON = await (await fetch('./data.json')).json();
 const PAGE_TEXT_JSON = await (await fetch('./pageText.json')).json();
+const RESUME_DATA_JSON = await (await fetch('./resumeData.json')).json();
 
 const LANGUAGES = ["en", "cn"];
 const INTERESTS = [
@@ -74,6 +75,10 @@ function wireSwitchLanguageBtn() {
 }
 
 function renderNavbar() {
+    // add header element first ...
+    setHeaderElement();
+
+    // ... then render text
     let NAV_LINKS = PAGE_TEXT_JSON["nav-links"];
     for (const [navName, navText] of Object.entries(NAV_LINKS)) {
         let navElements = document.getElementsByClassName(`${navName}-nav`);
@@ -83,15 +88,67 @@ function renderNavbar() {
     }
 }
 
-export { 
-    DATA_JSON, 
-    PAGE_TEXT_JSON, 
-    LANGUAGES, 
-    INTERESTS, 
-    languageIndex, 
-    displayLanguage, 
-    wireHamburgerBtn,
-    wireSwitchLanguageBtn,
+function wireNavbarEventListeners() {
+    wireHamburgerBtn();
+    wireSwitchLanguageBtn();
+}
+
+function setHeaderElement() {
+    let headerElement = document.querySelector("header");
+    if (!headerElement) {
+        headerElement = document.createElement("header");
+        let bodyElement = document.querySelector("body");
+        bodyElement.prepend(headerElement);
+    }
+
+    headerElement.innerHTML = getHeaderTemplateHTML();
+
+    wireNavbarEventListeners();
+}
+
+function getHeaderTemplateHTML() {
+    return `
+        <div class="logo"><a href="./index.html#"><span class="typewrite"><span>Tony Wu.</span></span></a></div>
+
+        <nav id="desktop-nav">
+        <ul class="nav-links">
+            <li><a class="about-nav" href="./index.html#about"></a></li>
+            <li><a class="skills-nav" href="./index.html#skills"></a></li>
+            <li><a class="projects-nav" href="./index.html#projects"></a></li>
+            <li><a class="contacts-nav" href="./index.html#contacts"></a></li>
+            <li><a class="switch-language-btn icon"><ion-icon name="language"></ion-icon></a></li>
+        </ul>
+        </nav>
+
+        <nav id="hamburger-nav">
+        <div class="hamburger-menu">
+            <!-- this element will act as the button for opening and closing the nav menu -->
+            <div class="hamburger-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+            </div>
+
+            <div class="menu-links">
+            <li><a class="about-nav nav-link" href="./index.html#about"></a></li>
+            <li><a class="skills-nav nav-link" href="./index.html#skills"></a></li>
+            <li><a class="projects-nav nav-link" href="./index.html#projects"></a></li>
+            <li><a class="contacts-nav nav-link" href="./index.html#contacts"></a></li>
+            <li><a class="switch-language-btn icon"><ion-icon name="language"></ion-icon></a></li>
+            </div>
+        </div>
+        </nav>
+    `;
+}
+
+export {
+    DATA_JSON,
+    PAGE_TEXT_JSON,
+    RESUME_DATA_JSON,
+    LANGUAGES,
+    INTERESTS,
+    languageIndex,
+    displayLanguage,
     renderNavbar,
     addRenderFunction,
     render
