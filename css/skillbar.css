@@ -1,0 +1,29 @@
+/* https://www.youtube.com/watch?v=rp36m6xH3Bw&ab_channel=CodingLab */
+.skill-bar {
+  height: 8px;
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+.skill-per {
+  display: block;
+  height: 100%;
+  border-radius: 6px;
+  animation: progress 1s ease-in-out forwards;
+  opacity: 0;
+}
+
+/* .skill-per.{skill-name} {
+  width: {proficiency}%;
+} */
+
+@keyframes progress {
+  0% {
+    width: 0;
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
