@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --theme-color-1: #023047;
+    --wechat-green: #09B83E;
+    --link-hover-color: #6b7280;
+  }
+
+  .bp-responsive-container {
+    @apply w-full mx-auto px-10 xl:px-20 
+      sm:max-w-screen-sm md:max-w-screen-md lg:max-w-screen-lg xl:max-w-screen-xl;
+  }
+  .flex-center {
+    @apply flex justify-center items-center;
+  }
+
+  h1 {
+    @apply text-4xl font-semibold;
+  }
+
+  .btn,
+  .icon-btn,
+  .icon,
+  a,
+  .text-glow,
+  .border-glow {
+    @apply transition-all ease-out delay-75;
+  }
+  
+  .icon,
+  .icon-btn, 
+  a {
+    @apply text-nowrap hover:text-[var(--link-hover-color)] cursor-pointer;
+  }
+
+  .resume-section-title {
+    @apply flex gap-2 text-sm font-semibold items-center mb-1;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply text-sm font-semibold border-solid border-2 rounded-full border-gray-800 py-3 px-3 w-32;
+  }
+  .btn-outlined {
+    @apply hover:bg-gray-800 hover:text-white;
+  }
+  .btn-filled {
+    @apply bg-gray-800 hover:bg-white hover:text-black text-white;
+  }
+  .icon-btn {
+    @apply hover:cursor-pointer w-8 h-8;
+  }
+}
+
+@layer utilities {
+  .clip-path-circle {
+    clip-path: circle();
+  }
+
+  .text-glow {
+    /* offset-x | offset-y | blur-radius | color */
+    text-shadow: 0 0 .3rem #94f3ff;
+  }
+
+  .border-glow {
+    /* offset-x | y | blur-radius | spread */
+    box-shadow: 0 0 .3rem #94f3ff, 
+                inset 0 0 .3rem #94f3ff;
+  }
+
+  .border-glow-outside {
+    box-shadow: 0 0 .3rem #94f3ff;
+  }
+}
