@@ -1,4 +1,4 @@
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import { Checkbox, Card, Tabs } from "antd"
 import { educations } from "../data"
 import { IoStar, IoLogoGithub } from "react-icons/io5"
@@ -15,8 +15,26 @@ const pageText = {
 }
 
 export function Educations({displayLanguage}) {
-  const [tabPosition, setTabPosition] = useState('left')
+  const [tabPosition, setTabPosition] = useState("left")
   const [showAllModules, setShowAllModules] = useState(false)
+
+  useEffect(() => {
+    // Add a listener for changes to the screen size
+    const mediaQuery = window.matchMedia("(max-width: 500px)")
+    // Set the initial value of the `tabPosition` state variable
+    setTabPosition(mediaQuery.matches ? "top" : "left")
+    // Define a callback function to handle changes to the media query
+    const handleMediaQueryChange = (event) => {
+      // if width < 500 display tab on top
+      setTabPosition(event.matches ? "top" : "left")
+    };
+    // Add the callback function as a listener for changes to the media query
+    mediaQuery.addEventListener("change", handleMediaQueryChange)
+    // Remove the listener when the component is unmounted
+    return () => {
+      mediaQuery.removeEventListener("change", handleMediaQueryChange)
+    }
+  }, [])
   
   return (
     <section className="bp-responsive-container">
