@@ -17,7 +17,7 @@ const pageText = {
       "cn": "原本来自中国广东，我小学二年级时移民到英国，在那里长大并接受教育。刚大学毕业不久，我决定回中国就业几年，希望能体验一下这边的文化和生活。"
     },
     p2: {
-      "en": "I am a hardworking and passionate individual, who is always trying to become the best that I can be. Throughtout university, I have consistently performed, both individually and in group projects. I hope to carry this momentum into the tech industry, where I can continue to hone my skills and knowledge.",
+      "en": "I am a hardworking and passionate individual, who is always trying to become the best that I can be. Throughout university, I have consistently performed, both individually and in group projects. I hope to carry this momentum into the tech industry, where I can continue to hone my skills and knowledge.",
       "cn": "我是一个勤奋、充满热情的人，一直在努力地改善自己。在整个大学期间，无论是个人项目还是小组项目，我都表现出色。我希望能将这种势头带入科技行业，继续磨练自己的技能和知识。"
     }
   },

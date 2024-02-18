@@ -246,6 +246,17 @@ export const educations = [
     "modulesStudied": [
       [
         {
+          "code": "fce1001",
+          "name": {"en": "Global Engineering Challenge Week", "cn": "全球工程挑战周"}, 
+          "description": {
+            "en": "Worked with students from other engineering disciplines, to tackle a real-world problem in an underdeveloped region. The proposal heavily involves the local community for gathering the plastic, that is then fed through a plastic extruder. The recycled plastic can then be used for 3D printing various things, to give back to the locals.", 
+            "cn": "与其他工程学科的学生合作，解决欠发达地区的实际问题。该提案在很大程度上让当地社区参与收集塑料，然后将塑料送入塑料挤出机。回收的塑料可用于 3D 打印各种物品，回馈当地人。"
+          },
+          "links": [],
+          "starred": true,
+          "image": com1009
+        },
+        {
           "code": "com1001",
           "name": {"en": "Introduction to Software Engineering", "cn": "软件工程概论"}, 
           "description": {
@@ -257,15 +268,15 @@ export const educations = [
           "image": com1001
         },
         {
-          "code": "com1002",
-          "name": {"en": "Foundations of Computer Science", "cn": "计算机科学基础"}, 
+          "code": "com1005",
+          "name": {"en": "Machines and Intelligence", "cn": "机器与智能"}, 
           "description": {
-            "en": "A discrete maths course on logic and linear algebra.", 
-            "cn": "逻辑和线性代数数学课程。"
+            "en": "Went on a deep dive into the history and philosophies of robotics. Then went on to learn various search algorithms like breadth/depth-first search, and the A* Algorithm. Involved a project implementing the depth and A* algorithms for pathfinding with an abstract overview of a map.", 
+            "cn": "深入了解机器人技术的历史和理念。然后继续学习各种搜索算法，如广度/深度优先搜索和 A* 算法。涉及一个项目，通过对地图的抽象概述来实现深度和 A* 算法的寻路。"
           },
-          "links": [],
-          "starred": false,
-          "image": com1002
+          "links": ["https://github.com/jwu02/com1005-ramblers-problem"],
+          "starred": true,
+          "image": com1005
         },
         {
           "code": "com1003",
@@ -279,15 +290,15 @@ export const educations = [
           "image": com1003
         },
         {
-          "code": "com1005",
-          "name": {"en": "Machines and Intelligence", "cn": "机器与智能"}, 
+          "code": "com1002",
+          "name": {"en": "Foundations of Computer Science", "cn": "计算机科学基础"}, 
           "description": {
-            "en": "Went on a deep dive into the history and philosophies of robotics. Then went on to learn various search algorithms like breadth/depth-first search, and the A* Algorithm. Involved a project implementing the depth and A* algorithms for pathfinding with an abstract overview of a map.", 
-            "cn": "深入了解机器人技术的历史和理念。然后继续学习各种搜索算法，如广度/深度优先搜索和 A* 算法。涉及一个项目，通过对地图的抽象概述来实现深度和 A* 算法的寻路。"
+            "en": "A discrete maths course on logic and linear algebra.", 
+            "cn": "逻辑和线性代数数学课程。"
           },
-          "links": ["https://github.com/jwu02/com1005-ramblers-problem"],
-          "starred": true,
-          "image": com1005
+          "links": [],
+          "starred": false,
+          "image": com1002
         },
         {
           "code": "com1006",
@@ -322,29 +333,18 @@ export const educations = [
           "starred": false,
           "image": com1009
         },
-        {
-          "code": "fce1001",
-          "name": {"en": "Global Engineering Challenge Week", "cn": "全球工程挑战周"}, 
-          "description": {
-            "en": "Worked with students from other engineering disciplines, to tackle a real-world problem in an underdeveloped region. The proposal heavily involves the local community for gathering the plastic, that is then fed through a plastic extruder. The recycled plastic can then be used for 3D printing various things, to give back to the locals.", 
-            "cn": "与其他工程学科的学生合作，解决欠发达地区的实际问题。该提案在很大程度上让当地社区参与收集塑料，然后将塑料送入塑料挤出机。回收的塑料可用于 3D 打印各种物品，回馈当地人。"
-          },
-          "links": [],
-          "starred": true,
-          "image": com1009
-        }
       ],
       [
         {
-          "code": "com2109",
-          "name": {"en": "Automata, Computation and Complexity", "cn": "自动机、计算和复杂性"}, 
+          "code": "fce2001",
+          "name": {"en": "Engineering - You're Hired", "cn": "工程 - 你被录用了"}, 
           "description": {
-            "en": "Algorithms on steroids.", 
-            "cn": "先进算法课程。"
+            "en": "Involved a cross-disciplinary group project to address a real-world problem, with the theme of IoT. Came up with a proposal plan for developing a physical network of sensors for detecting floods. Also involves developing an application to warn and redirect drivers.", 
+            "cn": "涉及一个以物联网为主题的跨学科小组项目，以解决现实世界中的问题。提出了一个开发物理传感器网络以检测洪水的建议计划。此外，还涉及开发一个应用程序，以警告和引导司机。"
           },
           "links": [],
-          "starred": false,
-          "image": com2109
+          "starred": true,
+          "image": null
         },
         {
           "code": "com2004",
@@ -369,17 +369,6 @@ export const educations = [
           "image": com2008
         },
         {
-          "code": "com2108",
-          "name": {"en": "Functional Programming", "cn": "函数式编程"}, 
-          "description": {
-            "en": "Learned the fundamentals of Haskell. Involved an assignment to program and solve a solitaire game with the language.", 
-            "cn": "学了 Haskell 的基础知识。课程包括一项使用该语言编程并解决接龙游戏的作业。"
-          },
-          "links": [],
-          "starred": false,
-          "image": com2108
-        },
-        {
           "code": "com2009",
           "name": {"en": "Robotics", "cn": "机器人学"}, 
           "description": {
@@ -389,17 +378,6 @@ export const educations = [
           "links": ["https://github.com/jwu02/com2009-robotics-team-1"],
           "starred": true,
           "image": com2009
-        },
-        {
-          "code": "com2107",
-          "name": {"en": "Logic in Computer Science", "cn": "计算机科学中的逻辑"}, 
-          "description": {
-            "en": "Prove it.", 
-            "cn": "证明一下。"
-          },
-          "links": [],
-          "starred": false,
-          "image": com2107
         },
         {
           "code": "com3420",
@@ -413,15 +391,37 @@ export const educations = [
           "image": com3420
         },
         {
-          "code": "fce2001",
-          "name": {"en": "Engineering - You're Hired", "cn": "工程 - 你被录用了"}, 
+          "code": "com2107",
+          "name": {"en": "Logic in Computer Science", "cn": "计算机科学中的逻辑"}, 
           "description": {
-            "en": "Involved a cross-disciplinary group project to address a real-world problem, with the theme of IoT. Came up with a proposal plan for developing a physical network of sensors for detecting floods. Also involves developing an application to warn and redirect drivers.", 
-            "cn": "涉及一个以物联网为主题的跨学科小组项目，以解决现实世界中的问题。提出了一个开发物理传感器网络以检测洪水的建议计划。此外，还涉及开发一个应用程序，以警告和引导司机。"
+            "en": "Prove it.", 
+            "cn": "证明一下。"
           },
           "links": [],
-          "starred": true,
-          "image": null
+          "starred": false,
+          "image": com2107
+        },
+        {
+          "code": "com2108",
+          "name": {"en": "Functional Programming", "cn": "函数式编程"}, 
+          "description": {
+            "en": "Learned the fundamentals of Haskell. Involved an assignment to program and solve a solitaire game with the language.", 
+            "cn": "学了 Haskell 的基础知识。课程包括一项使用该语言编程并解决接龙游戏的作业。"
+          },
+          "links": [],
+          "starred": false,
+          "image": com2108
+        },
+        {
+          "code": "com2109",
+          "name": {"en": "Automata, Computation and Complexity", "cn": "自动机、计算和复杂性"}, 
+          "description": {
+            "en": "Algorithms on steroids.", 
+            "cn": "先进算法课程。"
+          },
+          "links": [],
+          "starred": false,
+          "image": com2109
         },
       ],
       [
@@ -437,6 +437,28 @@ export const educations = [
           "image": com3610
         },
         {
+          "code": "com3504",
+          "name": {"en": "The Intelligent Web", "cn": "智能网"}, 
+          "description": {
+            "en": "Anything but the intelligent part. The course involved a web development group project to develop a bird sighting application. Made use of the following technologies: Socket.io for real-time client interactions (used to implement a chat functionality), Node.js for the backend, and MongoDB for data storage. (Short demo in GitHub repository)", 
+            "cn": "没有包含一点智能元素。该课程涉及一个网络开发小组项目，开发一个鸟类观测应用程序。使用了以下技术： Socket.io 用于实时客户端交互（用于实现聊天功能），Node.js 用于后台，MongoDB 用于数据存储。(GitHub 代码库中有一个简短的演示）"
+          },
+          "links": ["https://github.com/jwu02/com3504_bird_watching"],
+          "starred": true,
+          "image": com3504
+        },
+        {
+          "code": "com3505",
+          "name": {"en": "The Internet of Things", "cn": "物联网"}, 
+          "description": {
+            "en": "An adult LEGO course. Assembled and developed a remote-controlled robot car using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment. (Short demo in GitHub repository)", 
+            "cn": "一个成人乐高课程。组装并开发了自己的遥控机器人车，并在 ESP32 开发板（类似于 Arduino）上使用 C/C++ 进行编程。在机器人探索环境时，我还利用超声波传感器进行物体探测和避让。(GitHub 代码库中有一个简短的演示）"
+          },
+          "links": ["https://github.com/jwu02/com3505-robocar"],
+          "starred": true,
+          "image": com3505
+        },
+        {
           "code": "com3110",
           "name": {"en": "Text Processing", "cn": "文本处理"}, 
           "description": {
@@ -446,17 +468,6 @@ export const educations = [
           "links": ["https://github.com/jwu02/com3110-information-retrieval-assignment", "https://github.com/jwu02/com3110-sentiment-anaylsis-assignment"],
           "starred": true,
           "image": com3110
-        },
-        {
-          "code": "com3502",
-          "name": {"en": "Speech Processing", "cn": "语音处理"}, 
-          "description": {
-            "en": "Touched upon the basics of linguistics, and the biology of human speech and hearing. Also gained some speech processing experience using filters.",
-            "cn": "学习了语言学基础知识以及人类语言和听力的生物学知识。还获得了一些使用滤波器进行语音处理的经验。"
-          },
-          "links": [],
-          "starred": false,
-          "image": com3502
         },
         {
           "code": "com3524",
@@ -492,26 +503,15 @@ export const educations = [
           "image": com3240
         },
         {
-          "code": "com3504",
-          "name": {"en": "The Intelligent Web", "cn": "智能网"}, 
+          "code": "com3502",
+          "name": {"en": "Speech Processing", "cn": "语音处理"}, 
           "description": {
-            "en": "Anything but the intelligent part. The course involved a web development group project to develop a bird sighting application. Made use of the following technologies: Socket.io for real-time client interactions (used to implement a chat functionality), Node.js for the backend, and MongoDB for data storage. (Short demo in GitHub repository)", 
-            "cn": "没有包含一点智能元素。该课程涉及一个网络开发小组项目，开发一个鸟类观测应用程序。使用了以下技术： Socket.io 用于实时客户端交互（用于实现聊天功能），Node.js 用于后台，MongoDB 用于数据存储。(GitHub 代码库中有一个简短的演示）"
+            "en": "Touched upon the basics of linguistics, and the biology of human speech and hearing. Also gained some speech processing experience using filters.",
+            "cn": "学习了语言学基础知识以及人类语言和听力的生物学知识。还获得了一些使用滤波器进行语音处理的经验。"
           },
-          "links": ["https://github.com/jwu02/com3504_bird_watching"],
-          "starred": true,
-          "image": com3504
-        },
-        {
-          "code": "com3505",
-          "name": {"en": "The Internet of Things", "cn": "物联网"}, 
-          "description": {
-            "en": "An adult LEGO course. Assembled and developed a remote-controlled robot car using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment. (Short demo in GitHub repository)", 
-            "cn": "一个成人乐高课程。组装并开发了自己的遥控机器人车，并在 ESP32 开发板（类似于 Arduino）上使用 C/C++ 进行编程。在机器人探索环境时，我还利用超声波传感器进行物体探测和避让。(GitHub 代码库中有一个简短的演示）"
-          },
-          "links": ["https://github.com/jwu02/com3505-robocar"],
-          "starred": true,
-          "image": com3505
+          "links": [],
+          "starred": false,
+          "image": com3502
         },
         {
           "code": "mgt388",
@@ -523,7 +523,7 @@ export const educations = [
           "links": [],
           "starred": false,
           "image": null
-        }
+        },
       ]
     ]
   }

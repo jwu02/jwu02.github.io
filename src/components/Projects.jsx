@@ -1,6 +1,7 @@
 import { Timeline, Tooltip } from "antd"
 import { projects } from "../data"
 import { AiFillCheckCircle, AiFillClockCircle } from "react-icons/ai"
+import { FaLink } from "react-icons/fa"
 
 const pageText = {
   title: {"en": "Projects", "cn": "项目经验"}
@@ -47,7 +48,18 @@ export function Projects({displayLanguage}) {
 const ProjectItemChild = ({displayLanguage, project}) => {
   return (
     <div>
-      <div className="text-base font-semibold">{project.name[displayLanguage]}</div>
+      <div className="text-base font-semibold flex items-center gap-2 flex-nowrap">
+        <span>{project.name[displayLanguage]}</span>
+        <span className="flex gap-2">
+          {
+            project.links.map((link, i) => (
+              <a key={i} href={link} target="_blank" rel="noreferrer">
+                <FaLink className="icon" />
+              </a>
+            ))
+          }
+        </span>
+      </div>
       <div>{project.description[displayLanguage]}</div>
     </div>
   )

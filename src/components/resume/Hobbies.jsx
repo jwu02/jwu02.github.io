@@ -8,8 +8,8 @@ export function Hobbies({displayLanguage}) {
   }
 
   return (
-    <section className="mt-2 px-10">
-      <div className="font-medium text-center">{pageText.hobbies[displayLanguage]}</div>
+    <section className="mt-2">
+      <div className="font-medium">{pageText.hobbies[displayLanguage]}</div>
     </section>
   )
 }

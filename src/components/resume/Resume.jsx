@@ -35,6 +35,7 @@ export function Resume({displayLanguage}) {
           <Languages displayLanguage={displayLanguage} />
           <Skills displayLanguage={displayLanguage} />
           <Achievements displayLanguage={displayLanguage} />
+          <Hobbies displayLanguage={displayLanguage} />
         </div>
 
         {/* right container */}
@@ -47,7 +48,6 @@ export function Resume({displayLanguage}) {
             <Education displayLanguage={displayLanguage} />
             <Projects displayLanguage={displayLanguage} />
             <SelfEvaluation displayLanguage={displayLanguage} />
-            <Hobbies displayLanguage={displayLanguage} />
           </div>
         </div>
       </div>
