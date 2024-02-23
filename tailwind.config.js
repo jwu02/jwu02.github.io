@@ -6,9 +6,6 @@ export default {
   ],
   theme: {
     extend: {
-      fontSize: {
-        '2xs': '0.7rem'
-      },
       textUnderlineOffset: {
         'lg': '1rem'
       },

@@ -4,20 +4,22 @@ import { AiFillCheckCircle, AiFillClockCircle } from "react-icons/ai"
 import { FaLink } from "react-icons/fa"
 
 const pageText = {
-  title: {"en": "Projects", "cn": "项目经验"}
+  title: {"en": "Projects", "cn": "项目经验"},
+  inProgressTag: {"en": "In Progress", "cn": "进行中"},
+  completedText: {"en": "Completed", "cn": "完成"}
 }
 
 export function Projects({displayLanguage}) {
   const iconCommonStyles = "cursor-pointer w-5 h-5"
 
   const inProgressDot = (
-    <Tooltip placement="top" title="In Progress">
+    <Tooltip placement="top" title={pageText.inProgressTag[displayLanguage]}>
       <AiFillClockCircle className={iconCommonStyles} />
     </Tooltip>
   )
 
   const completedDot = (
-    <Tooltip placement="top" title="Completed">
+    <Tooltip placement="top" title={pageText.completedText[displayLanguage]}>
       <AiFillCheckCircle className={iconCommonStyles} />
     </Tooltip>
   )

@@ -16,7 +16,7 @@ export function Projects({displayLanguage}) {
   const asterisk = (<span className="text-red-500">*</span>)
   // displayed if project is in progress
   const inProgressTag = (
-    <span className="rounded-full text-[.6rem] bg-[var(--theme-color-1)] text-white px-[0.2rem]">
+    <span className="rounded-full text-[.85em] bg-[var(--theme-color-1)] text-white px-[0.2rem]">
       {pageText.inProgressTag[displayLanguage]}
     </span>
   )

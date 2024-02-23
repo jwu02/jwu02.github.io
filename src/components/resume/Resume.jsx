@@ -28,14 +28,17 @@ export function Resume({displayLanguage}) {
       </div>
 
       {/* resume container */}
-      <div className={`flex w-a4 h-a4 shadow-2xl ${displayLanguage === "cn" ? "text-[.77rem]" : "text-2xs"} md:self-center`}>
+      <div className={`
+          flex w-a4 h-a4 shadow-2xl print:shadow-none 
+          ${displayLanguage === "cn" ? "text-[.77rem]" : "text-[.65rem]"} 
+          md:self-center`}>
         {/* left container */}
         <div className={`${leftBottomContainer} w-1/3 bg-[var(--theme-color-1)] text-white`}>
           <Portrait displayLanguage={displayLanguage} />
           <Languages displayLanguage={displayLanguage} />
           <Skills displayLanguage={displayLanguage} />
           <Achievements displayLanguage={displayLanguage} />
-          <Hobbies displayLanguage={displayLanguage} />
+          {/* <Hobbies displayLanguage={displayLanguage} /> */}
         </div>
 
         {/* right container */}

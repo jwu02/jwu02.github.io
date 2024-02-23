@@ -10,7 +10,9 @@ export function Navbar({ displayLanguage, switchLanguageBtnEvent }) {
 
   function toggleNavMenu() {
     // reverse boolean value every click
-    setNavMenuOpened(!navMenuOpened)
+    // not recommended to use setNavMenuOpened(!navMenuOpened)
+    // as can lead to unexpected behaviour
+    setNavMenuOpened((prev) => !prev)
     let hamburgerMenu = document.querySelector("#hamburger-nav ul");
     hamburgerMenu.classList.toggle("hidden")
   }

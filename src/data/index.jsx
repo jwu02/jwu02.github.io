@@ -1,6 +1,6 @@
 import { IoLogoJavascript, IoLogoPython } from 'react-icons/io5'
 import { FaJava, FaCss3Alt } from "react-icons/fa6"
-import { SiArduino, SiRuby, SiPhp, SiCplusplus, SiTensorflow, SiRubyonrails, SiTailwindcss, SiCss3 } from "react-icons/si"
+import { SiArduino, SiRuby, SiPhp, SiCplusplus, SiTensorflow, SiRubyonrails, SiTailwindcss } from "react-icons/si"
 import { BiLogoReact, BiLogoSpringBoot } from "react-icons/bi"
 import { IoLogoAngular } from "react-icons/io"
 import { TbBrandDjango } from "react-icons/tb"
@@ -193,8 +193,8 @@ export const projects = [
   {
     "name": {"en": "ESP32 Robot Car", "cn": "ESP32 机器人车"}, 
     "description": {
-      "en": "Assembled and developed a remote-controlled robot car (via a WAP and served page) using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment.", 
-      "cn": "使用 C/C++ 在 ESP32 开发板（类似于 Arduino）上组装和开发遥控机器人汽车（通过 WAP 和服务页面）。还安装了一个超声波传感器，用于在机器人探索环境时探测和避开物体。"
+      "en": "Assembled and developed a remote-controlled robot car (via a WAP and served page) using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment. (Short demo in GitHub repository)", 
+      "cn": "使用 C/C++ 在 ESP32 开发板（类似于 Arduino）上组装和开发遥控机器人汽车（通过 WAP 和服务页面）。还安装了一个超声波传感器，用于在机器人探索环境时探测和避开物体。(GitHub 代码库中有一个简短的演示）"
     },
     "inProgress": false,
     "isAcademic": true,
@@ -203,8 +203,8 @@ export const projects = [
   {
     "name": {"en": "Robotics", "cn": "机器人学"}, 
     "description": {
-      "en": "Programmed a small robot dog with Python ROS, in both a simulation and the actual hardware, navigating closed environments whilst completing tasks such as maze completion, obstacle avoidance, and beaconing (finding and moving towards a target).", 
-      "cn": "在模拟和实际硬件中使用 Python ROS 对小型机器狗进行编程，使其能够在封闭的环境中航行，同时完成迷宫迷、避障和信标（寻找并向目标移动）等任务。"
+      "en": "Involved a group project programming a small robot dog with Python ROS, in both a simulation and the actual hardware, to complete various tasks such as maze completion, obstacle avoidance, and beaconing (finding and moving towards a target). Ended up completing the entire project by myself, but enjoyed the work involved and took the opportunity to learn a lot. I managed to achieve a good grade.", 
+      "cn": "涉及一个小组项目，使用 Python ROS 在模拟和实际硬件中对小型机器狗进行编程，以完成各种任务，如完成迷宫、避开障碍物和信标（寻找目标并向目标移动）。整个项目最终由我一个人完成，但我很享受其中的工作，并借此机会学到了很多东西。我取得了不错的成绩。"
     },
     "inProgress": false,
     "isAcademic": true,
@@ -213,8 +213,8 @@ export const projects = [
   {
     "name": {"en": "Property Booking Desktop App", "cn": "物业预订桌面应用程序"}, 
     "description": {
-      "en": "Developed as part of a group project, emulating a real-world agile software development process. Utilized UML for a formal requirements analysis and system design process. The application was developed following the MVC architecture, with Java as frontend and backend, linking to MySQL database.", 
-      "cn": "作为小组项目的一部分进行开发，模拟现实世界中的敏捷软件开发过程。利用 UML 进行正式的需求分析和系统设计过程。应用程序采用 MVC 架构开发，前台和后台均为 Java，并与 MySQL 数据库相连。"
+      "en": "Involved a group project emulating a real-world agile software development process, with formal requirements analysis and system design process, utilizing UML diagrams. Developed a property booking desktop app following the MVC architecture, with Java as frontend and backend, linking to MySQL database. Ended up completing the entire project by myself, from the formulation of system requirements, the design and implementation of the database, through to the design and implementation of the entire system. I managed to achieve a good grade.", 
+      "cn": "参与一个小组项目，模拟真实世界的敏捷软件开发流程，利用 UML 图表进行正式的需求分析和系统设计流程。按照 MVC 架构开发了一个物业预订桌面应用程序，使用 Java 作为前端和后端，并链接到 MySQL 数据库。从系统需求的制定、数据库的设计和实施，到整个系统的设计和实施，最终由我自己完成了整个项目。我自己取得了很好的成绩。"
     },
     "inProgress": false,
     "isAcademic": true,
@@ -249,7 +249,7 @@ export const educations = [
           "code": "fce1001",
           "name": {"en": "Global Engineering Challenge Week", "cn": "全球工程挑战周"}, 
           "description": {
-            "en": "Worked with students from other engineering disciplines, to tackle a real-world problem in an underdeveloped region. The proposal heavily involves the local community for gathering the plastic, that is then fed through a plastic extruder. The recycled plastic can then be used for 3D printing various things, to give back to the locals.", 
+            "en": "Worked with students from other engineering disciplines, to tackle a real-world problem in an underdeveloped region. The proposal heavily involves the local community in gathering the plastic, which is then fed through a plastic extruder. The recycled plastic can then be used for 3D printing various things, to give back to the locals.", 
             "cn": "与其他工程学科的学生合作，解决欠发达地区的实际问题。该提案在很大程度上让当地社区参与收集塑料，然后将塑料送入塑料挤出机。回收的塑料可用于 3D 打印各种物品，回馈当地人。"
           },
           "links": [],
@@ -260,8 +260,8 @@ export const educations = [
           "code": "com1001",
           "name": {"en": "Introduction to Software Engineering", "cn": "软件工程概论"}, 
           "description": {
-            "en": "Involved a group project emulating an agile development process. Developed a student-mentor matching website with Ruby as the backend, using the Sinatra gem. The application is intended for students to learn about the industry they are interested in, that which the mentor is a part of.", 
-            "cn": "参与模仿敏捷开发流程的小组项目。使用 Sinatra gem 开发了一个以 Ruby 为后台的学生与导师匹配网站。该应用程序旨在让学生了解他们感兴趣的行业以及导师所在的行业。"
+            "en": "Involved a group project emulating an agile development process. Developed a student-mentor matching website with Ruby as the backend, using the Sinatra gem. The application is intended for students to learn about the industry they are interested in, which the mentor is a part of. My responsibilities included designing and implementing the backend/database, as well as most of the major functionalities in the system.", 
+            "cn": "参与模仿敏捷开发流程的小组项目。使用 Sinatra gem 开发了一个以 Ruby 为后台的学生与导师匹配网站。该应用程序旨在让学生了解他们感兴趣的行业以及导师所在的行业。我的职责包括设计和实施后台/数据库，以及系统中的大部分主要功能。"
           },
           "links": [],
           "starred": true,
@@ -271,7 +271,7 @@ export const educations = [
           "code": "com1005",
           "name": {"en": "Machines and Intelligence", "cn": "机器与智能"}, 
           "description": {
-            "en": "Went on a deep dive into the history and philosophies of robotics. Then went on to learn various search algorithms like breadth/depth-first search, and the A* Algorithm. Involved a project implementing the depth and A* algorithms for pathfinding with an abstract overview of a map.", 
+            "en": "Went on a deep dive into the history and philosophies of robotics. Then went on to learn various search algorithms like breadth/depth-first search, and the A* Algorithm. Involved in a project implementing the depth and A* algorithms for pathfinding with an abstract overview of a map.", 
             "cn": "深入了解机器人技术的历史和理念。然后继续学习各种搜索算法，如广度/深度优先搜索和 A* 算法。涉及一个项目，通过对地图的抽象概述来实现深度和 A* 算法的寻路。"
           },
           "links": ["https://github.com/jwu02/com1005-ramblers-problem"],
@@ -339,7 +339,7 @@ export const educations = [
           "code": "fce2001",
           "name": {"en": "Engineering - You're Hired", "cn": "工程 - 你被录用了"}, 
           "description": {
-            "en": "Involved a cross-disciplinary group project to address a real-world problem, with the theme of IoT. Came up with a proposal plan for developing a physical network of sensors for detecting floods. Also involves developing an application to warn and redirect drivers.", 
+            "en": "Involved in a cross-disciplinary group project to address a real-world problem, with the theme of IoT. Came up with a proposal plan for developing a physical network of sensors for detecting floods. Also involves developing an application to warn and redirect drivers.", 
             "cn": "涉及一个以物联网为主题的跨学科小组项目，以解决现实世界中的问题。提出了一个开发物理传感器网络以检测洪水的建议计划。此外，还涉及开发一个应用程序，以警告和引导司机。"
           },
           "links": [],
@@ -361,8 +361,8 @@ export const educations = [
           "code": "com2008",
           "name": {"en": "Systems Design and Security", "cn": "系统设计与安全"}, 
           "description": {
-            "en": "Involved a group project emulating a real-world agile software development process, with formal requirements analysis and system design process, utilizing UML diagrams. Developed a property booking desktop app following the MVC architecture, with Java as frontend and backend, linking to MySQL database.", 
-            "cn": "参与一个小组项目，模拟真实世界的敏捷软件开发流程，利用 UML 图表进行正式的需求分析和系统设计流程。按照 MVC 架构开发了一个物业预订桌面应用程序，使用 Java 作为前端和后端，并与 MySQL 数据库相连。"
+            "en": "Involved a group project emulating a real-world agile software development process, with formal requirements analysis and system design process, utilizing UML diagrams. Developed a property booking desktop app following the MVC architecture, with Java as frontend and backend, linking to MySQL database. Ended up completing the entire project by myself, from the formulation of system requirements, the design and implementation of the database, through to the design and implementation of the entire system. I managed to achieve a good grade.", 
+            "cn": "参与一个小组项目，模拟真实世界的敏捷软件开发流程，利用 UML 图表进行正式的需求分析和系统设计流程。按照 MVC 架构开发了一个物业预订桌面应用程序，使用 Java 作为前端和后端，并链接到 MySQL 数据库。从系统需求的制定、数据库的设计和实施，到整个系统的设计和实施，最终由我自己完成了整个项目。我自己取得了很好的成绩。"
           },
           "links": ["https://github.com/jwu02/com2008-homebreak-plc"],
           "starred": true,
@@ -372,8 +372,8 @@ export const educations = [
           "code": "com2009",
           "name": {"en": "Robotics", "cn": "机器人学"}, 
           "description": {
-            "en": "Programmed a small robot dog with Python ROS, in both a simulation and the actual hardware, navigating closed environments whilst completing tasks such as maze completion, obstacle avoidance, and beaconing (finding and moving towards a target).", 
-            "cn": "在模拟和实际硬件中使用 Python ROS 对小型机器狗进行编程，使其能够在封闭的环境中航行，同时完成迷宫迷、避障和信标（寻找并向目标移动）等任务。"
+            "en": "Involved a group project programming a small robot dog with Python ROS, in both a simulation and the actual hardware, to complete various tasks such as maze completion, obstacle avoidance, and beaconing (finding and moving towards a target). Ended up completing the entire project by myself, but enjoyed the work involved and took the opportunity to learn a lot. I managed to achieve a good grade.", 
+            "cn": "涉及一个小组项目，使用 Python ROS 在模拟和实际硬件中对小型机器狗进行编程，以完成各种任务，如完成迷宫、避开障碍物和信标（寻找目标并向目标移动）。整个项目最终由我一个人完成，但我很享受其中的工作，并借此机会学到了很多东西。我取得了不错的成绩。"
           },
           "links": ["https://github.com/jwu02/com2009-robotics-team-1"],
           "starred": true,
@@ -383,8 +383,8 @@ export const educations = [
           "code": "com3420",
           "name": {"en": "Software Hut", "cn": "软件小屋"}, 
           "description": {
-            "en": "Involved a group project emulating an agile development process to solve a real-world problem. Developed an extenuating circumstances system for university staff members, which aims to let students appeal to them, deadline extensions for example. The product is a website developed using Ruby on Rails for the front and back end.", 
-            "cn": "涉及一个模仿敏捷开发流程的小组项目，以解决现实世界中的问题。为大学教职员工开发了一个情有可原系统，目的是让学生能够向教职员工申诉，例如延长截止日期。产品是一个使用 Ruby on Rails 进行前后端开发的网站。"
+            "en": "Involved in a group project following an agile development process. Developed an extenuating circumstances system for university staff members, with the Ruby on Rails framework. The system lets students make appeals regarding deadline extensions or poor performances on tests, for example. My responsibilities included designing the entire system with UML diagrams, designing and implementing the database, and implementing most of the major functionalities.", 
+            "cn": "涉及一个遵循敏捷开发流程的小组项目。利用 Ruby on Rails 框架为大学教职员工开发了一个情有可原系统。该系统允许学生就截止日期延期或考试成绩不佳等情况提出申诉。我的职责包括用 UML 图设计整个系统、设计和实现数据库、实现大部分主要功能。"
           },
           "links": [],
           "starred": true,
@@ -440,8 +440,8 @@ export const educations = [
           "code": "com3504",
           "name": {"en": "The Intelligent Web", "cn": "智能网"}, 
           "description": {
-            "en": "Anything but the intelligent part. The course involved a web development group project to develop a bird sighting application. Made use of the following technologies: Socket.io for real-time client interactions (used to implement a chat functionality), Node.js for the backend, and MongoDB for data storage. (Short demo in GitHub repository)", 
-            "cn": "没有包含一点智能元素。该课程涉及一个网络开发小组项目，开发一个鸟类观测应用程序。使用了以下技术： Socket.io 用于实时客户端交互（用于实现聊天功能），Node.js 用于后台，MongoDB 用于数据存储。(GitHub 代码库中有一个简短的演示）"
+            "en": "Involved in a group project to develop a bird sighting web application. Made use of the following technologies: Socket.io for real-time client interactions (used to implement a chat functionality), Node.js for the backend, and MongoDB for data storage. Also made use of browser storage and caching technologies to ensure the website also functions offline locally. My responsibilities included the implementation of most of the major functionalities. (Short demo in GitHub repository)", 
+            "cn": "涉及一个开发鸟类观测网络应用程序的小组项目。使用了以下技术： Socket.io 用于实时客户端交互（用于实现聊天功能），Node.js 用于后台，MongoDB 用于数据存储。还使用了浏览器存储和缓存技术，以确保网站在本地离线时也能正常运行。我的职责包括实现大部分主要功能。(在 GitHub 存储库中的简短演示）"
           },
           "links": ["https://github.com/jwu02/com3504_bird_watching"],
           "starred": true,
@@ -451,8 +451,8 @@ export const educations = [
           "code": "com3505",
           "name": {"en": "The Internet of Things", "cn": "物联网"}, 
           "description": {
-            "en": "An adult LEGO course. Assembled and developed a remote-controlled robot car using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment. (Short demo in GitHub repository)", 
-            "cn": "一个成人乐高课程。组装并开发了自己的遥控机器人车，并在 ESP32 开发板（类似于 Arduino）上使用 C/C++ 进行编程。在机器人探索环境时，我还利用超声波传感器进行物体探测和避让。(GitHub 代码库中有一个简短的演示）"
+            "en": "An adult LEGO course. Assembled and developed a remote-controlled robot car (via a WAP and served page) using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment. (Short demo in GitHub repository)", 
+            "cn": "一个成人乐高课程。使用 C/C++ 在 ESP32 开发板（类似于 Arduino）上组装和开发遥控机器人汽车（通过 WAP 和服务页面）。还安装了一个超声波传感器，用于在机器人探索环境时探测和避开物体。(GitHub 代码库中有一个简短的演示）"
           },
           "links": ["https://github.com/jwu02/com3505-robocar"],
           "starred": true,
@@ -462,8 +462,8 @@ export const educations = [
           "code": "com3110",
           "name": {"en": "Text Processing", "cn": "文本处理"}, 
           "description": {
-            "en": "Learned various text processing techniques. Involved two assignments: develop a document retrieval system, and a sentiment analysis system using a classifier implementing the Naive Bayes algorithm.", 
-            "cn": "学习了各种文本处理技术。涉及两项任务：开发一个文档检索系统，以及使用实现 Naive Bayes 算法的分类器开发一个情感分析系统。"
+            "en": "Learned various text processing techniques. Completed two individual assignments: developed a document retrieval system, and a sentiment analysis system using a classifier implementing the Naive Bayes algorithm.", 
+            "cn": "学习各种文本处理技术。完成了两项个人作业：开发了一个文档检索系统，以及一个使用 Naive Bayes 算法分类器的情感分析系统。"
           },
           "links": ["https://github.com/jwu02/com3110-information-retrieval-assignment", "https://github.com/jwu02/com3110-sentiment-anaylsis-assignment"],
           "starred": true,
@@ -484,7 +484,7 @@ export const educations = [
           "code": "com3001",
           "name": {"en": "Modelling and Simulation of Natural Systems", "cn": "自然系统建模与仿真"}, 
           "description": {
-            "en": "Learning about differential equations with application to the Lotka-Volterra (aka. prey-predator) model. Involved a group assignment, researching the Lorenz System and simulating it.", 
+            "en": "Learning about differential equations with application to the Lotka-Volterra (aka. prey-predator) model. Involved in a group assignment, researching the Lorenz System and simulating it.", 
             "cn": "学习微分方程，并将其应用于 Lotka-Volterra（又名猎物-捕食者）模型。涉及一项小组作业，研究洛伦兹系统并对其进行模拟。"
           },
           "links": [],
@@ -535,8 +535,8 @@ export const skills = [
     "cn": "熟练 Python、Java 和 JavaScript，也熟悉 TypeScript、PHP 和 Ruby"
   },
   {
-    "en": "Experience with data processing and building deep learning models with Python packages such as Pandas, Numpy, Keras and TensorFlow",
-    "cn": "具有使用 Pandas、Numpy、Keras 和 TensorFlow 等 Python 软件包进行数据处理和构建深度学习模型的经验"
+    "en": "Experience with data processing and building machine learning models with Python packages such as Pandas, Numpy, Keras and TensorFlow",
+    "cn": "具有使用 Pandas、Numpy、Keras 和 TensorFlow 等 Python 软件包进行数据处理和构建机器学习模型的经验"
   },
   {
     "en": "Also have experience with GUIs with PyQt, web scraping with BeautifulSoup and robot programming with ROS",
@@ -577,19 +577,19 @@ export const achievements = [
 
 export const selfEvaluations = [
   {
-    "en": "I am a responsible individual equipped with strong learning skills. Through my dissertation, I have developed strong research skills, as well as confidence in my ability to deliver.",
-    "cn": "我是一个责任感很强的人，具着强劲的学习能力。通过毕业论文，我掌握了扎实的研究技能，并对自己取得成果的能力充满信心。"
+    "en": "I am a proactive individual who is always motivated to learn new things, to self-improve and to expand my skill sets. An important trait to have in this ever-changing, fast-paced field of technology, where there is a constant need to keep up.",
+    "cn": "我积极主动，总是主动学习新知识，自我完善并扩展技能组合。在这个瞬息万变、快节奏的技术领域，这是我必须具备的重要特质。"
   },
   {
-    "en": "After overcoming the many challenges and struggles of university, I have developed strong perseverance and self-motivation. Staying optimistic is key in the face of hardship.",
-    "cn": "在克服了大学生活中的诸多挑战和困难之后，我培养了坚强的毅力和自我激励的能力。面对困难，保持乐观是关键。"
+    "en": "I have strong independent learning and research skills and am aware of the various management techniques and workflows, for effective collaboration with other software engineers.",
+    "cn": "我有强劲的的独立学习和研究能力，了解各种管理技术和工作流程，能与其他软件工程师有效合作。"
   },
   {
-    "en": "I have good team working skills and am aware of the various management techniques and workflows, for effective collaboration with other software developers.",
-    "cn": "我拥有良好的团队工作技能，也了解各种管理技术和工作流程，以便与其他软件开发人员一起有效地合作。"
+    "en": "After overcoming the many challenges and struggles of university, I have developed strong perseverance, self-motivation, as well as confidence in my ability to deliver results.",
+    "cn": "在克服了大学期间的许多挑战和困难之后，我培养了坚强的毅力、自我激励的精神以及对自己取得成果的能力的信心。"
   },
   {
-    "en": "I am proactive and am always motivated to learn new things, to self-improve and expand my skill sets. This is an important trait to have in the ever-changing, fast-paced field of technology, where there is a constant need to keep up.",
-    "cn": "我积极主动，总是主动学习新知识，自我完善并扩展技能组合。在这个瞬息万变、快节奏的技术领域，这是一个非常重要的特质。"
-  }
+    "en": "I possess a strong passion for the work I do because, to me, programming is an art that allows me to express my creativity, while also being able to provide value to other people's lives.",
+    "cn": "我对自己的工作充满热情，因为对我来说，编程是一门艺术，它能让我表达自己的创造力，同时也能为他人的生活带来价值。"
+  },
 ]

@@ -31,8 +31,8 @@ function SkillProgressBar({ displayLanguage, language }) {
     <div className="flex flex-col gap-[0.1rem]">
       {/* language label */}
       <div className="flex gap-2 items-center">
-        <span className="text-xs font-semibold">{language.name[displayLanguage]}</span>
-        <span className="text-[.65rem] text-[var(--theme-color-1)] rounded-full px-[.3rem] bg-[#8ecae6]">{language.proficiency[displayLanguage]}</span>
+        <span className="text-[1.1em] font-semibold">{language.name[displayLanguage]}</span>
+        <span className="text-[.95em] text-[var(--theme-color-1)] rounded-full px-[.5em] bg-[#8ecae6]">{language.proficiency[displayLanguage]}</span>
       </div>
 
       {/* progress bar */}
