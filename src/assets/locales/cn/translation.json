@@ -1,0 +1,32 @@
+{
+  "landing": {
+    "greeting": "你好，我是",
+    "occupation": "计算机科学应届生",
+    "btn1": "查看简历",
+    "btn2": "联系我吧"
+  },
+  "about": {
+    "title": "个人简介",
+    "picAlt": "我在黄果树瀑布的照片",
+    "achievement": {
+      "title": "人生巅峰",
+      "period": "2013 - 2017",
+      "details": "因成为一个网瘾少年而获奖，并上了当地报纸。"
+    },
+    "viewDetailsBtn": "详细信息"
+  },
+  "skills": {
+    "title": "技能专长",
+    "levels": {
+      "beginner": "初学者",
+      "experienced": "熟悉",
+      "proficient": "熟练"
+    }
+  },
+  "projects": {
+    "title": "项目经验"
+  },
+  "contacts": {
+    "title": "联系方式"
+  }
+}

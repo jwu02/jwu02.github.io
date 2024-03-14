@@ -1,0 +1,32 @@
+{
+  "landing": {
+    "greeting": "Hello, I am",
+    "occupation": "Computer Science Graduate",
+    "btn1": "View Resume",
+    "btn2": "Contact Me"
+  },
+  "about": {
+    "title": "About Me",
+    "picAlt": "Picture of me at Huangguoshu waterfall",
+    "achievement": {
+      "title": "Peakest Moment",
+      "period": "2013 - 2017",
+      "details": "Awarded for being chronically online and made it to the local newspaper."
+    },
+    "viewDetailsBtn": "View Details"
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "levels": {
+      "beginner": "Begineer",
+      "experienced": "Experienced",
+      "proficient": "Proficient"
+    }
+  },
+  "projects": {
+    "title": "Projects"
+  },
+  "contacts": {
+    "title": "Contacts"
+  }
+}

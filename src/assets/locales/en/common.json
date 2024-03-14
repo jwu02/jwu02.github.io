@@ -1,0 +1,19 @@
+{
+  "fullname": "Tony Wu",
+  "navlinks": {
+    "about": "About",
+    "skills": "Skills",
+    "projects": "Projects",
+    "contacts": "Contacts"
+  },
+  "switchLanguageBtn": "Switch Language",
+  "portraitAlt": "Picture of me",
+  "inProgress": "In Progress",
+  "completed": "Completed",
+  "contacts": {
+    "email": "Email",
+    "wechat": "WeChat",
+    "github": "GitHub",
+    "linkedin": "LinkedIn"
+  }
+}

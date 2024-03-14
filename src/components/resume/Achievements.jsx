@@ -1,26 +1,26 @@
-import { styles } from '../../styles'
-import { achievements } from '../../data'
-import { IoRibbon } from 'react-icons/io5'
+import { IoRibbon } from 'react-icons/io5';
+import SubSectionTitle from './SubSectionTitle';
+import { useTranslation } from 'react-i18next';
 
-export function Achievements({displayLanguage}) {
-  const pageText = {
-    title: {"en": "Achievements", "cn": "校外荣誉"}
-  }
+const Achievements = () => {
+  const { t } = useTranslation('resume', { keyPrefix: 'achievements' });
 
   return (
     <section>
-      <h2 className="resume-section-title justify-end">
-        <span>{pageText.title[displayLanguage]}</span>
-        <IoRibbon className={`${styles.resumeTitleIcon}`} />
-      </h2>
+      <SubSectionTitle
+        title={t("title")}
+        icon={IoRibbon}
+      />
 
       <div className="flex flex-col gap-1">
         {
-          achievements.map((achievement, index) => (
-            <div key={index}>{achievement.year} - {achievement[displayLanguage]}</div>
+          t("data", {returnObjects: true}).map((achievement, i) => (
+            <div key={i}>{achievement.year} - {achievement.details}</div>
           ))
         }
       </div>
     </section>
   )
 }
+
+export default Achievements

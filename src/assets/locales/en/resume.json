@@ -1,0 +1,139 @@
+{
+  "controls": {
+    "downloadResumeBtn": "Download CV"
+  },
+  "header": {
+    "interestLabel": "Interested In: ",
+    "interests": [
+      "Software Engineering",
+      "Machine Learning",
+      "Robotics Engineering",
+      "Embedded Systems",
+      "Fullstack Development"
+    ],
+    "selfEvaluation": "I am a proactive and driven individual committed to perpetual learning and skill enhancement. Through overcoming the many challenges in my academic journey, I've honed my ability to independently learn and research, as well as the confidence to deliver results. My passion for programming extends beyond mere technical proficiency; it is a means of creative expression and a pathway to enriching the lives of others through innovative solutions."
+  },
+  "languages": {
+    "title": "Languages",
+    "levels": {
+      "native": "Native",
+      "heritage": "Heritage",
+      "beginner": "Beginner"
+    },
+    "data": {
+      "english": "English",
+      "mandarin": "Mandarin",
+      "taishanese": "Taishanese",
+      "cantonese": "Cantonese",
+      "japanese": "Japanese",
+      "french": "French"
+    }
+  },
+  "skills": {
+    "title": "Technical Skills",
+    "data": [
+      "Proficient with Python, Java and JavaScript, also familiar with TypeScript, PHP and Ruby",
+      "Experience with data processing and building machine learning models with Python packages such as Pandas, Numpy, Keras and TensorFlow",
+      "Also have experience with building GUIs with PyQt, web scraping with BeautifulSoup and robot programming with Python ROS",
+      "Experience with frameworks such as Angular, React, Django, RubyOnRails, and Spring Boot"
+    ]
+  },
+  "achievements": {
+    "title": "Achievements",
+    "data": [
+      {
+        "year": "2017",
+        "details": "Received an award for my continuous effort and willingness to help with producing videos for various events in school. Includes help promoting the work of a charity, aimed towards providing a better educational environment for children in Nepal"
+      },
+      {
+        "year": "2018",
+        "details": "Awarded for participation in the NCS (National Citizenship Service) program which involved two weeks of volunteering at a care home"
+      },
+      {
+        "year": "2019",
+        "details": "Received my UK manual driving license"
+      },
+      {
+        "year": "2023",
+        "details": "Received my Chinese manual driving license"
+      }
+    ]
+  },
+  "education": {
+    "title": "Education"
+  },
+  "projects": {
+    "title": "Project Experience",
+    "note": "Work is public on my GitHub profile if interested. You can also find more academic and personal projects there.",
+    "data": [
+      {
+        "name": "Language Exchange Platform", 
+        "description": "A personal full-stack project where I self-taught and utilized the Angular framework for frontend, with the help of Bootstrap for presentation. The front end requests services from a REST API backend developed with Spring Boot. Also gained experiences with using Postman for testing backend service responses and using JSoup for web scraping language data.", 
+        "inProgress": true,
+        "isAcademic": false,
+        "links": ["https://github.com/jwu02/language-exchange-angular-frontend", "https://github.com/jwu02/language-exchange-springboot-backend"]
+      },
+      {
+        "name": "Portfolio Website", 
+        "description": "A responsive personal website built with React, made use of Tailwind CSS for fast inline styling and Ant Design components for better presentation of data. Also made use of the i18next package for managing  site translations (done Chinese so far).", 
+        "inProgress": false,
+        "isAcademic": false,
+        "links": ["https://github.com/jwu02/jwu02.github.io"]
+      },
+      {
+        "name": "Named Entity Recognition (NER) System",
+        "description": "Developed from scratch as part of my dissertation project. The Multinomial Logistic Regression (MLR) algorithm was chosen for the implementation, with the help of NumPy for matrix calculations and Pandas for data sanitization and manipulation. The trained and finetuned model achieved results very close to what was capable of existing systems.", 
+        "inProgress": false,
+        "isAcademic": true,
+        "links": []
+      },
+      {
+        "name": "ESP32 Robot Car", 
+        "description": "Assembled and developed a remote-controlled robot car (via a WAP and served page) using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment. (Short demo in GitHub repository)", 
+        "inProgress": false,
+        "isAcademic": true,
+        "links": ["https://github.com/jwu02/com3505-robocar"]
+      },
+      {
+        "name": "Robotics", 
+        "description": "Involved a group project programming a small robot dog with Python ROS, in both a simulation and the actual hardware, to complete various tasks such as maze completion, obstacle avoidance, and beaconing (finding and moving towards a target). Ended up completing the entire project by myself, but enjoyed the work involved and took the opportunity to learn a lot.",
+        "inProgress": false,
+        "isAcademic": true,
+        "links": ["https://github.com/jwu02/com2009-robotics-team-1"]
+      },
+      {
+        "name": "Property Booking Desktop App",
+        "description": "Involved a group project emulating a real-world agile software development process, with formal requirements analysis and system design process, utilizing UML diagrams. Developed a property booking desktop app following the MVC architecture, with Java as frontend and backend, linking to MySQL database. My responsibilities included all of the above-mentioned things and implementation of the entire system.", 
+        "inProgress": false,
+        "isAcademic": true,
+        "links": ["https://github.com/jwu02/com2008-homebreak-plc"]
+      },
+      {
+        "name": "Chess Piece Image Classification System", 
+        "description": "Developed as part of a machine learning course which involved learning various classification techniques, including both supervised and unsupervised. I implemented the system with both the Naive Bayes and k-nearest neighbor algorithms.", 
+        "inProgress": false,
+        "isAcademic": true,
+        "links": ["https://github.com/jwu02/com2004-chess-board-classification"]
+      }
+    ]
+  },
+  "selfEvaluations": {
+    "title": "Self Evaluation",
+    "data": [
+      "I am a proactive individual who is always motivated to learn new things, to self-improve and to expand my skill sets. An important trait to have in this ever-changing, fast-paced field of technology, where there is a constant need to keep up.",
+      "I have strong independent learning and research skills and am aware of the various management techniques and workflows, for effective collaboration with other software engineers.",
+      "After overcoming the many challenges and struggles of university, I have developed strong perseverance, self-motivation, as well as confidence in my ability to deliver results.",
+      "I possess a strong passion for the work I do because, to me, programming is an art that allows me to express my creativity, while also being able to provide value to other people's lives."
+    ]
+  },
+  "hobbies": {
+    "title": "Hobbies and Interests",
+    "data": [
+      "Self Improvement", 
+      "Language Learning", 
+      "Sports", 
+      "Gaming", 
+      "Content Creation"
+    ]
+  }
+}

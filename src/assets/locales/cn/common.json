@@ -1,0 +1,19 @@
+{
+  "fullname": "吴家聪",
+  "navlinks": {
+    "about": "个人情况",
+    "skills": "技能专长",
+    "projects": "项目经验",
+    "contacts": "联系方式"
+  },
+  "switchLanguageBtn": "切换语言",
+  "portraitAlt": "个人头像",
+  "inProgress": "进行中",
+  "completed": "完成",
+  "contacts": {
+    "email": "电子邮件",
+    "wechat": "微信",
+    "github": "GitHub",
+    "linkedin": "领英"
+  }
+}

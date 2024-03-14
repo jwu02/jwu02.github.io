@@ -1,26 +1,26 @@
-import { styles } from '../../styles'
-import { skills } from '../../data'
 import { IoConstruct } from 'react-icons/io5'
+import SubSectionTitle from './SubSectionTitle'
+import { useTranslation } from 'react-i18next'
 
-export function Skills({displayLanguage}) {
-  const pageText = {
-    title: {"en": "Technical Skills", "cn": "技能专长"}
-  }
+const Skills = () => {
+  const { t } = useTranslation('resume', { keyPrefix: 'skills' });
 
   return (
     <section>
-      <h2 className="resume-section-title justify-end">
-        <span>{pageText.title[displayLanguage]}</span>
-        <IoConstruct className={`${styles.resumeTitleIcon}`} />
-      </h2>
+      <SubSectionTitle
+        title={t("title")}
+        icon={IoConstruct}
+      />
 
       <ul className="list-disc ml-4">
         {
-          skills.map((skill, index) => (
-            <li key={index}>{skill[displayLanguage]}</li>
+          t("data", {returnObjects: true}).map((skill, i) => (
+            <li key={i}>{skill}</li>
           ))
         }
       </ul>
     </section>
   )
 }
+
+export default Skills

@@ -1,29 +1,38 @@
 import { Link } from "react-router-dom"
 import { IoLanguage } from "react-icons/io5"
-import { navLinks } from "../data"
 import { Tooltip } from "antd"
 
-export function NavLinks({ displayLanguage, switchLanguageBtnEvent, toggleNavMenu }) {
-  const pageText = {
-    switchLanguageBtn: {"en": "切换语言", "cn": "Switch Language"}
-  }
+import { useTranslation } from "react-i18next";
+
+const navLinkRoutes = [
+  "about",
+  "skills",
+  "projects",
+  "contacts"
+]
+
+const NavLinks = ({ toggleNavMenu, switchLanguageBtnEvent }) => {
+  const { t } = useTranslation('common');
 
   return (
     <>
-      {navLinks.map((nav) => (
-        <li key={nav.id}>
-          <Link to={`/#${nav.id}`}
+      {navLinkRoutes.map((link, i) => (
+        <li key={i}>
+          <Link to={`/#${link}`}
               className="md:hover:underline md:hover:underline-offset-lg"
               onClick={toggleNavMenu}>
-            {nav.title[displayLanguage]}
+            {t(`navlinks.${link}`)}
           </Link>
         </li>
       ))}
+
       <li className="flex-center ml-auto">
-        <Tooltip placement="bottomRight" title={pageText.switchLanguageBtn[displayLanguage]}>
+        <Tooltip placement="bottomRight" title={t("switchLanguageBtn")}>
           <IoLanguage className="icon-btn" onClick={switchLanguageBtnEvent}/>
         </Tooltip>
       </li>
     </>
   )
 }
+
+export default NavLinks

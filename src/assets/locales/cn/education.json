@@ -1,0 +1,200 @@
+{
+  "controls": {
+    "showAllModulesCb": "显示所有课程"
+  },
+  "title": "教育背景",
+  "tabTitle": "第{{year}}年",
+  "data": [
+    {
+      "id": "uos",
+      "institution": "谢菲尔德大学",
+      "degreeTitle": "计算机科学（本科）",
+      "degreeClassification": "二等一（相当于中国的78-84）",
+      "startDate": "2020.09",
+      "endDate": "2023.07",
+      "modulesStudied": [
+        [
+          {
+            "code": "fce1001",
+            "name": "全球工程挑战周", 
+            "description": "与其他工程学科的学生合作，解决欠发达地区的实际问题。该提案在很大程度上让当地社区参与收集塑料，然后将塑料送入塑料挤出机。回收的塑料可用于 3D 打印各种物品，回馈当地人。",
+            "links": [],
+            "starred": true
+          },
+          {
+            "code": "com1001",
+            "name": "软件工程概论", 
+            "description": "参与模仿敏捷开发流程的小组项目。使用 Sinatra gem 开发了一个以 Ruby 为后台的学生与导师匹配网站。该应用程序旨在让学生了解他们感兴趣的行业以及导师所在的行业。我的职责包括设计和实施后台/数据库，以及系统中的大部分主要功能。",
+            "links": [],
+            "starred": true
+          },
+          {
+            "code": "com1005",
+            "name": "机器与智能", 
+            "description": "深入了解机器人技术的历史和理念。然后继续学习各种搜索算法，如广度/深度优先搜索和 A* 算法。涉及一个项目，通过对地图的抽象概述来实现深度和 A* 算法的寻路。",
+            "links": ["https://github.com/jwu02/com1005-ramblers-problem"],
+            "starred": true
+          },
+          {
+            "code": "com1003",
+            "name": "Java 编程", 
+            "description": "熟练掌握面向对象编程范例和 Java 语言。",
+            "links": [],
+            "starred": true
+          },
+          {
+            "code": "com1002",
+            "name": "计算机科学基础", 
+            "description": "逻辑和线性代数数学课程。",
+            "links": [],
+            "starred": false
+          },
+          {
+            "code": "com1006",
+            "name": "设备和网络", 
+            "description": "涉及学习数字逻辑、计算机运算、互联网协议和互联网数据传输。",
+            "links": [],
+            "starred": false
+          },
+          {
+            "code": "com1008",
+            "name": "网络和互联网技术", 
+            "description": "(重新）学了 HTML、CSS 和 JavaScript 的基础知识，并作为一项作业建立了一个个人作品集网站（不是这个）。",
+            "links": [],
+            "starred": false
+          },
+          {
+            "code": "com1009",
+            "name": "算法与数据结构导论", 
+            "description": "学习计算机科学的基本数据结构，以及算法设计和复杂性分析。",
+            "links": [],
+            "starred": false
+          }
+        ],
+        [
+          {
+            "code": "fce2001",
+            "name": "工程 - 你被录用了", 
+            "description": "涉及一个以物联网为主题的跨学科小组项目，以解决现实世界中的问题。提出了一个开发物理传感器网络以检测洪水的建议计划。此外，还涉及开发一个应用程序，以警告和引导司机。",
+            "links": [],
+            "starred": true
+          },
+          {
+            "code": "com2004",
+            "name": "数据驱动计算", 
+            "description": "机器学习课程，涉及学习各种分类技术，包括监督式（朴素贝叶斯、k近邻、深度学习）和无监督式（聚类）分类技术。开发了一个国际象棋棋子图像分类系统，采用了朴素贝叶斯算法和 k近邻算法。",
+            "links": ["https://github.com/jwu02/com2004-chess-board-classification"],
+            "starred": true
+          },
+          {
+            "code": "com2008",
+            "name": "系统设计与安全", 
+            "description": "参与一个小组项目，模拟真实世界的敏捷软件开发流程，利用 UML 图表进行正式的需求分析和系统设计流程。按照 MVC 架构开发了一个物业预订桌面应用程序，使用 Java 作为前端和后端，并链接到 MySQL 数据库。我的职责包括上述所有工作以及整个系统的实施。",
+            "links": ["https://github.com/jwu02/com2008-homebreak-plc"],
+            "starred": true
+          },
+          {
+            "code": "com2009",
+            "name": "机器人学", 
+            "description": "涉及一个小组项目，使用 Python ROS 在模拟和实际硬件中对小型机器狗进行编程，以完成各种任务，如完成迷宫、避开障碍物和信标（寻找目标并向目标移动）。整个项目最终由我一个人完成，但我很享受其中的工作，并借此机会学到了很多东西。",
+            "links": ["https://github.com/jwu02/com2009-robotics-team-1"],
+            "starred": true
+          },
+          {
+            "code": "com3420",
+            "name": "软件小屋", 
+            "description": "涉及一个遵循敏捷开发流程的小组项目。利用 Ruby on Rails 框架为大学教职员工开发了一个情有可原系统。该系统允许学生就截止日期延期或考试成绩不佳等情况提出申诉。我的职责包括用 UML 图设计整个系统、设计和实现数据库、实现大部分主要功能。",
+            "links": [],
+            "starred": true
+          },
+          {
+            "code": "com2107",
+            "name": "计算机科学中的逻辑", 
+            "description": "证明一下。",
+            "links": [],
+            "starred": false
+          },
+          {
+            "code": "com2108",
+            "name": "函数式编程", 
+            "description": "学了 Haskell 的基础知识。课程包括一项使用该语言编程并解决接龙游戏的作业。",
+            "links": [],
+            "starred": false
+          },
+          {
+            "code": "com2109",
+            "name": "自动机、计算和复杂性", 
+            "description": "先进算法课程。",
+            "links": [],
+            "starred": false
+          }
+        ],
+        [
+          {
+            "code": "com3610",
+            "name": "论文项目", 
+            "description": "论文题目是《探索深度学习在命名实体识别（NER）中的应用》。从零开始开发了一个 NER 系统，采用了多项式逻辑回归（MLR）算法。还尝试用 TensorFlow/Keras 开发了一个 Transformer 神经网络（仅前向推理）。",
+            "links": [],
+            "starred": true
+          },
+          {
+            "code": "com3504",
+            "name": "智能网", 
+            "description": "涉及一个开发鸟类观测网络应用程序的小组项目。使用了以下技术： Socket.io 用于实时客户端交互（用于实现聊天功能），Node.js 用于后台，MongoDB 用于数据存储。还使用了浏览器存储和缓存技术，以确保网站在本地离线时也能正常运行。我的职责包括实现大部分主要功能。(在 GitHub 存储库中的简短演示）",
+            "links": ["https://github.com/jwu02/com3504_bird_watching"],
+            "starred": true
+          },
+          {
+            "code": "com3505",
+            "name": "物联网", 
+            "description": "一个成人乐高课程。使用 C/C++ 在 ESP32 开发板（类似于 Arduino）上组装和开发遥控机器人汽车（通过 WAP 和服务页面）。还安装了一个超声波传感器，用于在机器人探索环境时探测和避开物体。(GitHub 代码库中有一个简短的演示）",
+            "links": ["https://github.com/jwu02/com3505-robocar"],
+            "starred": true
+          },
+          {
+            "code": "com3110",
+            "name": "文本处理", 
+            "description": "学习各种文本处理技术。完成了两项个人作业：开发了一个文档检索系统，以及一个使用 Naive Bayes 算法分类器的情感分析系统。",
+            "links": ["https://github.com/jwu02/com3110-information-retrieval-assignment", "https://github.com/jwu02/com3110-sentiment-anaylsis-assignment"],
+            "starred": true
+          },
+          {
+            "code": "com3524",
+            "name": "仿生计算", 
+            "description": "学习了各种现代人工智能技术及其对生物系统的启发。例如，进化、多细胞组织、神经系统、免疫系统和蜂群，以及进化算法或基于蜂群的优化算法等抽象概念的启发。",
+            "links": [],
+            "starred": true
+          },
+          {
+            "code": "com3001",
+            "name": "自然系统建模与仿真", 
+            "description": "学习微分方程，并将其应用于 Lotka-Volterra（又名猎物-捕食者）模型。涉及一项小组作业，研究洛伦兹系统并对其进行模拟。",
+            "links": [],
+            "starred": true
+          },
+          {
+            "code": "com3240",
+            "name": "自适应智能", 
+            "description": "从零开始编码深度神经网络，并对其进行修改，以便在简化的国际象棋游戏中进行强化学习。",
+            "links": ["https://github.com/jwu02/com3240-reinforcement-learning-assignment"],
+            "starred": true
+          },
+          {
+            "code": "com3502",
+            "name": "语音处理", 
+            "description": "学习了语言学基础知识以及人类语言和听力的生物学知识。还获得了一些使用滤波器进行语音处理的经验。",
+            "links": [],
+            "starred": false
+          },
+          {
+            "code": "mgt388",
+            "name": "工程师的金融和法律", 
+            "description": "^",
+            "links": [],
+            "starred": false
+          }
+        ]
+      ]
+    }
+  ]
+}

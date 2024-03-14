@@ -1,26 +1,27 @@
-import { styles } from "../../styles"
 import { IoPerson } from "react-icons/io5"
-import { selfEvaluations } from "../../data"
+import { useTranslation } from "react-i18next";
+import SubSectionTitle from "./SubSectionTitle";
 
-export function SelfEvaluation({displayLanguage}) {
-  const pageText = {
-    title: {"en": "Self Evaluation", "cn": "自我评价"}
-  }
+const SelfEvaluation = () => {
+  const { t } = useTranslation('resume', { keyPrefix: 'selfEvaluations' });
 
   return (
     <section>
-      <h2 className="resume-section-title">
-        <IoPerson className={`${styles.resumeTitleIcon}`} />
-        <span className={styles.sectionTitleDivider}>{pageText.title[displayLanguage]}</span>
-      </h2>
+      <SubSectionTitle 
+        title={t("title")} 
+        icon={IoPerson} 
+      />
 
       <ul className="list-disc ml-4">
         {
-          selfEvaluations.map((evaluation, index) => (
-            <li key={index}>{evaluation[displayLanguage]}</li>
-          ))
+          t("data", {returnObjects: true})
+            .map((evaluation, i) => (
+              <li key={i}>{evaluation}</li>
+            ))
         }
       </ul>
     </section>
   )
-  }
+}
+
+export default SelfEvaluation

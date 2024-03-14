@@ -1,45 +1,41 @@
-import { Timeline, Tooltip } from "antd"
-import { projects } from "../data"
-import { AiFillCheckCircle, AiFillClockCircle } from "react-icons/ai"
-import { FaLink } from "react-icons/fa"
+import { Timeline, Tooltip } from "antd";
+import { AiFillCheckCircle, AiFillClockCircle } from "react-icons/ai";
+import { FaLink } from "react-icons/fa";
+import { useTranslation } from "react-i18next";
+import i18n from "../i18n";
 
-const pageText = {
-  title: {"en": "Projects", "cn": "项目经验"},
-  inProgressTag: {"en": "In Progress", "cn": "进行中"},
-  completedText: {"en": "Completed", "cn": "完成"}
-}
+const Projects = () => {
+  const { t } = useTranslation('translation', { keyPrefix: 'projects' });
 
-export function Projects({displayLanguage}) {
-  const iconCommonStyles = "cursor-pointer w-5 h-5"
+  const iconCommonStyles = "cursor-pointer w-5 h-5";
 
   const inProgressDot = (
-    <Tooltip placement="top" title={pageText.inProgressTag[displayLanguage]}>
+    <Tooltip placement="top" title={i18n.t("inProgress", {ns: "common"})}>
       <AiFillClockCircle className={iconCommonStyles} />
     </Tooltip>
-  )
+  );
 
   const completedDot = (
-    <Tooltip placement="top" title={pageText.completedText[displayLanguage]}>
+    <Tooltip placement="top" title={i18n.t("completed", {ns: "common"})}>
       <AiFillCheckCircle className={iconCommonStyles} />
     </Tooltip>
-  )
+  );
 
-  const projectItems = projects.map((project) => {
-    return {
-      color: project.inProgress ? "gold" : "green",
-      dot: project.inProgress ? inProgressDot : completedDot,
-      children: <ProjectItemChild 
-        displayLanguage={displayLanguage} 
-        project={project} />
-    }
-  })
+  const projectItems = i18n.t("projects.data", {ns: "resume", returnObjects: true})
+    .map((project) => {
+      return {
+        color: project.inProgress ? "gold" : "green",
+        dot: project.inProgress ? inProgressDot : completedDot,
+        children: <ProjectItem project={project} />
+      }
+    });
 
   return (
     <section id="projects" className="bp-responsive-container">
-      <h1>{pageText.title[displayLanguage]}</h1>
+      <h1>{t("title")}</h1>
 
       <Timeline
-        reverse={true}
+        // reverse={true}
         items={projectItems}
         className="sm:max-w-lg mx-auto my-8"
       />
@@ -47,11 +43,13 @@ export function Projects({displayLanguage}) {
   )
 }
 
-const ProjectItemChild = ({displayLanguage, project}) => {
+export default Projects
+
+const ProjectItem = ({ project }) => {
   return (
     <div>
       <div className="text-base font-semibold flex items-center gap-2 flex-nowrap">
-        <span>{project.name[displayLanguage]}</span>
+        <span>{project.name}</span>
         <span className="flex gap-2">
           {
             project.links.map((link, i) => (
@@ -62,7 +60,8 @@ const ProjectItemChild = ({displayLanguage, project}) => {
           }
         </span>
       </div>
-      <div>{project.description[displayLanguage]}</div>
+
+      <div>{project.description}</div>
     </div>
   )
 }

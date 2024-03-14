@@ -1,24 +1,20 @@
-import { IoLanguage } from 'react-icons/io5'
-import { styles } from '../../styles'
-import { languages } from '../../data'
+import { IoLanguage } from 'react-icons/io5';
+import SubSectionTitle from './SubSectionTitle';
+import { useTranslation } from 'react-i18next';
+import { languages } from '../../data';
 
-export function Languages({displayLanguage}) {
-  const pageText = {
-    title: {"en": "Languages", "cn": "语言能力"}
-  }
+const Languages = () => {
+  const { t } = useTranslation('resume', { keyPrefix: 'languages' });
 
   return (
     <section>
-      <h2 className="resume-section-title justify-end">
-        <span>{pageText.title[displayLanguage]}</span>
-        <IoLanguage className={`${styles.resumeTitleIcon}`} />
-      </h2>
+      <SubSectionTitle title={t("title")} icon={IoLanguage} />
 
       {/* languages proficiency container */}
       <div className="flex flex-col gap-2">
         {
-          languages.map((language, index) => (
-            <SkillProgressBar displayLanguage={displayLanguage} language={language} key={index} />
+          languages.map((language, i) => (
+            <SkillProgressBar key={i} language={language} />
           ))
         }
       </div>
@@ -26,13 +22,19 @@ export function Languages({displayLanguage}) {
   )
 }
 
-function SkillProgressBar({ displayLanguage, language }) {
+export default Languages
+
+function SkillProgressBar({ language }) {
+  const { t } = useTranslation('resume', { keyPrefix: 'languages' });
+  
   return (
-    <div className="flex flex-col gap-[0.1rem]">
+    <div className="flex flex-col gap-[0.2rem]">
       {/* language label */}
       <div className="flex gap-2 items-center">
-        <span className="text-[1.1em] font-semibold">{language.name[displayLanguage]}</span>
-        <span className="text-[.95em] text-[var(--theme-color-1)] rounded-full px-[.5em] bg-[#8ecae6]">{language.proficiency[displayLanguage]}</span>
+        <span className="font-semibold">{t(`data.${language.name}`)}</span>
+        <span className="text-[.90em] text-[var(--theme-color-1)] rounded-full px-[.5em] bg-[#8ecae6]">
+          {t(`levels.${language.proficiency.text}`)}
+        </span>
       </div>
 
       {/* progress bar */}

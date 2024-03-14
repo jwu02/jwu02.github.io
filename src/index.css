@@ -6,6 +6,7 @@
   :root {
     --theme-color-1: #023047;
     --wechat-green: #09B83E;
+    --linkedin-blue: #0072b1;
     --link-hover-color: #6b7280;
   }
 
@@ -33,11 +34,25 @@
   .icon,
   .icon-btn, 
   a {
-    @apply text-nowrap hover:text-[var(--link-hover-color)] cursor-pointer;
+    @apply hover:opacity-75 cursor-pointer;
   }
 
-  .resume-section-title {
-    @apply flex gap-2 text-sm font-semibold items-center mb-1;
+  /* right-bottom-container-specfic section title style */
+  /* a divider between title and section content */
+  #right-bottom-container section h2 .title {
+    @apply flex-grow border-b-2 border-black pb-1;
+  }
+
+  /* left-container-specfic section title styles */
+  /* switch up original order of title and icon */
+  #left-container section h2 .title {
+    order: 1;
+  }
+  #left-container section h2 .icon {
+    order: 2;
+  }
+  #left-container section h2 {
+    justify-content: flex-end;
   }
 }
 
@@ -75,4 +90,8 @@
   .border-glow-outside {
     box-shadow: 0 0 .3rem #94f3ff;
   }
+}
+
+.ant-card-body {
+  height: 80%;
 }
