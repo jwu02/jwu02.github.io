@@ -25,7 +25,7 @@ const Education = () => {
                 
                 {/* education details */}
                 <div>
-                  <div className="flex gap-5">
+                  <div className="flex gap-4">
                     <div className="font-semibold text-nowrap">{education.institution}</div>
                     <div className="italic">{education.degreeTitle}</div>
                   </div>

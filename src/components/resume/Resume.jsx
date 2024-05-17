@@ -54,7 +54,7 @@ const Resume = () => {
           {/* bottom container */}
           <div id="right-bottom-container" className={leftBottomContainer}>
             <Education />
-            {/* <WorkExperience /> */}
+            <WorkExperience />
             <Projects />
             {/* <SelfEvaluation /> */}
           </div>

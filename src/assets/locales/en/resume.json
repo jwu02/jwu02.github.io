@@ -59,7 +59,27 @@
     "title": "Education"
   },
   "workExperience": {
-    "title": "Work Experience"
+    "title": "Work Experience",
+    "data": [
+      {
+        "role": "Waiter",
+        "company": "Let's Sushi",
+        "location": "Sheffield",
+        "employmentType": "Part-Time",
+        "startDate": "2021.11",
+        "endDate": "2022.04",
+        "responsibilities": []
+      },
+      {
+        "role": "Waiter & Order Processor",
+        "company": "Imperial Restaurant",
+        "location": "Scunthorpe",
+        "employmentType": "Part-Time",
+        "startDate": "2018.07",
+        "endDate": "2020.01",
+        "responsibilities": []
+      }
+    ]
   },
   "projects": {
     "title": "Project Experience",
@@ -101,23 +121,6 @@
           "Also developed a foundational knowledge of transformer neural networks and attempted at implementing it from scratch."
         ], 
         "links": []
-      },
-      {
-        "name": "ESP32 Robot Car", 
-        "description": [
-          "Assembled and developed a remote-controlled robot car using C/C++ on an ESP32 development board, akin to an Arduino.",
-          "Integrated a web server accessed via a Wireless Access Point (WAP) to facilitate remote control through served web pages.",
-          "Incorporated an ultrasonic sensor for real-time object detection and avoidance during the robot's exploration of its environment. Short demo available in GitHub repository."
-        ], 
-        "links": ["https://github.com/jwu02/com3505-robocar"]
-      },
-      {
-        "name": "Chess Piece Image Classification System", 
-        "description": [
-          "Developed as part of a machine learning course which involved learning various classification techniques, including both supervised and unsupervised.",
-          "Implemented the system with both the Naive Bayes and k-nearest neighbor algorithms."
-        ], 
-        "links": ["https://github.com/jwu02/com2004-chess-board-classification"]
       }
     ]
   },
