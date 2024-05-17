@@ -63,9 +63,8 @@
     "data": [
       {
         "role": "Waiter",
-        "company": "Let's Sushi",
+        "company": "NoodleSta",
         "location": "Sheffield",
-        "employmentType": "Part-Time",
         "startDate": "2021.11",
         "endDate": "2022.04",
         "responsibilities": []
@@ -74,7 +73,6 @@
         "role": "Waiter & Order Processor",
         "company": "Imperial Restaurant",
         "location": "Scunthorpe",
-        "employmentType": "Part-Time",
         "startDate": "2018.07",
         "endDate": "2020.01",
         "responsibilities": []
