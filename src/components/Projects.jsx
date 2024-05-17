@@ -24,8 +24,7 @@ const Projects = () => {
   const projectItems = i18n.t("projects.data", {ns: "resume", returnObjects: true})
     .map((project) => {
       return {
-        color: project.inProgress ? "gold" : "green",
-        dot: project.inProgress ? inProgressDot : completedDot,
+        color: "black",
         children: <ProjectItem project={project} />
       }
     });
@@ -61,7 +60,9 @@ const ProjectItem = ({ project }) => {
         </span>
       </div>
 
-      <div>{project.description}</div>
+      <div>
+        {project.description.join(" ")}
+      </div>
     </div>
   )
 }

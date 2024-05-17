@@ -10,6 +10,7 @@ import SelfEvaluation from "./SelfEvaluation";
 import Hobbies from "./Hobbies";
 
 import { useTranslation } from "react-i18next";
+import WorkExperience from "./WorkExperience";
 
 const Resume = () => {
   const { t, i18n: {language} } = useTranslation('resume');
@@ -31,7 +32,7 @@ const Resume = () => {
 
       {/* resume container */}
       <div className={`
-          flex w-a4 h-a4 shadow-2xl print:shadow-none text-xs 
+          flex w-a4 h-a4 shadow-2xl print:shadow-none text-xxs 
           md:self-center`}>
         {/* left container */}
         <div 
@@ -53,6 +54,7 @@ const Resume = () => {
           {/* bottom container */}
           <div id="right-bottom-container" className={leftBottomContainer}>
             <Education />
+            {/* <WorkExperience /> */}
             <Projects />
             {/* <SelfEvaluation /> */}
           </div>

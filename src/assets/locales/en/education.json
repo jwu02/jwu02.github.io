@@ -195,6 +195,24 @@
           }
         ]
       ]
+    },
+    {
+      "id": "jlc",
+      "institution": "John Leggott College",
+      "degreeTitle": "A-Levels Maths, Computer Science, Physics",
+      "degreeClassification": "Respective Grades: A*AA",
+      "startDate": "2018.09",
+      "endDate": "2020.06",
+      "modulesStudied": []
+    },
+    {
+      "id": "tsla",
+      "institution": "The St Lawrence Academy",
+      "degreeTitle": "GCSE Maths, Triple Science, Art, Computer Science, French, Religious Studies, English Language and Literature",
+      "degreeClassification": "Respective Grades: 9, 8, 7, 7, 8, 7, 7, 5, 4, 4",
+      "startDate": "2013.09",
+      "endDate": "2018.06",
+      "modulesStudied": []
     }
   ]
 }

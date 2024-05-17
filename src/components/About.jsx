@@ -62,6 +62,7 @@ const About = () => {
                 <>
                   {
                     i18n.t("data", { ns: "education", returnObjects: true })
+                      .filter(education => education.id !== 'tsla' && education.id !== 'jlc')
                       .map((education, i) => (
                         <div key={i}>
                           <div>{education.startDate} - {education.endDate}</div>

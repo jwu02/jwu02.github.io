@@ -42,12 +42,16 @@ const Educations = () => {
       {/* all educations container */}
       <div className="flex flex-col gap-5">
         {
-          t("data", {returnObjects: true}).map((education, i) => (
-            <EducationItemDetails key={i} 
-              tabPosition={tabPosition} 
-              showAllModules={showAllModules} 
-              education={education} />
-          ))
+          t("data", {returnObjects: true})
+            .filter(education => education.id !== 'tsla' && education.id !== 'jlc')
+            .map((education, i) => (
+              <EducationItemDetails 
+                key={i} 
+                tabPosition={tabPosition} 
+                showAllModules={showAllModules} 
+                education={education} 
+              />
+            ))
         }
       </div>
     </section>

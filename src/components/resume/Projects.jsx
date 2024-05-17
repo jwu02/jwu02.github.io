@@ -22,16 +22,23 @@ const Projects = () => {
         icon={IoLayers} 
       />
 
-      <div className="flex flex-col gap-1 text-justify">
+      <div className="flex flex-col gap-1">
         <p>{asterisk} {t("note")}</p>
         {
           t("data", {returnObjects: true})
             .map((project, i) => (
               <div key={i}>
-                <span className="font-semibold">{project.name}</span>
-                {project.links.length != 0 ? <>{asterisk}</> : <></>}&nbsp;
-                {project.inProgress ? <>{inProgressTag}&nbsp;</> : <></>}
-                - {project.description}
+                <div>
+                  <span className="font-semibold">{project.name}</span>
+                  {project.links.length != 0 && <>{asterisk}</>}
+                </div>
+                <ul className="list-disc ml-3">
+                  {
+                    project.description.map((desc, i) => (
+                      <li key={i}>{desc}</li>
+                    ))
+                  }
+                </ul>
               </div>
             ))
         }

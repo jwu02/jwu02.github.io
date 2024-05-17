@@ -29,11 +29,11 @@ export const languages = [
   },
   {
     "name": "japanese", 
-    "proficiency": {"text": "beginner", "quantification": 10}
+    "proficiency": {"text": "intermediate", "quantification": 20}
   },
   {
     "name": "french", 
-    "proficiency": {"text": "beginner", "quantification": 10}
+    "proficiency": {"text": "intermediate", "quantification": 20}
   },
 ]
 

@@ -12,13 +12,14 @@ const Achievements = () => {
         icon={IoRibbon}
       />
 
-      <div className="flex flex-col gap-1">
+      {/* <div className="flex flex-col gap-1"> */}
+      <ul className="list-disc ml-3">
         {
           t("data", {returnObjects: true}).map((achievement, i) => (
-            <div key={i}>{achievement.year} - {achievement.details}</div>
+            <li key={i}>{achievement.details}</li>
           ))
         }
-      </div>
+      </ul>
     </section>
   )
 }

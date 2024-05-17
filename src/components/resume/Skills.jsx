@@ -12,7 +12,7 @@ const Skills = () => {
         icon={IoConstruct}
       />
 
-      <ul className="list-disc ml-4">
+      <ul className="list-disc ml-3">
         {
           t("data", {returnObjects: true}).map((skill, i) => (
             <li key={i}>{skill}</li>

@@ -15,6 +15,9 @@ export default {
       fontFamily: {
         'poppins': ['Poppins'],
       },
+      fontSize: {
+        'xxs': ['0.68rem', '0.93rem']
+      },
       width: {
         'a4': '21cm'
       },

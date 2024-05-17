@@ -7,17 +7,16 @@
     "interests": [
       "Software Engineering",
       "Machine Learning",
-      "Robotics Engineering",
-      "Embedded Systems",
-      "Fullstack Development"
+      "Robotics Engineering"
     ],
-    "selfEvaluation": "I am a proactive and driven individual committed to perpetual learning and skill enhancement. Through overcoming the many challenges in my academic journey, I've honed my ability to independently learn and research, as well as the confidence to deliver results. My passion for programming extends beyond mere technical proficiency; it is a means of creative expression and a pathway to enriching the lives of others through innovative solutions."
+    "selfEvaluation": "I am a proactive and driven individual, committed to continuous learning and skill development. My academic journey has equipped me with strong adaptability, research capabilities, and a passion for acquiring new knowledge. With a background in programming, I possess keen attention to detail and strive for excellence. I am confident that my versatility and skills will allow me to contribute effectively to any team or project, and go further beyond."
   },
   "languages": {
     "title": "Languages",
     "levels": {
       "native": "Native",
       "heritage": "Heritage",
+      "intermediate": "Intermediate",
       "beginner": "Beginner"
     },
     "data": {
@@ -30,16 +29,17 @@
     }
   },
   "skills": {
-    "title": "Technical Skills",
+    "title": "Skills",
     "data": [
       "Proficient with Python, Java and JavaScript, also familiar with TypeScript, PHP and Ruby",
       "Experience with data processing and building machine learning models with Python packages such as Pandas, Numpy, Keras and TensorFlow",
-      "Also have experience with building GUIs with PyQt, web scraping with BeautifulSoup and robot programming with Python ROS",
-      "Experience with frameworks such as Angular, React, Django, RubyOnRails, and Spring Boot"
+      "Also have experience with building GUIs with PyQt, web scraping with BeautifulSoup, robot programming with Python ROS and ESP32",
+      "Experience with frameworks such as Angular, Next/React, Django, RubyOnRails, and Spring Boot",
+      "Customer experience working as a waiter and processing orders"
     ]
   },
   "achievements": {
-    "title": "Achievements",
+    "title": "Other Activities",
     "data": [
       {
         "year": "2017",
@@ -47,72 +47,76 @@
       },
       {
         "year": "2018",
-        "details": "Awarded for participation in the NCS (National Citizenship Service) program which involved two weeks of volunteering at a care home"
+        "details": "Participated in the NCS (National Citizenship Service) program which involved two weeks of volunteering at a care home"
       },
       {
         "year": "2019",
         "details": "Received my UK manual driving license"
-      },
-      {
-        "year": "2023",
-        "details": "Received my Chinese manual driving license"
       }
     ]
   },
   "education": {
     "title": "Education"
   },
+  "workExperience": {
+    "title": "Work Experience"
+  },
   "projects": {
     "title": "Project Experience",
     "note": "Work is public on my GitHub profile if interested. You can also find more academic and personal projects there.",
     "data": [
       {
-        "name": "Language Exchange Platform", 
-        "description": "A personal full-stack project where I self-taught and utilized the Angular framework for frontend, with the help of Bootstrap for presentation. The front end requests services from a REST API backend developed with Spring Boot. Also gained experiences with using Postman for testing backend service responses and using JSoup for web scraping language data.", 
-        "inProgress": true,
-        "isAcademic": false,
-        "links": ["https://github.com/jwu02/language-exchange-angular-frontend", "https://github.com/jwu02/language-exchange-springboot-backend"]
+        "name": "LeetInterview", 
+        "description": [
+          "A personal startup endeavor aimed at creating a platform that facilitates answering common interview questions using both text and speech responses. It includes a tailored administrative dashboard for managing sample questions and study plans.",
+          "Utilized Next/React JS and Tailwind CSS to create the front-end interface, incorporating shadcn/ui for customizable UI components.",
+          "Engineered a REST API backend using Spring Boot to handle service requests efficiently.",
+          "Leveraged the Backblaze B2 storage solution for user response recordings which uses the same SDK for AWS S3."
+        ], 
+        "links": []
+      },
+      {
+        "name": "Job Applications Tracker",
+        "description": [
+          "Developed a NextJS application enabling users to manage and track all their job applications in a centralized location.",
+          "Utilized Clerk for secure, out-of-the-box authentication and user management, implementing Clerk webhooks to update the MongoDB backend in response to user creation and update events.",
+          "Integrated Google Maps API for geolocation services and visualization of job application data."
+        ], 
+        "links": ["https://github.com/jwu02/job-tracker"]
       },
       {
         "name": "Portfolio Website", 
-        "description": "A responsive personal website built with React, made use of Tailwind CSS for fast inline styling and Ant Design components for better presentation of data. Also made use of the i18next package for managing  site translations (done Chinese so far).", 
-        "inProgress": false,
-        "isAcademic": false,
+        "description": [
+          "Developed a mobile-responsive personal website using React, Tailwind CSS, and Ant Design UI components.",
+          "Implemented site translations in English and Chinese using the i18next package for efficient management and localization."
+        ], 
         "links": ["https://github.com/jwu02/jwu02.github.io"]
       },
       {
         "name": "Named Entity Recognition (NER) System",
-        "description": "Developed from scratch as part of my dissertation project. The Multinomial Logistic Regression (MLR) algorithm was chosen for the implementation, with the help of NumPy for matrix calculations and Pandas for data sanitization and manipulation. The trained and finetuned model achieved results very close to what was capable of existing systems.", 
-        "inProgress": false,
-        "isAcademic": true,
+        "description": [
+          "Developed a Multinomial Logistic Regression (MLR) algorithm from scratch as part of my dissertation project.",
+          "Utilized NumPy for efficient matrix calculations and Pandas for data sanitization and manipulation during implementation.",
+          "Achieved results with the trained and fine-tuned model that closely matched the capabilities of existing systems, demonstrating the effectiveness of the developed algorithm.",
+          "Also developed a foundational knowledge of transformer neural networks and attempted at implementing it from scratch."
+        ], 
         "links": []
       },
       {
         "name": "ESP32 Robot Car", 
-        "description": "Assembled and developed a remote-controlled robot car (via a WAP and served page) using C/C++, on an ESP32 development board (similar to an Arduino). Also installed an ultrasonic sensor for object detection and avoidance whilst the robot is exploring its environment. (Short demo in GitHub repository)", 
-        "inProgress": false,
-        "isAcademic": true,
+        "description": [
+          "Assembled and developed a remote-controlled robot car using C/C++ on an ESP32 development board, akin to an Arduino.",
+          "Integrated a web server accessed via a Wireless Access Point (WAP) to facilitate remote control through served web pages.",
+          "Incorporated an ultrasonic sensor for real-time object detection and avoidance during the robot's exploration of its environment. Short demo available in GitHub repository."
+        ], 
         "links": ["https://github.com/jwu02/com3505-robocar"]
       },
       {
-        "name": "Robotics", 
-        "description": "Involved a group project programming a small robot dog with Python ROS, in both a simulation and the actual hardware, to complete various tasks such as maze completion, obstacle avoidance, and beaconing (finding and moving towards a target). Ended up completing the entire project by myself, but enjoyed the work involved and took the opportunity to learn a lot.",
-        "inProgress": false,
-        "isAcademic": true,
-        "links": ["https://github.com/jwu02/com2009-robotics-team-1"]
-      },
-      {
-        "name": "Property Booking Desktop App",
-        "description": "Involved a group project emulating a real-world agile software development process, with formal requirements analysis and system design process, utilizing UML diagrams. Developed a property booking desktop app following the MVC architecture, with Java as frontend and backend, linking to MySQL database. My responsibilities included all of the above-mentioned things and implementation of the entire system.", 
-        "inProgress": false,
-        "isAcademic": true,
-        "links": ["https://github.com/jwu02/com2008-homebreak-plc"]
-      },
-      {
         "name": "Chess Piece Image Classification System", 
-        "description": "Developed as part of a machine learning course which involved learning various classification techniques, including both supervised and unsupervised. I implemented the system with both the Naive Bayes and k-nearest neighbor algorithms.", 
-        "inProgress": false,
-        "isAcademic": true,
+        "description": [
+          "Developed as part of a machine learning course which involved learning various classification techniques, including both supervised and unsupervised.",
+          "Implemented the system with both the Naive Bayes and k-nearest neighbor algorithms."
+        ], 
         "links": ["https://github.com/jwu02/com2004-chess-board-classification"]
       }
     ]
@@ -132,7 +136,6 @@
       "Self Improvement", 
       "Language Learning", 
       "Sports", 
-      "Gaming", 
       "Content Creation"
     ]
   }

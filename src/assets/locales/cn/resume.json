@@ -7,17 +7,16 @@
     "interests": [
       "软件工程",
       "机器学习",
-      "机器人工程",
-      "嵌入式系统",
-      "全栈开发"
+      "机器人工程"
     ],
-    "selfEvaluation": "我是一个积极主动、干劲十足的人，致力于不断学习和提高技能。通过克服学业过程中的诸多挑战，我磨练出了独立学习和研究的能力，以及取得成果的信心。我对编程的热情超越了单纯的技术熟练程度，它是一种创造性的表达方式，也是通过创新解决方案丰富他人生活的途径。"
+    "selfEvaluation": "我是一个积极主动、充满动力的人，致力于持续学习和技能发展。我的学术经历使我具备了强大的适应能力、研究能力以及对获取新知识的热情。凭借编程背景，我拥有敏锐的细节关注能力并追求卓越。我相信我的灵活性和技能将使我能够有效地为任何团队或项目做出贡献，并取得更大的成就。"
   },
   "languages": {
     "title": "语言能力",
     "levels": {
       "native": "母语",
       "heritage": "传承语",
+      "intermediate": "中级者",
       "beginner": "初学者"
     },
     "data": {
@@ -34,12 +33,13 @@
     "data": [
       "熟练 Python、Java 和 JavaScript，也熟悉 TypeScript、PHP 和 Ruby",
       "具有使用 Pandas、Numpy、Keras 和 TensorFlow 等 Python 软件包进行数据处理和构建机器学习模型的经验",
-      "此外，还拥有使用 PyQt 构建图形用户界面、使用 BeautifulSoup 进行网络搜刮以及使用 Python ROS 进行机器人编程的经验",
-      "具有使用 Angular、React、Django、RubyOnRails 和 Spring Boot 等框架的经验"
+      "此外，还拥有使用 PyQt 构建图形用户界面、使用 BeautifulSoup 进行网络搜刮、使用 Python ROS 和 ESP32 进行机器人编程的经验",
+      "具有使用 Angular、Next/React、Django、RubyOnRails 和 Spring Boot 等框架的经验",
+      "客户服务经验，包括担任服务员和处理订单"
     ]
   },
   "achievements": {
-    "title": "校外荣誉",
+    "title": "校外活动",
     "data": [
       {
         "year": "2017",
@@ -47,7 +47,7 @@
       },
       {
         "year": "2018",
-        "details": "因参加 NCS（National Citizenship Service 国家公民服务）计划而获奖，该计划包括在一家护理院进行为期两周的志愿服务"
+        "details": "参加了国家公民服务（NCS）项目，包括在养老院进行为期两周的志愿服务"
       },
       {
         "year": "2019",
@@ -55,64 +55,80 @@
       },
       {
         "year": "2023",
-        "details": "获得了我的中国手动驾驶证（转证只需考科目一）"
+        "details": "获得了我的中国手动驾驶证"
       }
     ]
   },
   "education": {
     "title": "教育背景"
   },
+  "workExperience": {
+    "title": "工作经验"
+  },
   "projects": {
     "title": "项目经验",
     "note": "如果感兴趣，作品已在我的 GitHub 个人主页上公开。您还可以在那里找到更多校内和个人项目。",
     "data": [
       {
-        "name": "语言交换程序", 
-        "description": "一个个人全栈项目，我自学并使用 Angular 框架开发前端，演示使用 Bootstrap。前端从使用 Spring Boot 开发的 REST API 后端请求服务。此外，我还获得了使用 Postman 测试后端服务响应和使用 JSoup 进行网络语言数据搜刮的经验。",
-        "inProgress": true,
-        "isAcademic": false,
-        "links": ["https://github.com/jwu02/language-exchange-angular-frontend", "https://github.com/jwu02/language-exchange-springboot-backend"]
+        "name": "力面试", 
+        "description": [
+          "一个个人创业项目，旨在创建一个平台，以促进使用文本和语音回答常见面试问题。它包括一个定制的管理仪表板，用于管理示例问题和学习计划。",
+          "利用 Next/React JS 和 Tailwind CSS 创建前端界面，整合了 shadcn/ui 实现可定制的 UI 组件。",
+          "使用 Spring Boot 工程化 REST API 后端，以高效处理服务请求。",
+          "利用 Backblaze B2 存储解决方案记录用户响应，该方案使用与 AWS S3 相同的 SDK。"
+        ],
+        "links": []
+      },
+      {
+        "name": "工作申请跟踪应用", 
+        "description": [
+          "开发了一个基于NextJS的应用程序，使用户能够在一个集中位置管理和跟踪所有的工作申请。",
+          "使用Clerk进行安全的开箱即用的身份验证和用户管理，通过实现Clerk webhooks来响应用户创建和更新事件并更新MongoDB后台。",
+          "集成了Google Maps API用于地理定位服务和工作申请数据的可视化。"
+        ],
+        "links": ["https://github.com/jwu02/job-tracker"]
       },
       {
         "name": "个人网站", 
-        "description": "这是一个使用 React 构建的响应式个人网站，使用 Tailwind CSS 进行快速内联样式设计，并使用 Ant Design 组件更好地展示数据。还使用 i18next 软件包管理网站翻译（目前已完成中文翻译）。",
-        "inProgress": false,
-        "isAcademic": false,
+        "description": [
+          "使用 React、Tailwind CSS 和 Ant Design UI 组件开发了一个支持移动端响应式的个人网站。",
+          "使用 i18next 软件包实现了英文和中文的站点翻译，以实现高效管理和本地化。"
+        ],
         "links": ["https://github.com/jwu02/jwu02.github.io"]
       },
       {
         "name": "命名实体识别（NER）系统", 
-        "description": "作为我的毕业论文项目的一部分，从零开始开发。在 NumPy 进行矩阵计算和使用 Pandas 进行数据处理和操作的帮助下，我选择了多项式逻辑回归 (MLR) 算法来实施该系统。经过训练和微调的模型取得了与现有系统非常接近的结果。",
-        "inProgress": false,
-        "isAcademic": true,
+        "description": [
+          "作为我的论文项目的一部分，从零开始开发了一个多项式逻辑回归（MLR）算法。",
+          "在实现过程中，利用 NumPy 进行高效的矩阵计算，并使用 Pandas 进行数据清理和处理。",
+          "通过对训练和微调的模型取得了结果，这些结果与现有系统的能力非常接近，证明了所开发算法的有效性。",
+          "也建立了对变压器神经网络的基础知识，并尝试从零开始实现它。"
+        ],
         "links": []
       },
       {
         "name": "ESP32 机器人车", 
-        "description": "使用 C/C++ 在 ESP32 开发板（类似于 Arduino）上组装和开发遥控机器人汽车（通过 WAP 和服务页面）。还安装了一个超声波传感器，用于在机器人探索环境时探测和避开物体。(GitHub 代码库中有一个简短的演示）",
-        "inProgress": false,
-        "isAcademic": true,
+        "description": [
+          "使用 C/C++ 在类似 Arduino 的 ESP32 开发板上组装和开发了一辆远程控制的机器人小车。",
+          "集成了通过无线接入点（WAP）访问的 Web 服务器，以便通过提供的网页实现远程控制。",
+          "在机器人探索环境过程中，引入了超声波传感器以实现实时物体检测和避障。GitHub 仓库中提供了简短的演示。"
+        ],
         "links": ["https://github.com/jwu02/com3505-robocar"]
       },
       {
         "name": "机器人学", 
-        "description": "涉及一个小组项目，使用 Python ROS 在模拟和实际硬件中对小型机器狗进行编程，以完成各种任务，如完成迷宫、避开障碍物和信标（寻找目标并向目标移动）。整个项目最终由我一个人完成，但我很享受其中的工作，并借此机会学到了很多东西。",
-        "inProgress": false,
-        "isAcademic": true,
+        "description": [
+          "与团队合作参与了一个项目，使用 Python ROS 编程了一只小型机器人狗。",
+          "参与了仿真和硬件实现，重点关注迷宫完成、避障和信标（目标定位和移动）等任务。"
+        ],
         "links": ["https://github.com/jwu02/com2009-robotics-team-1"]
       },
       {
-        "name": "物业预订桌面应用程序", 
-        "description": "参与一个小组项目，模拟真实世界的敏捷软件开发流程，利用 UML 图表进行正式的需求分析和系统设计流程。按照 MVC 架构开发了一个物业预订桌面应用程序，使用 Java 作为前端和后端，并链接到 MySQL 数据库。我的职责包括上述所有工作以及整个系统的实施。",
-        "inProgress": false,
-        "isAcademic": true,
-        "links": ["https://github.com/jwu02/com2008-homebreak-plc"]
-      },
-      {
         "name": "国际象棋棋子图像分类系统", 
-        "description": "作为机器学习修选课的一部分开发，该修选课涉及学习各种分类技术，包括监督和非监督技术。我使用朴素贝叶斯算法和 k近邻算法实施了该系统。",
-        "inProgress": false,
-        "isAcademic": true,
+        "description": [
+          "作为机器学习课程的一部分开发，涉及学习各种分类技术，包括监督学习和无监督学习。",
+          "使用朴素贝叶斯和k最近邻算法实现了系统。"
+        ],
         "links": ["https://github.com/jwu02/com2004-chess-board-classification"]
       }
     ]
@@ -132,7 +148,6 @@
       "自我提升", 
       "语言学习", 
       "体育", 
-      "电竞", 
       "内容创作"
     ]
   }

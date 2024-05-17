@@ -53,15 +53,15 @@ const Landing = () => {
 
           {/* socials */}
           <div className="flex-center gap-3">
-            <Tooltip title={i18n.t("contacts.linkedin", {ns: "common"})} placement="bottom">
-              <a href="https://www.linkedin.com/in/jwu31" target="_blank" rel="noreferrer">
-                <IoLogoLinkedin className="icon-btn hover:text-[var(--linkedin-blue)] !hover:opacity-100" />
-              </a>
-            </Tooltip>
-
             <Tooltip title={i18n.t("contacts.github", {ns: "common"})} placement="bottom">
               <a href="https://github.com/jwu02" target="_blank" rel="noreferrer">
                 <IoLogoGithub className="icon-btn" />
+              </a>
+            </Tooltip>
+
+            <Tooltip title={i18n.t("contacts.linkedin", {ns: "common"})} placement="bottom">
+              <a href="https://www.linkedin.com/in/jwu31" target="_blank" rel="noreferrer">
+                <IoLogoLinkedin className="icon-btn hover:text-[var(--linkedin-blue)] !hover:opacity-100" />
               </a>
             </Tooltip>
           </div>

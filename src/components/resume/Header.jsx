@@ -1,9 +1,10 @@
-import { IoLogoGithub, IoLogoWechat, IoMail } from "react-icons/io5";
+import { IoLogoGithub, IoLogoLinkedin, IoLogoWechat, IoMail } from "react-icons/io5";
 import { Tooltip } from "antd";
 import { useEffect, useState } from "react";
 import TextTransition from 'react-text-transition'
 import { useTranslation } from "react-i18next";
 import i18n from "../../i18n";
+import { FaMobileScreen } from "react-icons/fa6";
 
 const Header = () => {
   const { t } = useTranslation('resume', { keyPrefix: 'header' });
@@ -19,16 +20,16 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="flex flex-col gap-1 py-3 px-8 bg-slate-300 text-center">
+    <div className="flex flex-col gap-1 py-3 px-6 bg-slate-300 text-center">
       <Contacts />
 
       <div className="text-4xl font-semibold">{i18n.t("fullname", {ns:"common"})}</div>
-      <div className="text-base font-semibold">
+      {/* <div className="text-base font-semibold">
         {t("interestLabel")} 
         <TextTransition inline={true} translateValue="50%">
           {INTERESTS[interestIndex % INTERESTS.length]}
         </TextTransition>
-      </div>
+      </div> */}
 
       <div className="text-justify">
         {t("selfEvaluation")}
@@ -45,17 +46,29 @@ const Contacts = () => {
   const resumeHeaderIcon = "icon w-5 h-5 group-hover:text-[var(--link-hover-color)]";
 
   return (
-    <div className="flex justify-between">
+    <div className="flex justify-around">
       <ContactMethod
         method={t("email")}
         details={<a>jiacongwu31@gmail.com</a>}
         icon={<IoMail className={resumeHeaderIcon} />}
       />
 
-      <ContactMethod
+      {/* <ContactMethod
         method={t("wechat")}
         details={<a>tonywu02</a>}
         icon={<IoLogoWechat className={`${resumeHeaderIcon} group-hover:text-[var(--wechat-green)]`} />}
+      /> */}
+
+      {/* <ContactMethod
+        method={t("linkedin")}
+        details={<a href="https://www.linkedin.com/in/jwu31" target="_blank" rel="noreferrer">jwu31</a>}
+        icon={<IoLogoLinkedin className={`${resumeHeaderIcon} group-hover:text-[var(--linkedin-blue)]`} />}
+      /> */}
+
+      <ContactMethod
+        method={t("mobile")}
+        details={<a>075 3342 2220</a>}
+        icon={<FaMobileScreen className={`${resumeHeaderIcon}`} />}
       />
 
       <ContactMethod
