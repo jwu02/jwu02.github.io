@@ -17,14 +17,15 @@ const WorkExperience = () => {
           t("data", {returnObjects: true})
             .map((workExp, i) => (
               <div key={i}>
-                <div>
-                  <div className="font-semibold text-sm">
-                    {workExp.role}
-                  </div>
-                  <div>
-                    <span className="font-semibold">{workExp.company}</span>, {workExp.location}
-                  </div>
+                <div className="flex ml-9 gap-5 items-center">
                   <div>{workExp.startDate} - {workExp.endDate}</div>
+                  <div>
+                    <div className="font-semibold">{workExp.role}</div>
+                    <div>
+                      {workExp.company},&nbsp;
+                      <span className="italic">{workExp.location}</span>
+                    </div>
+                  </div>
                 </div>
                 <ul className="list-disc ml-3">
                   {

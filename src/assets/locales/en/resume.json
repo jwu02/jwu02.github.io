@@ -62,20 +62,17 @@
     "title": "Work Experience",
     "data": [
       {
-        "role": "Waiter",
-        "company": "NoodleSta",
-        "location": "Sheffield",
-        "startDate": "2021.11",
-        "endDate": "2022.04",
-        "responsibilities": []
-      },
-      {
-        "role": "Waiter & Order Processor",
+        "role": "Order Processor & Waiter",
         "company": "Imperial Restaurant",
         "location": "Scunthorpe",
-        "startDate": "2018.07",
+        "startDate": "2016.08",
         "endDate": "2020.01",
-        "responsibilities": []
+        "responsibilities": [
+          "Accurately entered and verified customer orders, ensuring correct pricing and product quantities.",
+          "Provided excellent customer service, accurately took orders, and managed payments.",
+          "Delivered food and beverages promptly, ensuring customer satisfaction.",
+          "Maintained clean and organized dining areas, and addressed customer complaints professionally."
+        ]
       }
     ]
   },

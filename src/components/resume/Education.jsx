@@ -13,13 +13,13 @@ const Education = () => {
         icon={IoSchool}
       />
 
-      <div className="flex flex-col ml-2">
+      <div className="flex flex-col">
         {
           i18n.t("data", {ns: "education", returnObjects: true})
             .map((education, i) => (
               <div key={i} className="flex gap-3">
                 {/* education period */}
-                <div className="text-nowrap">
+                <div className="text-nowrap text-end">
                   {education.startDate} - {education.endDate}
                 </div>
                 
